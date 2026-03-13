@@ -12,7 +12,7 @@
 
 <!-- All hyperlinks as classic monochrome buttons -->
 <p align="center">
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">
+  <a href="https://www.linkedin.com/in/karthikdarapaneni/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brv%2FjQHUtQTWO2UmdIxbXOQ%3D%3D/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:YOUR_EMAIL@example.com">
