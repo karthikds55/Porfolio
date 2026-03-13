@@ -1,97 +1,127 @@
-<!-- Animated typing header -->
+<!-- Classic "background" banner (image) -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&color=00C2FF&center=true&vCenter=true&width=900&lines=Cloud+Data+Engineer+%7C+5%2B+years;AWS+%2F+Azure+%2F+GCP+%7C+ETL%2FELT+%7C+Data+Modeling;SQL+%7C+Python+%7C+Spark+%7C+Airflow;Reliable+pipelines+with+quality%2C+observability+%26+cost+focus" alt="Typing SVG" />
-</p>
-
-<h1 align="center">Hi, I'm Karthik</h1>
-
-<p align="center">
-  <b>Cloud Data Engineer (5+ years)</b> building scalable, reliable data platforms on <b>AWS/Azure/GCP</b>.<br/>
-  I specialize in <b>SQL + Python</b>, orchestration, data modeling, and production-grade pipelines with quality + observability.
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:374151&height=140&section=header&text=Karthik%20Darapaneni&fontColor=E5E7EB&fontSize=48&animation=fadeIn" />
 </p>
 
 <p align="center">
-  <!-- Replace links -->
-  <a href="https://www.linkedin.com/in/karthikdarapaneni/">LinkedIn</a> •
-  <a href="https://github.com/karthikds55">GitHub</a> •
-  <a href="mailto:darapuneni.karthik@gmail.com">Email</a> •
-  <a href="https://YOUR-PORTFOLIO.com">Portfolio</a>
+  <b>Cloud Data Engineer (5+ years)</b> • AWS / Azure / GCP • SQL • Python • Spark • Airflow
+</p>
+<p align="center">
+  Reliable pipelines • Data Modeling • Data Quality • Observability • Cost/Performance
+</p>
+
+<!-- All hyperlinks as classic monochrome buttons -->
+<p align="center">
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:YOUR_EMAIL@example.com">
+    <img src="https://img.shields.io/badge/Email-Contact-111827?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://github.com/karthikds55">
+    <img src="https://img.shields.io/badge/GitHub-Follow-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://YOUR_PORTFOLIO.com">
+    <img src="https://img.shields.io/badge/Portfolio-Visit-111827?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+</p>
+
+<hr/>
+
+<!-- Classic navigation row -->
+<p align="center">
+  <a href="#featured-work"><img src="https://img.shields.io/badge/Featured%20Work-Open-374151?style=for-the-badge" /></a>
+  <a href="#core-skills"><img src="https://img.shields.io/badge/Core%20Skills-View-374151?style=for-the-badge" /></a>
+  <a href="#cloud--data-stack"><img src="https://img.shields.io/badge/Cloud%20%26%20Data%20Stack-Browse-374151?style=for-the-badge" /></a>
+  <a href="#highlights"><img src="https://img.shields.io/badge/Highlights-See-374151?style=for-the-badge" /></a>
+  <a href="#contact"><img src="https://img.shields.io/badge/Contact-Reach%20out-374151?style=for-the-badge" /></a>
 </p>
 
 ---
 
-## Contents
-- [Featured projects](#featured-projects)
-- [Core skills](#core-skills)
-- [Cloud toolkit](#cloud-toolkit)
-- [How I work](#how-i-work)
-- [Stats](#stats)
+## Featured Work
+
+<p>
+  <a href="https://github.com/karthikds55/DataEngineering">
+    <img src="https://img.shields.io/badge/Repo-DataEngineering-111827?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
+
+**DataEngineering** — a portfolio repo for production-style patterns:
+- ingestion → transforms → tests → orchestration
+- quality gates + monitoring mindset
+- scalable structure for cloud deployments
+
+<details>
+  <summary><b>Roadmap</b></summary>
+
+- Raw → staging → marts example pipeline
+- Data quality checks (schema, freshness, duplicates)
+- Orchestration DAG + backfills
+- CI checks (lint/test)
+</details>
 
 ---
 
-## Featured projects
-> Replace the placeholders with your real repos. I can rewrite these “impact-first” once you share links.
-
-### 1) DataEngineering (Templates + E2E pipelines)
-**Outcome:** reusable templates for ingestion → transforms → tests → orchestration  
-**Focus:** clean structure, quality checks, and production patterns  
-**Tech:** SQL • Python • Airflow • dbt/Spark • Cloud Storage/Warehouse  
-**Repo:** https://github.com/karthikds55/DataEngineering
-
-### 2) Cloud ELT Pipeline (example)
-**Outcome:** automated ELT into a warehouse with incremental loads + testing  
-**Tech:** Airflow/Prefect • dbt • Snowflake/BigQuery/Redshift • Terraform
-
-### 3) Streaming Pipeline (example)
-**Outcome:** near real-time ingestion with partitioned storage + curated tables  
-**Tech:** Kafka/Kinesis/PubSub • Spark Structured Streaming • Lakehouse
+## Core Skills
+- **SQL (advanced):** modeling, performance tuning, validation
+- **Python:** pipelines, automation, API ingestion
+- **Orchestration:** Airflow / Prefect / Dagster
+- **Transforms:** dbt / Spark / SQL
+- **Modeling:** facts/dims, SCD, marts
+- **Quality & Observability:** tests, SLAs, monitoring/alerting
+- **Cost/Performance:** partitioning, clustering, Parquet, incremental loads
 
 ---
 
-## Core skills
-- **Data Engineering:** ETL/ELT, batch + streaming, CDC (if applicable), orchestration, backfills
-- **Modeling:** Kimball (facts/dims), SCD, marts, schema design, governance basics
-- **Quality & Reliability:** tests (dbt/GE), data contracts mindset, SLAs/SLOs, alerting
-- **Performance & Cost:** partitioning/clustering, file formats (Parquet), query optimization
-- **Dev Practices:** Git, CI/CD, Docker, documentation-first pipelines
-
----
-
-## Cloud toolkit (pick what you actually use)
+## Cloud & Data Stack
 <details>
   <summary><b>AWS</b></summary>
 
-- S3, IAM, Glue, Lambda, Athena, EMR
-- Redshift, CloudWatch, Step Functions
+<p>
+  <a href="https://aws.amazon.com/s3/"><img src="https://img.shields.io/badge/S3-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
+  <a href="https://aws.amazon.com/glue/"><img src="https://img.shields.io/badge/Glue-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
+  <a href="https://aws.amazon.com/redshift/"><img src="https://img.shields.io/badge/Redshift-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
+</p>
 </details>
 
 <details>
   <summary><b>Azure</b></summary>
 
-- ADLS Gen2, ADF, Synapse, Databricks
-- Azure Functions, Monitor
+<p>
+  <a href="https://azure.microsoft.com/products/storage/data-lake-storage/"><img src="https://img.shields.io/badge/ADLS-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
+  <a href="https://azure.microsoft.com/products/data-factory/"><img src="https://img.shields.io/badge/Data%20Factory-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
+  <a href="https://azure.microsoft.com/products/synapse-analytics/"><img src="https://img.shields.io/badge/Synapse-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
+</p>
 </details>
 
 <details>
   <summary><b>GCP</b></summary>
 
-- GCS, BigQuery, Dataflow, Pub/Sub
-- Cloud Composer, Cloud Functions, Cloud Logging
+<p>
+  <a href="https://cloud.google.com/storage"><img src="https://img.shields.io/badge/GCS-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
+  <a href="https://cloud.google.com/bigquery"><img src="https://img.shields.io/badge/BigQuery-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
+  <a href="https://cloud.google.com/pubsub"><img src="https://img.shields.io/badge/Pub%2FSub-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
+</p>
 </details>
 
 ---
 
-## How I work
-- Build **idempotent** pipelines (safe re-runs, reliable backfills)
-- Ship with **tests + monitoring** (quality gates before dashboards break)
-- Prefer **simple, explainable designs** (documented tradeoffs, clean ownership)
+## Highlights
+- 5+ years delivering cloud pipelines end-to-end (ingestion → curated marts)
+- Strong emphasis on **data trust** (testing + observability) and **practical performance**
 
 ---
 
-## Stats
+## Contact
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=karthikds55&show_icons=true&theme=tokyonight" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=karthikds55&layout=compact&theme=tokyonight" />
+  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">
+    <img src="https://img.shields.io/badge/LinkedIn-Message-374151?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:YOUR_EMAIL@example.com">
+    <img src="https://img.shields.io/badge/Email-Send-374151?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://YOUR_PORTFOLIO.com">
+    <img src="https://img.shields.io/badge/Portfolio-Open-374151?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
 </p>
-
-<!-- Optional: add the snake animation later (see section B) -->
