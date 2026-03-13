@@ -1,0 +1,2601 @@
+order_id,order_date,customer_age,product_category,order_value,discount_applied,payment_method,delivery_time_days,customer_rating,order_status
+1,2024-02-22,60,Electronics,6455.58,Yes,Card,6,1.6,Returned
+2,2024-12-03,64,Books,22530.0,No,Card,9,2.0,Cancelled
+3,2024-06-21,63,Sports,9673.54,Yes,Wallet,3,4.4,Cancelled
+4,2024-10-19,31,Home & Kitchen,20141.05,No,COD,5,3.7,Delivered
+5,2024-08-04,23,Electronics,9275.31,No,Wallet,5,2.1,Returned
+6,2024-06-23,52,Books,21043.03,Yes,UPI,4,1.7,Returned
+7,2024-05-18,52,Beauty,19170.1,No,COD,4,3.6,Returned
+8,2024-07-06,43,Home & Kitchen,21052.25,No,COD,8,3.7,Delivered
+9,2024-08-15,30,Books,16145.88,No,UPI,3,4.5,Returned
+10,2024-01-23,37,Beauty,2345.6,Yes,COD,8,2.2,Returned
+11,2024-01-09,34,Fashion,18051.97,No,Card,6,1.8,Returned
+12,2024-12-01,21,Electronics,8929.06,No,COD,10,4.9,Cancelled
+13,2024-01-12,51,Fashion,15042.11,No,Card,10,2.6,Delivered
+14,2024-05-16,35,Beauty,7381.86,Yes,Wallet,5,2.3,Returned
+15,2024-06-10,47,Books,13843.9,No,UPI,5,2.2,Cancelled
+16,2024-05-05,30,Books,490.52,Yes,UPI,10,1.6,Delivered
+17,2024-09-04,32,Electronics,6940.29,No,Card,7,4.5,Returned
+18,2024-02-23,57,Electronics,12438.89,Yes,UPI,3,4.1,Cancelled
+19,2024-01-18,44,Electronics,3886.73,No,Card,9,1.8,Cancelled
+20,2024-04-16,58,Sports,6647.04,Yes,COD,10,3.7,Cancelled
+21,2024-09-13,54,Sports,4254.06,No,Wallet,8,2.4,Delivered
+22,2024-01-31,63,Books,15495.75,No,COD,6,3.9,Returned
+23,2024-12-29,41,Fashion,11500.79,No,Wallet,3,4.6,Cancelled
+24,2024-06-29,39,Sports,15277.06,No,UPI,9,3.4,Delivered
+25,2024-10-02,24,Electronics,1950.72,Yes,Wallet,1,1.8,Cancelled
+26,2024-09-27,55,Books,17008.82,No,Wallet,10,4.9,Returned
+27,2024-09-02,40,Sports,11174.16,No,Wallet,1,4.4,Returned
+28,2024-05-18,53,Sports,8731.61,Yes,COD,3,4.8,Returned
+29,2024-01-12,60,Books,22822.87,Yes,Wallet,6,3.2,Cancelled
+30,2024-05-02,41,Fashion,19398.43,Yes,UPI,10,5.0,Returned
+31,2024-10-27,29,Electronics,6141.3,Yes,Wallet,1,5.0,Returned
+32,2024-09-27,61,Books,22570.69,Yes,Wallet,4,1.4,Returned
+33,2024-10-13,25,Fashion,12910.71,No,Wallet,5,2.6,Delivered
+34,2024-12-27,33,Sports,18263.91,Yes,UPI,6,2.7,Returned
+35,2024-05-13,47,Home & Kitchen,23192.56,No,Wallet,6,3.9,Returned
+36,2024-06-21,63,Electronics,10097.61,No,UPI,7,4.3,Delivered
+37,2024-01-08,55,Books,1844.26,No,Card,10,1.9,Delivered
+38,2024-03-15,43,Sports,10508.86,Yes,UPI,6,5.0,Cancelled
+39,2024-03-01,55,Fashion,6995.4,No,Card,6,2.9,Cancelled
+40,2024-06-30,39,Electronics,9658.0,Yes,UPI,6,1.2,Returned
+41,2024-09-02,27,Beauty,4570.88,Yes,Wallet,9,4.5,Cancelled
+42,2024-09-25,41,Sports,17575.03,Yes,Wallet,1,4.5,Cancelled
+43,2024-05-29,37,Books,5318.37,Yes,Wallet,8,4.7,Delivered
+44,2024-04-22,38,Sports,18294.85,No,COD,2,1.9,Cancelled
+45,2024-03-29,62,Beauty,18931.27,No,Wallet,8,4.0,Delivered
+46,2024-09-29,35,Beauty,16224.63,Yes,Wallet,2,4.1,Delivered
+47,2024-05-21,55,Books,1303.74,Yes,Card,1,4.5,Returned
+48,2024-11-01,43,Electronics,10939.21,Yes,COD,5,2.6,Cancelled
+49,2024-08-14,40,Electronics,16914.03,Yes,UPI,10,3.5,Delivered
+50,2024-12-09,56,Fashion,1253.16,No,UPI,7,4.0,Delivered
+51,2024-05-10,51,Electronics,17750.97,Yes,Card,5,1.1,Cancelled
+52,2024-04-20,36,Home & Kitchen,13669.68,Yes,UPI,3,2.3,Returned
+53,2024-03-18,39,Sports,8553.84,Yes,Card,4,1.6,Cancelled
+54,2024-06-12,28,Books,11960.47,No,Wallet,2,3.4,Returned
+55,2024-04-08,21,Home & Kitchen,15726.89,Yes,UPI,5,4.5,Returned
+56,2024-02-17,26,Beauty,20047.81,No,COD,3,3.5,Returned
+57,2024-12-25,46,Fashion,23151.35,Yes,COD,10,3.1,Delivered
+58,2024-01-27,35,Electronics,12789.12,Yes,Card,7,2.3,Delivered
+59,2024-08-31,48,Home & Kitchen,12297.72,No,Wallet,4,3.3,Cancelled
+60,2024-05-28,50,Fashion,17616.16,No,Wallet,7,3.9,Returned
+61,2024-04-13,20,Home & Kitchen,24651.19,No,UPI,3,3.2,Cancelled
+62,2024-08-16,27,Electronics,24914.59,No,Card,7,4.5,Delivered
+63,2024-08-25,56,Electronics,23590.01,Yes,Card,1,2.7,Returned
+64,2024-09-21,46,Sports,13309.86,Yes,Wallet,8,1.9,Delivered
+65,2024-04-22,30,Electronics,21925.06,Yes,Card,7,4.0,Cancelled
+66,2024-02-26,39,Home & Kitchen,1722.58,Yes,Card,6,1.9,Returned
+67,2024-02-16,53,Fashion,9044.76,Yes,COD,7,3.4,Returned
+68,2024-02-08,28,Home & Kitchen,6682.37,No,Wallet,6,1.5,Returned
+69,2024-10-31,19,Books,12463.38,Yes,COD,8,4.8,Delivered
+70,2024-03-01,31,Fashion,17035.56,Yes,UPI,2,3.2,Cancelled
+71,2024-07-14,42,Home & Kitchen,2924.15,No,UPI,5,2.8,Cancelled
+72,2024-12-10,19,Electronics,10818.18,Yes,Card,1,1.1,Returned
+73,2024-05-07,20,Beauty,12208.49,Yes,COD,6,3.8,Delivered
+74,2024-09-11,65,Beauty,9720.5,No,Card,4,1.6,Cancelled
+75,2024-07-21,49,Home & Kitchen,19345.35,No,COD,4,1.4,Cancelled
+76,2024-08-13,30,Electronics,24570.56,Yes,Card,5,1.5,Cancelled
+77,2024-01-11,49,Sports,9378.63,Yes,Card,9,2.8,Delivered
+78,2024-09-21,25,Sports,11162.49,Yes,Wallet,2,2.1,Cancelled
+79,2024-11-05,44,Books,4643.52,Yes,Card,2,2.8,Cancelled
+80,2024-04-10,40,Home & Kitchen,3627.73,Yes,Wallet,4,2.2,Delivered
+81,2024-02-10,38,Sports,13636.92,Yes,COD,9,4.2,Cancelled
+82,2024-12-21,65,Beauty,23898.25,Yes,Card,5,2.4,Cancelled
+83,2024-02-16,28,Fashion,23610.47,Yes,UPI,5,3.1,Delivered
+84,2024-03-05,57,Home & Kitchen,6214.82,Yes,Wallet,10,3.7,Cancelled
+85,2024-03-03,62,Home & Kitchen,18611.34,Yes,Card,8,4.6,Returned
+86,2024-02-21,18,Home & Kitchen,11775.92,No,Wallet,3,4.0,Returned
+87,2024-05-01,39,Fashion,24425.26,Yes,Card,10,2.2,Returned
+88,2024-08-01,30,Fashion,5303.22,Yes,Wallet,5,1.7,Cancelled
+89,2024-03-30,43,Fashion,23838.92,No,Wallet,5,1.6,Delivered
+90,2024-04-08,38,Beauty,16524.54,No,UPI,6,3.0,Cancelled
+91,2024-01-11,32,Sports,4686.58,No,UPI,1,1.2,Delivered
+92,2024-07-27,30,Electronics,19581.21,No,Card,9,3.1,Returned
+93,2024-12-15,48,Beauty,5759.6,Yes,UPI,9,2.6,Delivered
+94,2024-07-16,31,Home & Kitchen,3509.0,No,Wallet,2,1.8,Returned
+95,2024-10-23,45,Beauty,18416.33,No,COD,9,2.0,Delivered
+96,2024-06-06,38,Beauty,22365.0,No,Wallet,10,3.1,Returned
+97,2024-01-09,63,Electronics,10469.74,Yes,UPI,1,4.7,Delivered
+98,2024-12-09,49,Home & Kitchen,17904.46,Yes,COD,10,1.9,Cancelled
+99,2024-11-19,33,Sports,6337.55,No,UPI,1,1.6,Delivered
+100,2024-09-23,41,Electronics,18611.18,No,UPI,8,3.9,Delivered
+101,2024-01-20,31,Electronics,3010.85,Yes,Wallet,3,3.3,Returned
+102,2024-12-20,47,Books,6786.24,No,COD,4,1.3,Delivered
+103,2024-06-15,51,Electronics,20383.06,Yes,COD,10,3.1,Delivered
+104,2024-05-07,48,Sports,23542.63,Yes,Wallet,6,2.2,Delivered
+105,2024-02-16,39,Fashion,14835.14,No,COD,8,3.1,Cancelled
+106,2024-06-21,36,Beauty,18781.73,No,UPI,4,2.8,Delivered
+107,2024-04-07,27,Electronics,15432.79,No,Wallet,7,1.2,Delivered
+108,2024-12-09,35,Books,10957.92,Yes,COD,8,1.8,Returned
+109,2024-03-12,50,Books,10395.78,No,UPI,8,1.5,Returned
+110,2024-03-29,52,Beauty,5808.98,Yes,Wallet,6,1.6,Returned
+111,2024-03-08,60,Sports,15844.32,No,Card,9,2.8,Cancelled
+112,2024-03-13,59,Books,470.72,No,Wallet,2,4.8,Cancelled
+113,2024-01-03,49,Electronics,19016.93,Yes,Wallet,2,3.7,Cancelled
+114,2024-04-26,51,Fashion,9164.67,No,UPI,7,2.8,Delivered
+115,2024-09-23,36,Electronics,683.75,Yes,Wallet,9,3.2,Returned
+116,2024-07-06,45,Home & Kitchen,5775.27,Yes,COD,8,3.1,Delivered
+117,2024-09-15,24,Fashion,9464.91,Yes,UPI,5,2.5,Cancelled
+118,2024-11-13,53,Beauty,1546.33,No,UPI,2,2.5,Cancelled
+119,2024-03-31,25,Home & Kitchen,14555.51,No,Card,2,3.8,Returned
+120,2024-10-06,53,Sports,8600.12,Yes,Card,7,4.6,Returned
+121,2024-04-30,30,Home & Kitchen,21791.12,Yes,Card,5,2.6,Returned
+122,2024-01-22,37,Beauty,22120.79,Yes,COD,1,3.1,Delivered
+123,2024-11-14,44,Books,14497.43,Yes,UPI,10,3.8,Cancelled
+124,2024-07-20,29,Fashion,18010.3,Yes,Card,10,4.3,Cancelled
+125,2024-11-18,55,Electronics,20561.25,Yes,COD,7,4.6,Cancelled
+126,2024-06-18,33,Fashion,3892.03,No,COD,7,2.5,Cancelled
+127,2024-02-29,21,Home & Kitchen,3260.22,No,UPI,8,3.5,Cancelled
+128,2024-07-08,46,Fashion,6154.92,Yes,COD,5,4.8,Cancelled
+129,2024-06-02,45,Home & Kitchen,9484.71,No,Card,1,4.9,Delivered
+130,2024-04-16,32,Home & Kitchen,13953.91,No,UPI,5,4.5,Delivered
+131,2024-10-28,20,Home & Kitchen,4987.4,Yes,Card,5,1.4,Cancelled
+132,2024-06-05,33,Home & Kitchen,2452.56,Yes,COD,6,1.3,Cancelled
+133,2024-07-31,30,Electronics,24359.82,Yes,Card,7,3.3,Returned
+134,2024-11-15,58,Fashion,23971.74,Yes,Card,10,3.8,Delivered
+135,2024-02-23,58,Electronics,23812.34,No,UPI,7,4.0,Cancelled
+136,2024-02-19,24,Books,21822.83,Yes,Card,10,1.5,Delivered
+137,2024-04-22,44,Sports,18967.81,No,COD,3,3.5,Returned
+138,2024-10-30,41,Books,8076.43,No,UPI,8,4.8,Returned
+139,2024-11-09,52,Sports,22384.85,No,UPI,5,1.5,Cancelled
+140,2024-12-07,36,Books,19961.75,No,Card,2,1.6,Returned
+141,2024-02-03,57,Fashion,16505.36,No,COD,10,1.9,Cancelled
+142,2024-03-26,54,Fashion,20809.28,No,UPI,8,3.1,Delivered
+143,2024-06-02,42,Home & Kitchen,6855.51,No,UPI,1,1.1,Returned
+144,2024-09-21,30,Electronics,2410.72,Yes,Card,6,2.2,Returned
+145,2024-01-18,24,Home & Kitchen,15847.55,Yes,COD,8,1.3,Delivered
+146,2024-09-24,50,Fashion,13372.6,Yes,Card,4,3.5,Cancelled
+147,2024-02-28,43,Home & Kitchen,24643.05,Yes,Wallet,3,2.0,Delivered
+148,2024-04-06,24,Beauty,370.39,Yes,Wallet,6,1.9,Delivered
+149,2024-07-19,40,Sports,24702.37,No,Wallet,10,2.1,Returned
+150,2024-05-25,40,Fashion,24880.06,No,Card,1,3.4,Returned
+151,2024-12-05,18,Electronics,3294.4,Yes,Wallet,3,3.6,Returned
+152,2024-06-22,48,Beauty,2219.2,No,COD,4,5.0,Delivered
+153,2024-03-16,50,Beauty,1485.2,No,UPI,3,4.9,Cancelled
+154,2024-06-27,65,Electronics,11740.33,Yes,Wallet,6,2.1,Delivered
+155,2024-11-17,41,Books,1091.21,No,UPI,3,4.0,Cancelled
+156,2024-11-01,28,Beauty,8772.13,No,COD,10,4.1,Cancelled
+157,2024-05-16,40,Sports,6498.57,No,UPI,7,2.3,Returned
+158,2024-04-22,47,Fashion,21274.0,Yes,Wallet,2,2.8,Returned
+159,2024-07-21,64,Home & Kitchen,15745.92,Yes,Wallet,6,2.2,Delivered
+160,2024-01-01,61,Books,7606.84,Yes,Card,4,4.0,Returned
+161,2024-06-18,59,Fashion,24838.27,No,UPI,1,1.2,Returned
+162,2024-04-22,41,Fashion,6963.06,No,UPI,7,5.0,Delivered
+163,2024-07-31,46,Beauty,11821.98,Yes,Card,2,4.6,Delivered
+164,2024-11-25,25,Electronics,7937.04,No,UPI,2,1.1,Cancelled
+165,2024-12-08,38,Books,2842.32,Yes,UPI,4,3.7,Returned
+166,2024-04-10,41,Home & Kitchen,19294.21,No,Wallet,7,3.2,Cancelled
+167,2024-11-25,41,Books,24624.19,Yes,Card,4,2.0,Cancelled
+168,2024-04-02,44,Fashion,7856.69,No,UPI,5,2.6,Returned
+169,2024-05-29,63,Home & Kitchen,15281.18,No,COD,7,2.7,Delivered
+170,2024-03-31,57,Books,5878.72,Yes,COD,10,2.1,Cancelled
+171,2024-08-10,26,Electronics,16330.36,No,Card,8,4.8,Returned
+172,2024-12-23,46,Fashion,2078.33,No,COD,6,4.7,Cancelled
+173,2024-11-13,51,Fashion,16410.93,Yes,UPI,1,4.1,Returned
+174,2024-01-20,23,Beauty,22874.5,No,UPI,5,3.7,Delivered
+175,2024-09-08,30,Home & Kitchen,24877.17,Yes,Wallet,8,3.1,Returned
+176,2024-01-13,39,Sports,24577.33,Yes,Wallet,6,4.4,Delivered
+177,2024-04-19,65,Books,13335.92,Yes,UPI,1,3.6,Returned
+178,2024-01-16,41,Beauty,3691.54,No,COD,3,2.6,Delivered
+179,2024-06-30,54,Fashion,7751.78,Yes,UPI,10,1.5,Returned
+180,2024-08-02,47,Beauty,13186.11,Yes,UPI,1,3.6,Delivered
+181,2024-12-08,30,Books,7778.04,Yes,UPI,6,2.3,Returned
+182,2024-07-26,52,Home & Kitchen,8453.84,Yes,COD,7,3.5,Cancelled
+183,2024-02-29,28,Fashion,4004.73,Yes,UPI,9,1.7,Delivered
+184,2024-04-23,30,Home & Kitchen,7068.98,No,UPI,6,1.9,Delivered
+185,2024-10-24,59,Fashion,14537.54,Yes,COD,6,2.7,Cancelled
+186,2024-09-23,56,Books,16326.81,No,UPI,9,1.4,Returned
+187,2024-12-10,37,Fashion,7507.47,No,UPI,1,5.0,Cancelled
+188,2024-02-27,39,Home & Kitchen,8993.1,Yes,COD,4,3.5,Delivered
+189,2024-10-25,40,Home & Kitchen,24208.97,Yes,COD,5,1.9,Cancelled
+190,2024-11-02,33,Sports,16854.12,No,Wallet,7,1.2,Cancelled
+191,2024-06-24,59,Books,22128.35,No,COD,9,4.0,Delivered
+192,2024-09-15,36,Books,1984.99,No,UPI,6,2.9,Delivered
+193,2024-05-04,44,Beauty,3390.16,No,UPI,8,2.9,Returned
+194,2024-11-23,23,Home & Kitchen,18481.43,Yes,Card,2,4.7,Returned
+195,2024-01-01,21,Beauty,12308.39,No,COD,4,3.6,Returned
+196,2024-05-25,35,Fashion,12364.22,Yes,UPI,1,2.7,Cancelled
+197,2024-12-31,48,Sports,16659.44,No,Card,5,3.6,Returned
+198,2024-11-20,57,Electronics,19284.56,Yes,UPI,9,4.8,Delivered
+199,2024-04-08,22,Electronics,6795.73,Yes,UPI,3,2.3,Delivered
+200,2024-10-09,28,Sports,21553.59,No,COD,2,1.3,Cancelled
+201,2024-06-04,57,Beauty,13612.34,No,Wallet,8,2.9,Returned
+202,2024-01-22,56,Sports,23957.37,No,Card,8,2.1,Delivered
+203,2024-05-18,42,Electronics,1221.15,No,COD,5,2.3,Cancelled
+204,2024-06-08,51,Home & Kitchen,18200.25,Yes,UPI,1,3.8,Returned
+205,2024-06-02,63,Beauty,9850.32,No,Wallet,3,4.3,Returned
+206,2024-10-22,36,Electronics,19275.03,Yes,Wallet,5,3.9,Delivered
+207,2024-08-25,23,Electronics,18865.51,Yes,Wallet,5,4.9,Returned
+208,2024-01-13,34,Sports,7301.83,No,Card,5,3.7,Returned
+209,2024-01-22,27,Electronics,17747.33,Yes,Card,9,3.1,Delivered
+210,2024-09-25,22,Sports,16657.42,No,Wallet,7,3.3,Returned
+211,2024-09-09,37,Electronics,21619.01,No,Wallet,3,3.9,Returned
+212,2024-10-26,32,Books,15470.44,No,Wallet,5,1.0,Cancelled
+213,2024-12-23,53,Beauty,6206.8,No,Card,5,3.5,Delivered
+214,2024-08-12,60,Sports,4143.14,Yes,COD,6,4.4,Returned
+215,2024-01-26,46,Books,8077.8,No,Wallet,4,3.1,Delivered
+216,2024-11-15,35,Electronics,10675.41,No,Wallet,6,1.9,Delivered
+217,2024-06-12,43,Electronics,17850.38,No,COD,1,3.7,Delivered
+218,2024-08-18,52,Beauty,8570.04,Yes,UPI,3,1.6,Returned
+219,2024-09-01,60,Sports,7288.78,Yes,Card,4,4.1,Returned
+220,2024-04-04,64,Electronics,24061.47,No,Card,4,3.9,Returned
+221,2024-06-22,64,Fashion,5845.81,No,Wallet,7,4.4,Cancelled
+222,2024-10-05,42,Electronics,17508.79,Yes,COD,6,2.5,Delivered
+223,2024-10-22,35,Beauty,8989.94,No,UPI,5,2.1,Delivered
+224,2024-02-19,61,Fashion,4811.06,No,Wallet,4,1.4,Cancelled
+225,2024-10-01,30,Electronics,19826.03,No,Card,10,3.1,Delivered
+226,2024-07-29,28,Sports,11954.78,Yes,COD,9,4.4,Delivered
+227,2024-08-23,47,Fashion,23371.95,Yes,UPI,3,2.0,Returned
+228,2024-02-08,50,Sports,13172.27,Yes,Card,6,2.2,Delivered
+229,2024-02-01,26,Fashion,3948.38,Yes,UPI,4,5.0,Delivered
+230,2024-12-30,47,Sports,10394.48,Yes,Wallet,5,3.9,Returned
+231,2024-02-13,34,Beauty,1088.86,No,Wallet,5,2.4,Delivered
+232,2024-07-03,34,Home & Kitchen,2552.81,Yes,Card,6,3.6,Cancelled
+233,2024-01-25,53,Fashion,16429.12,No,Card,8,4.3,Delivered
+234,2024-05-31,39,Books,16204.13,Yes,UPI,7,1.3,Delivered
+235,2024-11-17,52,Books,16139.82,No,Card,7,1.9,Cancelled
+236,2024-04-09,29,Electronics,8026.61,No,Wallet,5,3.8,Delivered
+237,2024-02-15,29,Fashion,20185.09,No,Wallet,5,1.2,Delivered
+238,2024-01-05,18,Sports,22328.36,No,Card,10,4.7,Cancelled
+239,2024-07-15,64,Books,2359.45,No,Card,6,3.0,Delivered
+240,2024-02-10,65,Beauty,13901.12,Yes,Card,10,3.8,Cancelled
+241,2024-07-10,43,Electronics,11490.48,Yes,COD,1,4.8,Cancelled
+242,2024-03-01,22,Books,23912.2,No,UPI,10,4.1,Delivered
+243,2024-01-10,21,Books,20005.33,No,Card,8,3.3,Cancelled
+244,2024-01-14,54,Sports,24551.55,No,COD,1,1.2,Delivered
+245,2024-05-09,39,Sports,6412.19,Yes,Card,5,4.9,Returned
+246,2024-11-21,62,Home & Kitchen,16489.58,Yes,UPI,6,2.8,Cancelled
+247,2024-01-17,55,Beauty,23833.67,Yes,Card,5,4.0,Returned
+248,2024-12-21,25,Books,24840.46,No,COD,5,2.9,Returned
+249,2024-11-10,40,Electronics,1607.13,Yes,UPI,6,2.1,Cancelled
+250,2024-08-02,32,Fashion,14043.44,No,UPI,5,4.6,Returned
+251,2024-03-17,43,Sports,3125.94,Yes,UPI,4,4.1,Returned
+252,2024-10-27,24,Books,15813.65,Yes,UPI,4,1.6,Cancelled
+253,2024-10-16,61,Home & Kitchen,16705.02,Yes,Card,5,3.8,Returned
+254,2024-11-17,26,Electronics,1942.75,No,UPI,6,4.4,Returned
+255,2024-01-31,61,Books,13077.68,Yes,Wallet,10,1.1,Cancelled
+256,2024-01-30,34,Beauty,6046.26,No,COD,9,3.9,Delivered
+257,2024-11-12,28,Books,2176.28,Yes,Card,2,2.2,Cancelled
+258,2024-07-14,50,Sports,5742.68,Yes,Wallet,7,1.1,Delivered
+259,2024-03-11,27,Fashion,7912.03,No,COD,9,2.3,Cancelled
+260,2024-09-26,26,Beauty,8087.86,No,Card,7,4.6,Delivered
+261,2024-01-24,34,Home & Kitchen,1605.08,Yes,UPI,3,4.2,Returned
+262,2024-04-09,53,Beauty,19227.51,No,Card,8,1.6,Returned
+263,2024-02-02,55,Sports,17357.28,Yes,Wallet,5,2.5,Returned
+264,2024-11-08,33,Beauty,7777.42,No,Card,9,1.2,Returned
+265,2024-10-11,32,Sports,9975.19,Yes,Wallet,5,3.4,Returned
+266,2024-03-26,30,Books,14025.41,Yes,UPI,4,3.3,Delivered
+267,2024-01-31,62,Sports,23143.31,No,UPI,7,3.7,Cancelled
+268,2024-12-18,51,Beauty,4496.12,Yes,Card,5,3.6,Delivered
+269,2024-10-03,63,Books,6485.41,No,COD,9,1.9,Returned
+270,2024-09-28,57,Beauty,6766.89,Yes,COD,9,1.6,Delivered
+271,2024-03-13,48,Sports,13989.23,Yes,UPI,9,1.1,Cancelled
+272,2024-02-08,42,Home & Kitchen,8119.6,No,Card,9,4.9,Returned
+273,2024-06-03,43,Beauty,10611.81,Yes,COD,4,4.5,Returned
+274,2024-07-19,48,Fashion,20163.53,Yes,COD,4,2.2,Cancelled
+275,2024-11-21,29,Home & Kitchen,20589.73,No,Card,6,3.0,Cancelled
+276,2024-02-08,40,Home & Kitchen,4259.51,Yes,UPI,5,4.3,Cancelled
+277,2024-04-14,28,Beauty,7213.66,No,Wallet,2,4.6,Cancelled
+278,2024-04-06,55,Sports,20945.97,Yes,UPI,5,3.6,Cancelled
+279,2024-04-09,52,Books,6467.87,Yes,Card,6,2.4,Delivered
+280,2024-12-25,28,Books,19906.43,No,UPI,2,3.9,Delivered
+281,2024-05-29,21,Electronics,4938.26,No,Card,2,4.3,Delivered
+282,2024-12-01,56,Home & Kitchen,20614.03,No,Card,5,3.0,Returned
+283,2024-09-15,55,Home & Kitchen,9426.57,No,Card,4,3.3,Delivered
+284,2024-01-24,37,Sports,17926.73,Yes,Card,4,2.2,Returned
+285,2024-07-22,24,Fashion,2291.35,Yes,UPI,9,1.0,Cancelled
+286,2024-03-30,59,Sports,20021.02,No,Wallet,2,2.0,Returned
+287,2024-09-21,60,Sports,12231.88,No,Wallet,1,3.6,Returned
+288,2024-08-02,53,Sports,14847.88,No,Wallet,1,3.0,Returned
+289,2024-09-16,24,Beauty,2072.22,Yes,Wallet,9,4.3,Returned
+290,2024-06-06,58,Books,22385.86,Yes,UPI,9,4.9,Delivered
+291,2024-01-05,59,Beauty,19891.24,Yes,UPI,8,3.7,Delivered
+292,2024-09-19,53,Home & Kitchen,13991.29,No,UPI,5,4.0,Cancelled
+293,2024-12-30,49,Sports,18649.24,Yes,UPI,7,3.6,Delivered
+294,2024-02-19,49,Sports,21384.71,No,COD,10,1.9,Returned
+295,2024-01-12,58,Home & Kitchen,24744.38,Yes,COD,7,3.2,Delivered
+296,2024-09-07,51,Fashion,16879.27,Yes,UPI,4,2.9,Cancelled
+297,2024-12-28,26,Books,12604.77,No,COD,4,2.0,Returned
+298,2024-04-12,46,Sports,24598.52,Yes,COD,2,5.0,Cancelled
+299,2024-11-17,20,Electronics,3265.58,Yes,Wallet,3,4.7,Cancelled
+300,2024-02-07,51,Electronics,7511.42,No,Card,8,2.3,Returned
+301,2024-06-22,54,Fashion,10351.75,Yes,COD,1,2.7,Returned
+302,2024-04-02,45,Books,24678.68,Yes,Card,5,2.6,Cancelled
+303,2024-08-03,33,Beauty,24730.13,No,COD,4,2.8,Cancelled
+304,2024-11-16,38,Electronics,23829.14,Yes,COD,3,4.1,Returned
+305,2024-01-31,50,Fashion,8141.07,Yes,Wallet,10,3.5,Returned
+306,2024-03-07,21,Home & Kitchen,10258.83,Yes,COD,6,4.7,Cancelled
+307,2024-02-22,34,Books,24977.71,Yes,Card,3,1.0,Cancelled
+308,2024-02-01,42,Books,18869.59,No,Card,1,2.2,Delivered
+309,2024-12-19,25,Beauty,14010.91,Yes,Wallet,6,1.2,Cancelled
+310,2024-01-18,38,Beauty,17884.76,No,Wallet,2,1.1,Returned
+311,2024-08-04,32,Beauty,17985.36,Yes,Card,7,2.5,Returned
+312,2024-11-14,39,Sports,11186.51,Yes,COD,4,4.1,Returned
+313,2024-12-30,21,Home & Kitchen,13232.38,No,Wallet,7,2.4,Cancelled
+314,2024-07-17,45,Electronics,18507.01,No,Card,9,3.0,Delivered
+315,2024-07-22,53,Electronics,20054.24,Yes,UPI,3,2.0,Returned
+316,2024-11-01,43,Home & Kitchen,19255.4,Yes,Card,1,3.7,Delivered
+317,2024-01-18,59,Books,13925.36,No,UPI,10,1.6,Delivered
+318,2024-09-13,25,Fashion,11348.97,Yes,Wallet,5,2.4,Cancelled
+319,2024-07-17,54,Fashion,19887.95,No,Wallet,10,2.4,Delivered
+320,2024-02-14,42,Sports,16683.32,Yes,Wallet,10,4.9,Delivered
+321,2024-07-12,21,Beauty,2143.19,No,Card,7,3.9,Delivered
+322,2024-05-06,49,Books,10139.19,Yes,Card,1,4.2,Returned
+323,2024-08-27,37,Sports,13806.68,No,UPI,6,2.3,Cancelled
+324,2024-07-26,42,Sports,24596.72,No,Wallet,4,4.9,Delivered
+325,2024-06-06,32,Sports,22791.89,No,Wallet,7,4.9,Returned
+326,2024-07-01,59,Electronics,13973.51,No,COD,10,2.8,Delivered
+327,2024-09-06,64,Beauty,16149.4,No,Card,6,2.6,Cancelled
+328,2024-05-18,64,Fashion,19793.56,No,UPI,4,4.8,Returned
+329,2024-05-05,32,Beauty,6208.53,Yes,Wallet,6,1.4,Cancelled
+330,2024-12-21,19,Electronics,16102.61,Yes,Card,9,2.9,Delivered
+331,2024-09-29,26,Electronics,1774.06,Yes,Wallet,6,4.5,Delivered
+332,2024-08-25,40,Electronics,23455.53,No,Card,6,2.4,Delivered
+333,2024-12-29,52,Electronics,5624.94,No,Wallet,1,3.3,Delivered
+334,2024-12-04,54,Home & Kitchen,11705.32,Yes,UPI,7,2.3,Cancelled
+335,2024-06-25,35,Fashion,10223.34,No,Card,9,5.0,Returned
+336,2024-03-05,47,Books,12038.15,No,UPI,4,1.6,Delivered
+337,2024-10-05,55,Home & Kitchen,14800.96,No,UPI,10,3.2,Delivered
+338,2024-02-18,63,Home & Kitchen,20199.86,Yes,Wallet,1,5.0,Cancelled
+339,2024-07-18,56,Electronics,6556.42,Yes,COD,6,2.0,Delivered
+340,2024-10-19,49,Beauty,23131.23,Yes,UPI,2,1.4,Delivered
+341,2024-12-24,19,Fashion,5342.15,Yes,Card,3,1.8,Delivered
+342,2024-05-08,18,Electronics,982.13,No,Card,1,2.3,Returned
+343,2024-10-28,34,Electronics,24043.61,Yes,UPI,7,1.7,Cancelled
+344,2024-03-21,22,Home & Kitchen,13726.81,No,Wallet,2,3.4,Returned
+345,2024-11-20,33,Fashion,23847.28,No,Wallet,3,1.6,Returned
+346,2024-04-21,51,Beauty,2658.28,Yes,Card,7,2.6,Returned
+347,2024-09-01,36,Books,12765.21,No,Card,6,2.0,Delivered
+348,2024-02-12,61,Beauty,13219.77,No,Wallet,3,3.0,Cancelled
+349,2024-04-20,65,Electronics,14774.01,No,UPI,4,1.9,Returned
+350,2024-02-16,19,Electronics,7968.01,No,Card,10,4.3,Cancelled
+351,2024-04-25,49,Home & Kitchen,12872.01,No,UPI,5,1.8,Delivered
+352,2024-02-27,42,Books,5745.73,No,COD,8,4.0,Cancelled
+353,2024-07-29,23,Electronics,657.5,Yes,COD,1,1.9,Returned
+354,2024-04-10,32,Electronics,22676.23,Yes,UPI,5,1.3,Cancelled
+355,2024-04-02,32,Fashion,3555.25,No,Wallet,7,3.8,Delivered
+356,2024-03-14,63,Electronics,11223.5,Yes,Card,10,2.4,Returned
+357,2024-11-04,31,Home & Kitchen,11829.95,Yes,Card,5,2.6,Returned
+358,2024-01-22,60,Electronics,8827.14,No,Card,10,2.3,Delivered
+359,2024-08-29,49,Home & Kitchen,23905.39,Yes,COD,9,1.9,Returned
+360,2024-10-26,65,Home & Kitchen,2974.46,Yes,Wallet,7,4.8,Returned
+361,2024-01-10,61,Electronics,18082.18,No,UPI,1,2.6,Cancelled
+362,2024-10-07,35,Home & Kitchen,18982.93,Yes,Wallet,9,1.5,Cancelled
+363,2024-01-18,45,Books,9886.37,Yes,Wallet,4,2.7,Cancelled
+364,2024-06-10,30,Home & Kitchen,5272.74,Yes,Wallet,9,3.6,Cancelled
+365,2024-06-05,25,Beauty,10864.0,Yes,Card,5,3.7,Returned
+366,2024-07-26,47,Home & Kitchen,11471.07,Yes,UPI,2,1.5,Cancelled
+367,2024-02-12,53,Books,2212.19,Yes,UPI,1,1.1,Delivered
+368,2024-04-08,21,Fashion,5289.21,Yes,COD,6,4.6,Returned
+369,2024-04-09,38,Books,6518.9,No,COD,8,3.5,Returned
+370,2024-02-28,46,Sports,23409.4,Yes,Card,4,3.2,Cancelled
+371,2024-04-12,61,Beauty,15590.52,Yes,Wallet,8,1.2,Cancelled
+372,2024-03-25,29,Fashion,10280.52,Yes,COD,10,3.0,Returned
+373,2024-05-16,50,Electronics,2985.79,No,Wallet,4,3.9,Returned
+374,2024-10-29,41,Fashion,3631.36,Yes,COD,10,2.9,Cancelled
+375,2024-05-04,27,Home & Kitchen,7225.72,Yes,UPI,5,1.5,Cancelled
+376,2024-07-16,20,Home & Kitchen,5901.09,Yes,COD,2,3.4,Returned
+377,2024-07-13,20,Sports,20002.18,No,COD,9,1.4,Returned
+378,2024-07-13,55,Home & Kitchen,3648.85,Yes,Wallet,1,3.3,Returned
+379,2024-02-18,27,Electronics,22820.9,No,COD,8,3.1,Cancelled
+380,2024-06-23,59,Beauty,13175.47,No,Wallet,10,3.4,Delivered
+381,2024-07-23,65,Sports,19502.67,No,Card,5,4.6,Cancelled
+382,2024-02-02,59,Electronics,3491.98,No,Card,2,3.1,Delivered
+383,2024-08-11,25,Sports,18456.38,No,Wallet,5,2.9,Returned
+384,2024-07-03,45,Beauty,19025.76,Yes,Wallet,4,4.2,Returned
+385,2024-07-24,56,Beauty,24386.8,Yes,COD,5,2.0,Delivered
+386,2024-04-08,47,Fashion,7203.61,Yes,Wallet,3,4.8,Cancelled
+387,2024-06-20,49,Books,10278.55,No,UPI,2,2.8,Returned
+388,2024-02-18,20,Fashion,14266.5,No,UPI,7,4.2,Delivered
+389,2024-05-03,27,Beauty,1156.98,No,COD,7,3.5,Cancelled
+390,2024-11-03,51,Beauty,23313.88,Yes,COD,10,3.3,Returned
+391,2024-06-23,21,Sports,18578.77,No,UPI,7,1.5,Returned
+392,2024-08-24,42,Beauty,19365.24,No,Wallet,2,3.6,Delivered
+393,2024-08-25,22,Sports,21971.64,No,COD,2,1.7,Returned
+394,2024-04-13,45,Fashion,4479.76,Yes,Wallet,9,2.1,Delivered
+395,2024-11-08,59,Books,20962.52,No,UPI,10,1.6,Delivered
+396,2024-01-03,27,Books,23080.39,Yes,UPI,3,4.6,Cancelled
+397,2024-03-06,65,Fashion,19697.75,No,Wallet,5,4.4,Cancelled
+398,2024-11-07,42,Beauty,15124.57,Yes,UPI,4,2.2,Delivered
+399,2024-02-28,37,Sports,7005.24,Yes,Wallet,8,4.2,Cancelled
+400,2024-12-03,51,Sports,9143.95,No,UPI,8,3.0,Delivered
+401,2024-12-08,42,Fashion,8788.43,Yes,Card,2,4.9,Delivered
+402,2024-04-12,20,Sports,4509.27,Yes,Wallet,9,2.1,Cancelled
+403,2024-01-19,43,Home & Kitchen,23039.25,No,UPI,9,1.1,Returned
+404,2024-12-16,35,Sports,15424.84,No,UPI,7,2.9,Delivered
+405,2024-09-23,64,Books,11469.49,Yes,Card,5,1.2,Delivered
+406,2024-06-07,25,Fashion,15196.99,Yes,UPI,5,2.4,Cancelled
+407,2024-12-27,53,Sports,24512.11,Yes,UPI,2,2.1,Delivered
+408,2024-01-01,22,Electronics,7225.69,Yes,COD,4,1.7,Returned
+409,2024-04-10,60,Home & Kitchen,21575.65,No,Card,9,1.5,Delivered
+410,2024-11-06,18,Home & Kitchen,23159.51,Yes,Wallet,4,2.7,Cancelled
+411,2024-10-18,23,Electronics,6565.07,No,COD,7,2.4,Delivered
+412,2024-01-20,63,Sports,23736.9,No,Wallet,9,4.5,Returned
+413,2024-11-07,30,Beauty,6937.44,Yes,UPI,2,1.0,Returned
+414,2024-01-03,52,Sports,9008.79,Yes,UPI,9,1.8,Delivered
+415,2024-05-21,42,Sports,18156.95,No,UPI,4,3.0,Cancelled
+416,2024-06-17,51,Books,4864.92,No,Wallet,7,4.4,Delivered
+417,2024-12-06,49,Beauty,13368.96,Yes,Wallet,10,3.3,Returned
+418,2024-10-11,43,Beauty,20443.59,Yes,COD,2,1.9,Returned
+419,2024-11-08,56,Books,22989.6,No,UPI,9,1.6,Delivered
+420,2024-01-03,59,Fashion,15613.32,Yes,Wallet,4,3.9,Delivered
+421,2024-04-15,45,Books,1044.37,Yes,Card,4,1.0,Cancelled
+422,2024-08-04,22,Sports,4098.11,No,UPI,7,1.0,Returned
+423,2024-03-13,54,Fashion,3994.52,Yes,COD,10,4.1,Delivered
+424,2024-01-28,26,Beauty,6361.7,No,COD,7,3.0,Delivered
+425,2024-03-03,22,Fashion,12205.58,Yes,UPI,9,1.5,Returned
+426,2024-09-27,22,Sports,21166.37,Yes,UPI,3,4.2,Returned
+427,2024-02-21,64,Electronics,7878.2,Yes,Wallet,4,4.4,Delivered
+428,2024-02-22,18,Sports,18249.99,No,UPI,2,2.6,Returned
+429,2024-03-05,61,Home & Kitchen,13192.44,No,Card,6,3.2,Cancelled
+430,2024-08-19,43,Beauty,16343.29,No,UPI,1,2.4,Cancelled
+431,2024-12-13,55,Home & Kitchen,14550.48,Yes,Card,7,3.0,Returned
+432,2024-03-03,19,Electronics,8206.17,Yes,UPI,9,2.3,Returned
+433,2024-07-17,19,Sports,24034.63,No,Card,8,4.3,Returned
+434,2024-06-01,20,Sports,12243.39,No,COD,4,1.7,Returned
+435,2024-05-07,48,Sports,8454.15,No,UPI,3,2.9,Cancelled
+436,2024-01-07,57,Sports,2387.2,No,Wallet,9,4.4,Returned
+437,2024-10-06,33,Sports,24576.55,No,COD,7,3.5,Delivered
+438,2024-06-14,43,Books,7947.37,No,Wallet,5,3.6,Delivered
+439,2024-05-30,38,Home & Kitchen,9733.28,Yes,COD,5,1.7,Cancelled
+440,2024-04-13,23,Fashion,18751.09,Yes,Wallet,10,2.9,Cancelled
+441,2024-06-12,18,Books,20355.04,Yes,COD,8,4.2,Returned
+442,2024-11-08,46,Home & Kitchen,2850.77,Yes,UPI,7,2.6,Cancelled
+443,2024-07-25,19,Fashion,18854.47,No,COD,5,4.8,Returned
+444,2024-06-26,33,Electronics,6985.4,Yes,COD,1,2.9,Delivered
+445,2024-12-19,36,Electronics,13712.85,Yes,Card,5,4.5,Cancelled
+446,2024-10-01,41,Fashion,18651.13,No,Card,7,1.1,Returned
+447,2024-07-20,26,Sports,18120.37,No,Wallet,5,4.2,Returned
+448,2024-03-13,61,Fashion,11919.88,No,UPI,5,3.5,Returned
+449,2024-12-14,52,Sports,3083.43,No,Wallet,3,1.1,Cancelled
+450,2024-08-01,50,Home & Kitchen,13767.31,No,UPI,1,2.8,Cancelled
+451,2024-07-29,44,Beauty,8604.85,Yes,Card,6,2.5,Cancelled
+452,2024-06-30,27,Fashion,24178.83,Yes,UPI,5,3.1,Returned
+453,2024-09-05,59,Books,10199.49,Yes,UPI,3,1.3,Delivered
+454,2024-10-27,37,Books,14538.36,No,Card,3,4.7,Delivered
+455,2024-12-15,41,Books,7282.32,No,Wallet,4,2.6,Cancelled
+456,2024-03-31,48,Sports,6259.27,No,COD,9,3.3,Cancelled
+457,2024-09-14,48,Electronics,20383.08,Yes,Card,2,1.9,Returned
+458,2024-06-14,21,Home & Kitchen,16680.44,No,COD,7,4.8,Returned
+459,2024-07-23,43,Fashion,12595.23,No,Card,2,2.1,Delivered
+460,2024-01-06,49,Sports,3475.21,Yes,COD,1,3.8,Delivered
+461,2024-05-04,27,Home & Kitchen,11730.06,No,COD,6,3.7,Delivered
+462,2024-05-25,26,Beauty,14010.38,Yes,Card,10,1.9,Returned
+463,2024-07-11,65,Fashion,10711.75,No,UPI,5,1.6,Delivered
+464,2024-08-05,35,Fashion,18420.24,Yes,Card,7,3.7,Cancelled
+465,2024-11-27,34,Books,23388.41,Yes,COD,2,2.2,Returned
+466,2024-07-06,50,Beauty,22882.78,Yes,Card,9,2.4,Cancelled
+467,2024-07-08,22,Books,22667.54,No,Wallet,2,4.1,Returned
+468,2024-04-05,59,Electronics,13853.98,Yes,UPI,1,4.2,Returned
+469,2024-01-10,55,Sports,12237.03,Yes,Wallet,4,3.8,Returned
+470,2024-10-27,24,Books,458.76,Yes,Card,6,1.7,Delivered
+471,2024-12-05,56,Beauty,5843.91,No,COD,10,3.0,Delivered
+472,2024-03-30,34,Books,14637.04,No,Card,2,3.9,Cancelled
+473,2024-01-22,57,Electronics,14074.84,No,COD,1,4.4,Delivered
+474,2024-08-11,28,Books,1985.23,No,UPI,6,2.4,Returned
+475,2024-12-10,49,Home & Kitchen,8453.13,Yes,UPI,7,2.3,Delivered
+476,2024-03-05,62,Books,6524.58,No,Card,10,2.5,Delivered
+477,2024-08-02,20,Books,4225.75,Yes,UPI,9,3.6,Returned
+478,2024-02-05,22,Beauty,348.3,Yes,UPI,3,2.3,Delivered
+479,2024-10-27,64,Electronics,9778.77,Yes,COD,4,3.5,Delivered
+480,2024-07-21,23,Fashion,3051.52,No,COD,1,1.9,Returned
+481,2024-11-03,47,Beauty,14625.79,Yes,Wallet,4,1.3,Cancelled
+482,2024-02-18,64,Books,7421.84,No,UPI,4,4.8,Returned
+483,2024-01-20,33,Home & Kitchen,5981.53,No,Wallet,2,4.4,Returned
+484,2024-08-17,31,Books,14179.63,No,Wallet,8,2.1,Returned
+485,2024-09-23,29,Sports,20221.04,No,Wallet,7,4.8,Cancelled
+486,2024-04-29,32,Sports,10425.5,Yes,Card,9,3.4,Delivered
+487,2024-10-24,41,Beauty,17038.14,No,UPI,4,1.4,Cancelled
+488,2024-05-15,56,Home & Kitchen,8291.77,Yes,COD,2,2.2,Cancelled
+489,2024-06-15,21,Books,11550.66,No,Wallet,7,3.5,Delivered
+490,2024-12-30,43,Fashion,15148.29,No,COD,9,4.9,Returned
+491,2024-07-15,20,Fashion,15717.1,Yes,UPI,9,2.2,Returned
+492,2024-10-12,40,Books,23418.22,No,Wallet,7,3.0,Returned
+493,2024-11-08,45,Sports,15295.63,No,UPI,8,3.4,Cancelled
+494,2024-12-09,44,Fashion,13352.39,Yes,UPI,3,1.2,Cancelled
+495,2024-05-13,52,Home & Kitchen,12060.08,Yes,Card,2,2.3,Returned
+496,2024-02-05,24,Electronics,19154.37,Yes,Card,3,2.0,Cancelled
+497,2024-10-19,55,Sports,2744.18,Yes,UPI,4,1.8,Delivered
+498,2024-05-10,21,Sports,19896.63,No,Card,2,1.6,Cancelled
+499,2024-02-26,37,Electronics,20648.27,No,Wallet,1,3.8,Cancelled
+500,2024-07-10,44,Home & Kitchen,22688.84,No,Wallet,7,2.4,Returned
+501,2024-05-04,59,Sports,5732.47,Yes,Wallet,2,3.2,Cancelled
+502,2024-11-20,32,Electronics,6509.01,Yes,UPI,2,3.7,Delivered
+503,2024-05-03,32,Sports,9773.93,Yes,COD,2,3.1,Delivered
+504,2024-05-04,48,Fashion,22842.59,Yes,Card,2,3.2,Delivered
+505,2024-03-19,61,Sports,8651.38,No,UPI,2,2.2,Cancelled
+506,2024-03-28,36,Home & Kitchen,23461.47,No,UPI,7,3.3,Cancelled
+507,2024-03-16,54,Electronics,6849.73,No,COD,8,1.0,Delivered
+508,2024-11-13,22,Home & Kitchen,19261.67,Yes,COD,7,2.7,Cancelled
+509,2024-09-24,32,Sports,12177.37,No,UPI,4,3.7,Delivered
+510,2024-06-10,33,Home & Kitchen,16344.51,No,COD,9,4.2,Cancelled
+511,2024-01-02,39,Home & Kitchen,11289.71,No,UPI,8,1.7,Delivered
+512,2024-06-13,35,Home & Kitchen,14463.15,Yes,COD,4,4.6,Cancelled
+513,2024-09-09,19,Home & Kitchen,6472.58,Yes,UPI,9,4.2,Returned
+514,2024-08-21,51,Books,22050.0,No,COD,2,1.6,Cancelled
+515,2024-11-21,53,Sports,10018.48,No,UPI,4,2.7,Cancelled
+516,2024-12-11,27,Sports,22346.39,No,Card,5,1.4,Delivered
+517,2024-12-05,36,Books,16123.8,Yes,Card,1,2.4,Delivered
+518,2024-02-18,25,Beauty,14103.3,Yes,COD,6,3.7,Cancelled
+519,2024-11-16,49,Home & Kitchen,23292.95,No,Card,10,2.0,Returned
+520,2024-12-15,46,Home & Kitchen,16276.32,No,Wallet,2,3.0,Returned
+521,2024-01-08,20,Electronics,16309.2,Yes,COD,8,2.2,Returned
+522,2024-06-16,47,Home & Kitchen,21100.81,No,Wallet,3,4.2,Cancelled
+523,2024-04-17,41,Electronics,13956.3,Yes,COD,8,4.3,Cancelled
+524,2024-06-26,20,Books,12390.8,No,Card,10,2.6,Cancelled
+525,2024-07-05,34,Beauty,16077.6,No,UPI,9,3.9,Cancelled
+526,2024-10-27,23,Fashion,12708.74,No,COD,6,1.7,Returned
+527,2024-11-24,47,Home & Kitchen,2680.76,Yes,UPI,2,4.5,Cancelled
+528,2024-02-12,50,Beauty,11334.47,No,Card,7,4.2,Delivered
+529,2024-02-18,49,Beauty,14694.8,No,Card,3,1.0,Returned
+530,2024-07-21,41,Home & Kitchen,14297.92,No,Card,1,4.8,Returned
+531,2024-03-31,22,Fashion,4937.68,Yes,Wallet,1,1.1,Returned
+532,2024-04-07,49,Books,7042.38,Yes,UPI,2,1.7,Returned
+533,2024-08-20,51,Electronics,11877.37,Yes,UPI,5,2.9,Returned
+534,2024-09-16,55,Sports,24022.47,No,Card,2,3.2,Cancelled
+535,2024-01-12,55,Sports,19440.76,No,Card,4,2.8,Cancelled
+536,2024-04-27,26,Sports,15861.83,No,Wallet,2,2.3,Delivered
+537,2024-02-25,47,Home & Kitchen,15768.76,Yes,Card,10,3.5,Cancelled
+538,2024-07-13,31,Electronics,6170.11,Yes,Card,3,4.6,Delivered
+539,2024-02-07,53,Beauty,6693.66,Yes,Wallet,7,2.2,Cancelled
+540,2024-11-13,43,Fashion,2699.6,No,UPI,8,1.2,Delivered
+541,2024-07-14,55,Fashion,10196.53,No,Wallet,4,2.5,Returned
+542,2024-01-29,61,Books,11588.38,Yes,COD,5,3.4,Cancelled
+543,2024-08-25,56,Electronics,2748.74,No,UPI,8,2.9,Delivered
+544,2024-02-29,50,Sports,2171.19,No,Wallet,10,1.5,Returned
+545,2024-07-18,60,Electronics,5277.03,Yes,COD,6,1.2,Cancelled
+546,2024-08-13,60,Books,14283.72,Yes,Wallet,7,1.0,Returned
+547,2024-03-20,38,Electronics,21824.22,No,Wallet,3,1.8,Returned
+548,2024-04-17,32,Electronics,20589.66,Yes,Card,10,2.3,Returned
+549,2024-11-16,47,Electronics,10106.35,Yes,Wallet,7,4.8,Returned
+550,2024-11-01,62,Sports,22876.99,Yes,Wallet,2,4.2,Cancelled
+551,2024-06-04,33,Books,21599.62,Yes,Wallet,8,2.8,Delivered
+552,2024-08-31,28,Fashion,12784.31,No,COD,6,1.5,Cancelled
+553,2024-12-09,64,Sports,18265.56,Yes,UPI,1,3.0,Returned
+554,2024-09-19,44,Fashion,16182.67,Yes,Wallet,7,1.8,Returned
+555,2024-06-10,58,Beauty,15672.89,No,UPI,4,1.3,Delivered
+556,2024-06-20,34,Electronics,17723.79,Yes,UPI,10,1.3,Returned
+557,2024-03-22,34,Sports,14272.56,No,Wallet,1,3.2,Delivered
+558,2024-11-03,59,Beauty,11332.58,No,UPI,10,1.6,Delivered
+559,2024-10-31,48,Sports,9244.86,No,Card,10,4.1,Delivered
+560,2024-12-27,28,Books,16437.49,Yes,UPI,10,2.3,Returned
+561,2024-07-09,52,Sports,21113.74,Yes,Wallet,5,3.9,Returned
+562,2024-04-05,51,Fashion,18263.4,Yes,Card,5,3.6,Returned
+563,2024-08-06,50,Books,7381.34,No,UPI,4,2.5,Returned
+564,2024-07-04,26,Home & Kitchen,19659.89,Yes,UPI,1,2.9,Returned
+565,2024-04-21,55,Beauty,9254.5,No,UPI,1,2.3,Cancelled
+566,2024-01-14,41,Sports,4295.32,No,COD,4,2.3,Delivered
+567,2024-05-30,29,Home & Kitchen,12791.31,No,Wallet,5,2.1,Delivered
+568,2024-05-28,57,Home & Kitchen,9983.95,Yes,Card,5,2.9,Cancelled
+569,2024-08-29,65,Home & Kitchen,3703.65,No,Wallet,10,4.0,Cancelled
+570,2024-07-25,21,Books,5357.96,Yes,Wallet,7,2.4,Returned
+571,2024-11-11,37,Beauty,10191.69,Yes,UPI,2,4.1,Delivered
+572,2024-12-25,65,Sports,13084.4,No,COD,2,1.0,Delivered
+573,2024-01-26,19,Electronics,14414.3,Yes,UPI,6,3.8,Cancelled
+574,2024-02-02,28,Fashion,18539.51,Yes,Wallet,5,3.1,Delivered
+575,2024-01-11,26,Home & Kitchen,5512.04,No,Wallet,6,2.9,Cancelled
+576,2024-01-01,46,Books,24564.76,No,UPI,7,3.1,Delivered
+577,2024-06-17,51,Home & Kitchen,2635.34,No,Wallet,10,4.1,Delivered
+578,2024-05-26,41,Home & Kitchen,7386.15,Yes,Card,5,1.9,Cancelled
+579,2024-01-23,28,Books,23397.59,Yes,COD,7,3.6,Cancelled
+580,2024-05-18,28,Beauty,18720.06,Yes,UPI,4,2.4,Delivered
+581,2024-10-28,23,Electronics,16206.7,Yes,UPI,4,4.9,Delivered
+582,2024-01-21,33,Sports,6823.34,No,Card,4,2.7,Cancelled
+583,2024-07-25,47,Beauty,24894.01,Yes,Wallet,9,3.5,Cancelled
+584,2024-06-17,63,Fashion,24856.8,No,Card,7,1.6,Delivered
+585,2024-09-15,27,Beauty,15215.76,No,COD,6,1.8,Cancelled
+586,2024-05-25,56,Beauty,13742.66,No,Card,4,4.2,Returned
+587,2024-02-12,26,Electronics,19706.39,No,COD,7,4.3,Cancelled
+588,2024-03-15,57,Electronics,3090.42,No,Wallet,9,2.2,Returned
+589,2024-06-23,21,Beauty,11985.05,Yes,COD,8,4.0,Cancelled
+590,2024-08-20,37,Books,22353.7,No,Card,3,4.2,Cancelled
+591,2024-06-09,38,Sports,8584.72,Yes,UPI,3,3.3,Cancelled
+592,2024-05-04,33,Books,5913.95,No,Wallet,3,1.4,Delivered
+593,2024-04-02,48,Sports,19399.95,No,Card,6,3.6,Cancelled
+594,2024-11-21,50,Sports,16704.02,Yes,Card,7,1.1,Cancelled
+595,2024-09-20,36,Electronics,6982.4,No,UPI,7,2.6,Delivered
+596,2024-03-06,47,Electronics,9352.49,No,COD,7,1.7,Returned
+597,2024-07-25,64,Home & Kitchen,18666.56,No,Card,9,4.1,Cancelled
+598,2024-02-02,34,Beauty,21082.74,Yes,COD,9,4.6,Delivered
+599,2024-08-07,38,Beauty,1848.89,Yes,COD,2,2.0,Delivered
+600,2024-03-20,61,Books,17129.86,Yes,Card,7,1.1,Cancelled
+601,2024-03-24,48,Electronics,19756.2,No,UPI,1,3.2,Cancelled
+602,2024-05-08,20,Beauty,3188.65,Yes,COD,9,4.0,Returned
+603,2024-07-20,27,Electronics,3720.01,No,UPI,6,1.9,Cancelled
+604,2024-01-10,37,Beauty,14579.16,No,Card,5,2.5,Delivered
+605,2024-03-25,56,Books,19105.16,Yes,Wallet,9,3.5,Delivered
+606,2024-11-18,41,Electronics,23889.22,Yes,Wallet,9,4.3,Cancelled
+607,2024-01-08,34,Books,23920.72,No,Wallet,1,1.9,Returned
+608,2024-12-04,63,Sports,12955.8,No,UPI,7,2.8,Returned
+609,2024-09-29,56,Sports,13921.93,No,UPI,3,2.7,Delivered
+610,2024-09-29,35,Sports,15392.43,No,UPI,6,3.9,Cancelled
+611,2024-04-30,38,Fashion,1577.7,Yes,Card,5,4.7,Cancelled
+612,2024-09-16,30,Electronics,24361.91,No,Wallet,7,3.6,Cancelled
+613,2024-10-27,54,Fashion,21746.97,No,UPI,5,3.6,Delivered
+614,2024-07-05,42,Home & Kitchen,23025.54,No,Card,5,4.4,Returned
+615,2024-07-24,43,Fashion,10245.34,No,UPI,4,2.0,Cancelled
+616,2024-12-16,42,Books,2532.5,No,UPI,6,1.8,Delivered
+617,2024-02-27,46,Books,7466.1,No,UPI,10,1.4,Delivered
+618,2024-06-10,28,Electronics,21916.57,No,UPI,2,3.4,Delivered
+619,2024-06-15,22,Sports,4912.75,Yes,UPI,2,3.9,Cancelled
+620,2024-07-24,36,Sports,24027.45,No,Card,7,2.2,Cancelled
+621,2024-01-20,21,Home & Kitchen,9258.21,Yes,Card,8,4.9,Delivered
+622,2024-03-22,61,Electronics,744.2,Yes,UPI,1,2.9,Delivered
+623,2024-01-31,50,Fashion,14584.84,Yes,Wallet,6,2.8,Returned
+624,2024-12-17,26,Home & Kitchen,13302.4,Yes,Card,10,3.8,Delivered
+625,2024-08-14,51,Home & Kitchen,8951.47,Yes,Wallet,2,4.9,Cancelled
+626,2024-12-28,20,Home & Kitchen,22176.5,Yes,COD,1,4.3,Delivered
+627,2024-05-31,39,Fashion,21747.28,Yes,UPI,1,4.3,Returned
+628,2024-12-24,27,Electronics,16779.34,Yes,COD,4,4.9,Delivered
+629,2024-05-08,47,Sports,15907.82,No,Wallet,2,1.2,Delivered
+630,2024-12-02,58,Fashion,14858.38,No,Card,9,1.3,Returned
+631,2024-02-28,61,Books,11820.06,Yes,COD,7,1.1,Cancelled
+632,2024-08-06,52,Home & Kitchen,18558.35,Yes,COD,2,1.9,Delivered
+633,2024-11-15,50,Books,15200.3,Yes,COD,9,1.7,Returned
+634,2024-06-20,46,Electronics,5794.43,Yes,Wallet,4,4.3,Returned
+635,2024-06-15,58,Home & Kitchen,23485.35,Yes,COD,9,4.1,Returned
+636,2024-12-15,24,Electronics,17202.84,No,UPI,2,3.0,Returned
+637,2024-01-08,33,Books,3853.96,No,UPI,8,3.7,Delivered
+638,2024-02-22,52,Fashion,12018.69,Yes,Card,6,1.3,Delivered
+639,2024-03-08,27,Sports,14100.18,No,COD,7,3.0,Cancelled
+640,2024-02-08,61,Sports,7256.34,No,UPI,10,2.8,Delivered
+641,2024-05-12,28,Fashion,22179.9,No,Wallet,6,3.6,Returned
+642,2024-04-06,21,Books,11306.42,No,Card,2,1.5,Cancelled
+643,2024-07-04,64,Sports,4476.4,Yes,Wallet,6,3.9,Cancelled
+644,2024-05-28,20,Beauty,21300.39,Yes,Card,1,1.9,Delivered
+645,2024-12-07,62,Home & Kitchen,24173.69,Yes,Card,6,1.8,Cancelled
+646,2024-08-27,44,Electronics,12699.35,Yes,UPI,2,3.3,Delivered
+647,2024-07-14,41,Home & Kitchen,3069.88,Yes,UPI,2,2.5,Returned
+648,2024-06-30,48,Fashion,4827.32,Yes,UPI,3,4.6,Returned
+649,2024-03-22,64,Sports,1605.3,No,UPI,7,3.7,Cancelled
+650,2024-11-21,48,Electronics,3029.35,No,COD,5,3.8,Delivered
+651,2024-06-26,39,Sports,4468.82,Yes,Wallet,1,4.6,Returned
+652,2024-04-28,20,Electronics,3874.23,Yes,Card,7,2.5,Delivered
+653,2024-01-06,27,Home & Kitchen,22162.37,No,Wallet,7,1.9,Returned
+654,2024-03-21,56,Sports,10942.73,Yes,UPI,8,3.5,Returned
+655,2024-10-17,22,Home & Kitchen,17454.9,Yes,Wallet,2,2.3,Delivered
+656,2024-12-13,32,Sports,7652.03,Yes,COD,1,3.0,Delivered
+657,2024-06-23,62,Home & Kitchen,8479.93,Yes,UPI,1,4.0,Cancelled
+658,2024-03-11,18,Home & Kitchen,19513.08,No,UPI,1,3.4,Cancelled
+659,2024-10-30,44,Home & Kitchen,22129.17,No,COD,1,1.2,Cancelled
+660,2024-05-22,54,Sports,23335.49,Yes,Card,9,3.0,Delivered
+661,2024-02-20,33,Fashion,12717.02,Yes,Wallet,7,4.2,Delivered
+662,2024-03-18,59,Sports,8900.53,No,Card,2,2.6,Returned
+663,2024-02-01,24,Electronics,12117.09,No,Wallet,10,4.5,Delivered
+664,2024-04-23,34,Fashion,1806.38,No,COD,8,4.9,Delivered
+665,2024-04-18,30,Beauty,2810.34,Yes,COD,1,2.7,Returned
+666,2024-08-27,54,Home & Kitchen,16008.55,Yes,UPI,5,1.5,Cancelled
+667,2024-04-23,32,Beauty,5011.86,No,Wallet,1,1.5,Cancelled
+668,2024-12-14,47,Sports,6359.36,No,UPI,7,1.5,Returned
+669,2024-05-31,24,Home & Kitchen,8720.24,Yes,Card,10,3.6,Delivered
+670,2024-04-12,34,Electronics,13145.33,Yes,Wallet,7,2.8,Returned
+671,2024-10-19,50,Beauty,23199.63,No,Card,6,1.3,Delivered
+672,2024-03-03,26,Fashion,21400.22,Yes,COD,3,4.5,Cancelled
+673,2024-06-07,32,Sports,22616.43,Yes,COD,3,2.0,Returned
+674,2024-06-29,33,Home & Kitchen,16137.81,Yes,UPI,8,1.7,Delivered
+675,2024-01-23,33,Electronics,2429.08,Yes,UPI,2,4.3,Returned
+676,2024-05-04,43,Books,22803.44,No,Wallet,3,2.2,Returned
+677,2024-08-17,18,Electronics,10431.06,Yes,COD,8,4.3,Cancelled
+678,2024-03-11,61,Sports,6885.84,No,UPI,1,2.5,Delivered
+679,2024-01-14,30,Books,22452.52,No,COD,5,2.3,Returned
+680,2024-11-01,38,Electronics,15525.99,No,COD,4,1.7,Returned
+681,2024-07-14,49,Home & Kitchen,24242.18,Yes,COD,5,2.0,Cancelled
+682,2024-09-12,32,Home & Kitchen,8124.97,Yes,UPI,4,1.6,Cancelled
+683,2024-10-07,62,Beauty,22276.05,Yes,UPI,2,4.7,Cancelled
+684,2024-05-14,65,Fashion,4176.14,Yes,Wallet,9,3.8,Cancelled
+685,2024-12-07,25,Fashion,23146.11,Yes,Card,7,1.8,Delivered
+686,2024-08-07,48,Home & Kitchen,24256.07,Yes,UPI,9,2.6,Delivered
+687,2024-11-22,56,Electronics,8381.0,No,Wallet,9,1.8,Cancelled
+688,2024-03-28,22,Fashion,14890.99,No,UPI,4,3.1,Cancelled
+689,2024-02-25,32,Fashion,4753.8,No,Card,4,4.1,Cancelled
+690,2024-09-01,36,Sports,10719.34,No,UPI,6,4.3,Delivered
+691,2024-11-18,56,Books,15292.96,No,Card,7,3.8,Returned
+692,2024-10-12,53,Sports,6157.2,No,COD,7,3.1,Delivered
+693,2024-10-14,37,Books,2973.09,Yes,Wallet,5,2.9,Cancelled
+694,2024-08-24,41,Sports,18965.07,No,UPI,5,1.1,Cancelled
+695,2024-02-23,19,Books,12720.12,Yes,Wallet,5,2.3,Cancelled
+696,2024-03-06,64,Sports,17926.79,Yes,Card,6,1.7,Returned
+697,2024-08-28,18,Beauty,3738.12,Yes,Card,2,3.9,Returned
+698,2024-10-28,20,Fashion,4921.0,No,Wallet,4,2.1,Returned
+699,2024-12-18,38,Sports,17496.22,No,Wallet,8,3.2,Cancelled
+700,2024-07-27,46,Sports,4348.49,No,Card,2,2.0,Returned
+701,2024-08-29,59,Sports,1627.34,No,UPI,7,2.3,Delivered
+702,2024-11-07,23,Electronics,2430.71,Yes,Card,5,5.0,Delivered
+703,2024-05-17,54,Fashion,5859.59,Yes,Card,8,1.4,Returned
+704,2024-03-08,58,Home & Kitchen,3681.13,No,UPI,1,3.6,Delivered
+705,2024-09-09,48,Beauty,19782.33,Yes,Card,5,1.8,Returned
+706,2024-12-01,64,Beauty,17994.29,No,Wallet,5,2.7,Delivered
+707,2024-06-13,39,Home & Kitchen,15848.12,No,COD,7,2.0,Cancelled
+708,2024-04-27,40,Electronics,10047.58,Yes,UPI,9,2.1,Returned
+709,2024-11-21,50,Beauty,14477.84,Yes,UPI,5,1.6,Returned
+710,2024-05-15,59,Beauty,8807.03,No,Wallet,2,1.2,Returned
+711,2024-01-14,45,Fashion,11872.62,No,UPI,1,1.3,Returned
+712,2024-10-10,55,Electronics,23698.71,No,Wallet,6,1.7,Returned
+713,2024-09-05,33,Electronics,21376.35,Yes,Wallet,10,3.8,Delivered
+714,2024-03-25,57,Electronics,8219.87,Yes,Wallet,8,3.9,Returned
+715,2024-09-19,42,Home & Kitchen,8361.67,No,COD,10,3.7,Cancelled
+716,2024-03-25,32,Beauty,20176.11,No,UPI,1,3.8,Returned
+717,2024-07-01,18,Sports,24233.59,Yes,Card,5,3.9,Cancelled
+718,2024-05-15,27,Sports,7675.08,No,Wallet,4,3.2,Returned
+719,2024-03-01,28,Beauty,12102.76,No,Wallet,7,3.4,Returned
+720,2024-04-30,58,Electronics,13184.6,No,Card,4,3.9,Cancelled
+721,2024-03-25,57,Beauty,20555.2,No,UPI,6,2.6,Delivered
+722,2024-10-06,57,Home & Kitchen,7010.56,Yes,Wallet,6,4.4,Delivered
+723,2024-07-23,41,Books,15345.84,Yes,COD,5,4.0,Returned
+724,2024-04-30,60,Fashion,2141.86,No,Wallet,7,4.3,Delivered
+725,2024-09-28,28,Beauty,16977.19,Yes,Card,7,1.5,Delivered
+726,2024-05-25,48,Books,10447.26,Yes,Wallet,5,1.3,Delivered
+727,2024-07-13,58,Electronics,2402.14,No,UPI,5,3.7,Delivered
+728,2024-07-29,41,Sports,14668.85,Yes,COD,5,2.1,Delivered
+729,2024-10-01,22,Beauty,10789.07,No,Card,2,3.1,Cancelled
+730,2024-03-11,28,Beauty,9706.78,No,UPI,3,1.7,Cancelled
+731,2024-11-30,46,Fashion,17509.86,Yes,UPI,9,2.7,Returned
+732,2024-10-05,63,Electronics,8007.82,Yes,Card,8,1.6,Cancelled
+733,2024-03-04,20,Fashion,1285.43,No,Card,2,3.2,Delivered
+734,2024-05-27,59,Sports,24074.14,No,COD,1,3.5,Cancelled
+735,2024-04-10,29,Home & Kitchen,20143.69,Yes,UPI,2,2.1,Delivered
+736,2024-11-22,43,Home & Kitchen,6011.23,Yes,Card,4,2.8,Delivered
+737,2024-09-16,54,Electronics,11349.01,No,COD,2,3.2,Cancelled
+738,2024-11-15,36,Beauty,16987.44,Yes,Wallet,2,2.2,Cancelled
+739,2024-06-26,22,Sports,24916.54,No,Card,4,1.9,Delivered
+740,2024-11-20,53,Books,18023.09,No,COD,3,1.2,Delivered
+741,2024-12-22,26,Fashion,3515.73,Yes,COD,6,4.4,Returned
+742,2024-07-23,34,Books,8308.71,Yes,COD,8,1.9,Returned
+743,2024-11-12,20,Sports,16946.52,No,Card,4,4.0,Returned
+744,2024-05-19,43,Home & Kitchen,20058.69,Yes,UPI,7,4.0,Delivered
+745,2024-10-08,28,Books,2143.54,Yes,Wallet,5,5.0,Cancelled
+746,2024-12-26,61,Fashion,15663.64,No,Card,8,1.8,Delivered
+747,2024-12-30,61,Fashion,1039.25,No,COD,7,1.4,Delivered
+748,2024-11-19,37,Beauty,17933.27,No,Card,9,2.0,Cancelled
+749,2024-07-19,22,Sports,2141.02,No,Card,1,4.1,Delivered
+750,2024-06-23,62,Books,6590.1,Yes,COD,1,1.2,Returned
+751,2024-11-04,41,Electronics,1653.98,Yes,UPI,5,4.0,Cancelled
+752,2024-10-04,36,Home & Kitchen,3588.27,No,COD,7,1.9,Returned
+753,2024-09-18,46,Electronics,5243.57,No,Card,6,1.9,Delivered
+754,2024-11-05,25,Sports,644.29,Yes,Card,3,3.6,Delivered
+755,2024-09-23,61,Books,5863.39,Yes,UPI,6,1.9,Delivered
+756,2024-05-30,19,Sports,17671.27,Yes,Card,6,3.1,Cancelled
+757,2024-04-01,28,Electronics,3027.94,No,Card,1,1.5,Delivered
+758,2024-11-23,28,Beauty,18580.59,Yes,Card,10,2.3,Cancelled
+759,2024-08-14,29,Beauty,6368.7,No,Wallet,7,2.6,Delivered
+760,2024-06-25,31,Electronics,21760.2,Yes,COD,1,4.5,Delivered
+761,2024-03-08,39,Books,19093.15,No,Card,8,2.1,Delivered
+762,2024-12-14,42,Home & Kitchen,6535.52,Yes,COD,2,1.7,Returned
+763,2024-04-06,47,Books,24174.85,Yes,UPI,3,1.9,Delivered
+764,2024-07-09,34,Home & Kitchen,15804.3,No,Wallet,4,4.6,Delivered
+765,2024-11-09,58,Beauty,23937.88,No,COD,3,2.6,Cancelled
+766,2024-06-16,50,Home & Kitchen,8528.66,No,Wallet,1,1.5,Cancelled
+767,2024-05-05,47,Sports,12271.35,Yes,Card,3,4.8,Cancelled
+768,2024-08-12,58,Home & Kitchen,18028.98,Yes,COD,5,3.8,Cancelled
+769,2024-12-06,58,Electronics,1814.66,No,Card,7,4.4,Returned
+770,2024-06-20,33,Home & Kitchen,12375.38,No,UPI,8,4.9,Cancelled
+771,2024-04-30,19,Books,8574.82,Yes,UPI,7,2.9,Delivered
+772,2024-02-20,20,Books,18288.85,No,Wallet,6,2.6,Delivered
+773,2024-12-04,33,Electronics,12341.79,Yes,Card,2,1.1,Delivered
+774,2024-01-14,48,Electronics,7880.02,No,COD,9,2.8,Delivered
+775,2024-02-14,26,Books,5972.38,No,COD,3,1.7,Returned
+776,2024-07-30,18,Books,9277.94,No,UPI,9,1.8,Delivered
+777,2024-03-23,55,Electronics,13212.03,Yes,UPI,2,4.6,Delivered
+778,2024-01-21,45,Fashion,2952.7,Yes,Wallet,6,3.4,Returned
+779,2024-10-05,55,Sports,20105.63,Yes,UPI,5,2.5,Cancelled
+780,2024-06-08,26,Sports,10094.62,Yes,UPI,10,3.8,Delivered
+781,2024-10-19,55,Home & Kitchen,21365.88,Yes,Card,6,5.0,Cancelled
+782,2024-05-04,51,Electronics,18191.55,No,Card,3,4.6,Returned
+783,2024-12-18,37,Fashion,24021.0,Yes,Wallet,9,2.6,Returned
+784,2024-01-01,31,Beauty,21239.56,No,Card,2,2.9,Returned
+785,2024-04-08,42,Books,15110.74,Yes,Card,5,2.8,Returned
+786,2024-04-15,43,Fashion,21494.78,No,COD,6,2.3,Cancelled
+787,2024-01-20,52,Beauty,8550.73,No,Wallet,7,1.3,Returned
+788,2024-01-23,60,Electronics,5369.35,Yes,UPI,4,3.5,Delivered
+789,2024-08-06,34,Books,23588.06,No,Wallet,3,3.7,Cancelled
+790,2024-11-16,26,Fashion,8568.68,No,COD,9,4.8,Cancelled
+791,2024-04-12,59,Beauty,7956.63,Yes,UPI,5,2.8,Returned
+792,2024-05-28,60,Electronics,1682.39,No,UPI,10,2.8,Delivered
+793,2024-04-08,42,Sports,8973.67,Yes,Wallet,4,4.0,Cancelled
+794,2024-01-04,65,Electronics,24751.2,No,COD,4,4.3,Returned
+795,2024-06-03,22,Beauty,4206.63,No,UPI,5,4.7,Returned
+796,2024-01-11,28,Electronics,17881.46,Yes,COD,7,4.1,Returned
+797,2024-06-01,45,Sports,3791.13,Yes,UPI,3,3.6,Returned
+798,2024-03-28,54,Fashion,16912.51,No,COD,10,4.8,Cancelled
+799,2024-09-01,49,Fashion,18532.94,Yes,Wallet,7,4.6,Returned
+800,2024-10-30,44,Home & Kitchen,22034.48,Yes,Card,5,2.9,Delivered
+801,2024-03-25,53,Fashion,14336.76,Yes,UPI,4,2.8,Cancelled
+802,2024-06-27,25,Home & Kitchen,9718.33,No,Wallet,1,1.5,Cancelled
+803,2024-08-27,58,Books,18999.95,No,Wallet,4,3.0,Returned
+804,2024-08-03,37,Books,1645.53,Yes,COD,7,4.5,Returned
+805,2024-11-12,28,Beauty,20319.61,No,Card,9,1.3,Returned
+806,2024-09-21,22,Home & Kitchen,12094.44,No,Card,10,2.6,Cancelled
+807,2024-12-20,28,Sports,4855.01,No,COD,9,2.1,Returned
+808,2024-07-03,28,Beauty,12379.06,Yes,Wallet,6,1.7,Delivered
+809,2024-11-15,52,Books,19832.68,Yes,Card,2,2.7,Delivered
+810,2024-08-05,38,Sports,2300.91,No,Wallet,4,4.4,Cancelled
+811,2024-12-26,50,Fashion,22774.68,Yes,Wallet,7,4.9,Returned
+812,2024-03-01,40,Electronics,16910.99,Yes,Card,2,2.1,Delivered
+813,2024-05-18,62,Fashion,23272.16,No,Card,7,2.9,Delivered
+814,2024-11-01,38,Fashion,5118.98,No,COD,4,3.2,Cancelled
+815,2024-02-21,39,Home & Kitchen,19344.62,Yes,Wallet,2,4.9,Returned
+816,2024-04-04,65,Books,22935.06,No,Card,7,3.8,Cancelled
+817,2024-06-04,26,Books,557.92,Yes,UPI,3,4.3,Delivered
+818,2024-12-08,65,Fashion,9302.76,No,UPI,4,1.9,Returned
+819,2024-05-24,41,Electronics,19256.45,Yes,COD,5,2.4,Returned
+820,2024-11-01,29,Sports,22055.41,Yes,UPI,7,1.2,Delivered
+821,2024-07-08,54,Electronics,6602.53,Yes,Card,4,2.6,Returned
+822,2024-06-06,31,Books,13613.15,No,COD,3,4.7,Cancelled
+823,2024-05-20,39,Home & Kitchen,380.54,No,Card,8,1.8,Cancelled
+824,2024-02-11,57,Books,5973.15,No,Card,6,4.3,Cancelled
+825,2024-11-12,65,Sports,10234.52,No,COD,7,1.6,Returned
+826,2024-01-26,19,Sports,908.97,No,Wallet,5,3.6,Cancelled
+827,2024-09-16,61,Fashion,16358.69,Yes,COD,7,1.3,Returned
+828,2024-11-30,59,Sports,15329.93,No,Card,10,1.8,Returned
+829,2024-06-17,38,Home & Kitchen,7734.47,No,UPI,2,4.8,Returned
+830,2024-06-23,40,Beauty,10961.76,No,Card,5,4.6,Cancelled
+831,2024-10-14,36,Books,16195.52,Yes,UPI,4,2.1,Returned
+832,2024-05-13,36,Fashion,23068.36,Yes,COD,5,4.2,Cancelled
+833,2024-06-12,20,Fashion,6183.05,No,UPI,6,3.4,Returned
+834,2024-01-09,20,Books,17961.09,Yes,UPI,10,1.3,Cancelled
+835,2024-02-05,25,Books,5589.42,Yes,UPI,3,1.7,Delivered
+836,2024-02-22,36,Books,24404.11,No,Card,1,3.2,Delivered
+837,2024-09-25,47,Home & Kitchen,17769.98,No,COD,1,1.8,Delivered
+838,2024-02-13,48,Home & Kitchen,8651.67,Yes,COD,8,1.4,Cancelled
+839,2024-11-09,33,Fashion,8825.62,No,Card,9,4.8,Delivered
+840,2024-03-28,38,Fashion,20544.4,Yes,Card,10,2.7,Returned
+841,2024-12-07,60,Books,22716.92,No,UPI,5,3.3,Delivered
+842,2024-06-12,32,Sports,24238.82,Yes,COD,4,1.1,Cancelled
+843,2024-09-15,52,Sports,3861.42,No,COD,10,4.4,Cancelled
+844,2024-01-02,58,Books,23152.74,Yes,Card,3,2.1,Delivered
+845,2024-11-20,54,Electronics,11577.88,No,COD,6,2.8,Delivered
+846,2024-11-15,25,Home & Kitchen,5608.2,No,Wallet,4,4.4,Delivered
+847,2024-11-15,60,Beauty,19391.65,Yes,COD,1,5.0,Delivered
+848,2024-07-09,37,Sports,23127.16,No,UPI,7,3.4,Delivered
+849,2024-03-22,21,Books,1615.02,No,UPI,1,4.3,Delivered
+850,2024-02-06,50,Sports,11860.48,Yes,Wallet,9,4.4,Cancelled
+851,2024-05-29,33,Home & Kitchen,11820.38,Yes,Card,5,2.5,Delivered
+852,2024-06-24,23,Fashion,12225.91,Yes,COD,9,3.5,Delivered
+853,2024-03-07,25,Beauty,491.52,No,Wallet,5,1.3,Delivered
+854,2024-07-22,59,Sports,12445.32,No,Wallet,4,1.9,Delivered
+855,2024-06-02,29,Sports,5662.03,No,Wallet,7,1.4,Cancelled
+856,2024-08-13,34,Beauty,11230.73,Yes,UPI,9,3.6,Returned
+857,2024-11-07,50,Electronics,11703.85,Yes,Card,10,2.9,Delivered
+858,2024-02-01,60,Books,7022.07,No,Wallet,5,4.0,Cancelled
+859,2024-12-01,26,Books,8385.64,Yes,COD,7,4.0,Returned
+860,2024-10-25,51,Home & Kitchen,6818.77,Yes,Card,2,2.5,Delivered
+861,2024-06-18,20,Books,10080.4,No,Wallet,4,2.5,Delivered
+862,2024-06-30,62,Sports,16258.49,Yes,UPI,1,2.6,Returned
+863,2024-09-05,31,Sports,6372.9,No,Wallet,6,3.2,Cancelled
+864,2024-01-23,55,Fashion,16179.27,Yes,Wallet,4,4.8,Returned
+865,2024-04-12,26,Books,10786.56,Yes,Card,1,2.3,Delivered
+866,2024-12-13,53,Electronics,2089.95,No,Card,9,2.9,Cancelled
+867,2024-05-23,32,Sports,16804.09,Yes,UPI,3,3.2,Cancelled
+868,2024-08-17,51,Sports,17914.57,No,Wallet,6,4.7,Cancelled
+869,2024-09-18,44,Electronics,4367.29,Yes,Wallet,10,2.1,Delivered
+870,2024-05-13,33,Sports,14020.88,Yes,Wallet,6,4.5,Cancelled
+871,2024-11-02,32,Beauty,15311.55,No,Card,10,3.2,Cancelled
+872,2024-05-15,41,Books,2314.1,Yes,UPI,10,4.8,Cancelled
+873,2024-10-26,31,Sports,16859.38,No,Wallet,4,1.3,Returned
+874,2024-09-13,26,Books,24076.01,Yes,COD,3,3.7,Delivered
+875,2024-01-19,31,Fashion,21354.03,Yes,Card,8,4.1,Delivered
+876,2024-10-28,39,Beauty,5002.24,Yes,Wallet,2,3.2,Cancelled
+877,2024-09-20,27,Books,12391.03,Yes,Card,4,3.4,Cancelled
+878,2024-11-18,25,Home & Kitchen,20095.88,No,UPI,1,2.0,Cancelled
+879,2024-10-28,61,Electronics,22473.53,Yes,Card,10,1.1,Returned
+880,2024-02-23,54,Books,21108.34,Yes,Card,7,1.3,Returned
+881,2024-03-26,49,Home & Kitchen,7787.81,Yes,COD,7,2.1,Delivered
+882,2024-01-01,40,Fashion,13993.33,No,COD,10,2.8,Delivered
+883,2024-06-11,40,Electronics,24116.11,No,COD,3,3.2,Delivered
+884,2024-02-08,61,Electronics,22869.6,No,COD,2,1.5,Delivered
+885,2024-11-21,26,Sports,4568.99,Yes,Card,7,4.9,Returned
+886,2024-08-25,60,Sports,6810.5,Yes,COD,6,2.7,Cancelled
+887,2024-07-03,27,Sports,1906.71,Yes,UPI,6,3.6,Cancelled
+888,2024-08-29,34,Fashion,3137.68,Yes,Wallet,8,2.8,Returned
+889,2024-01-19,47,Fashion,21133.52,No,UPI,1,2.0,Delivered
+890,2024-09-28,48,Beauty,16065.97,Yes,Card,1,2.7,Returned
+891,2024-02-02,55,Electronics,16814.7,Yes,COD,10,2.1,Returned
+892,2024-11-03,56,Books,4250.31,No,Wallet,1,2.8,Returned
+893,2024-04-23,53,Home & Kitchen,8204.24,Yes,Wallet,5,4.0,Returned
+894,2024-08-19,19,Fashion,8447.96,Yes,COD,10,2.4,Returned
+895,2024-04-26,45,Home & Kitchen,24561.86,Yes,Wallet,3,1.6,Delivered
+896,2024-01-24,22,Home & Kitchen,3552.0,No,COD,9,3.5,Delivered
+897,2024-06-16,46,Home & Kitchen,12563.8,No,UPI,10,2.5,Returned
+898,2024-08-29,57,Electronics,19110.16,No,COD,9,3.3,Delivered
+899,2024-05-01,58,Sports,1412.14,No,COD,10,2.9,Returned
+900,2024-07-08,46,Sports,4379.69,No,Card,10,3.7,Returned
+901,2024-08-17,32,Sports,4986.39,Yes,Card,6,2.5,Returned
+902,2024-12-08,53,Fashion,18016.54,No,Card,10,1.2,Cancelled
+903,2024-06-20,24,Sports,14733.67,No,Wallet,6,2.7,Delivered
+904,2024-12-02,35,Beauty,8535.16,No,Card,9,4.9,Returned
+905,2024-02-16,51,Beauty,11446.03,Yes,COD,10,2.5,Returned
+906,2024-10-14,41,Electronics,20309.26,No,Wallet,4,1.9,Cancelled
+907,2024-04-04,52,Beauty,9692.76,Yes,COD,3,2.9,Cancelled
+908,2024-09-14,38,Home & Kitchen,4102.03,Yes,Card,5,3.0,Delivered
+909,2024-05-08,20,Books,10667.66,Yes,Card,3,1.8,Cancelled
+910,2024-02-27,47,Electronics,21431.69,Yes,Card,6,2.9,Returned
+911,2024-09-21,18,Electronics,23132.18,Yes,Wallet,7,1.3,Cancelled
+912,2024-02-18,36,Home & Kitchen,4581.67,Yes,UPI,1,4.9,Returned
+913,2024-10-12,51,Fashion,12686.06,No,UPI,9,2.5,Cancelled
+914,2024-12-21,22,Books,11053.49,Yes,COD,1,3.8,Cancelled
+915,2024-04-27,49,Sports,8986.42,Yes,Wallet,4,1.7,Returned
+916,2024-08-23,48,Books,24803.23,No,Wallet,9,2.5,Delivered
+917,2024-04-09,27,Sports,14806.78,Yes,COD,2,4.5,Returned
+918,2024-09-23,33,Beauty,506.84,Yes,Wallet,5,3.5,Cancelled
+919,2024-01-31,62,Books,6732.02,No,Wallet,10,1.8,Returned
+920,2024-10-31,21,Beauty,20699.96,Yes,Wallet,1,2.1,Delivered
+921,2024-12-12,30,Fashion,23532.52,No,COD,5,3.0,Cancelled
+922,2024-07-01,65,Fashion,1855.58,Yes,UPI,8,2.0,Cancelled
+923,2024-07-17,19,Beauty,7384.8,No,COD,10,1.9,Delivered
+924,2024-08-28,18,Books,1953.34,Yes,Card,1,1.2,Cancelled
+925,2024-01-30,42,Home & Kitchen,359.1,Yes,UPI,8,2.4,Cancelled
+926,2024-08-14,25,Electronics,17821.3,Yes,UPI,6,4.1,Cancelled
+927,2024-05-22,46,Electronics,14131.39,No,COD,1,2.4,Delivered
+928,2024-03-10,51,Electronics,19873.56,No,Wallet,5,4.7,Returned
+929,2024-03-15,51,Fashion,23424.65,No,UPI,3,3.8,Returned
+930,2024-06-17,24,Home & Kitchen,3454.29,Yes,Card,6,4.7,Cancelled
+931,2024-07-04,20,Beauty,3444.24,No,Wallet,7,2.2,Delivered
+932,2024-12-12,61,Sports,8230.7,Yes,Card,10,3.5,Delivered
+933,2024-09-06,20,Home & Kitchen,5282.17,No,UPI,3,3.3,Returned
+934,2024-01-14,25,Books,19127.2,Yes,Card,7,4.3,Delivered
+935,2024-08-02,57,Fashion,13911.24,No,COD,3,2.7,Returned
+936,2024-02-18,62,Fashion,3080.85,No,UPI,5,2.9,Returned
+937,2024-04-12,18,Books,22213.52,No,Wallet,6,3.6,Cancelled
+938,2024-03-09,58,Fashion,5737.01,Yes,Wallet,1,3.9,Returned
+939,2024-05-01,34,Books,4889.08,Yes,Card,2,2.4,Returned
+940,2024-01-16,18,Electronics,21922.81,No,Wallet,2,1.4,Cancelled
+941,2024-07-21,64,Sports,6880.43,Yes,Wallet,8,2.3,Returned
+942,2024-12-22,20,Beauty,23345.26,Yes,UPI,5,2.8,Delivered
+943,2024-06-06,44,Fashion,21818.88,Yes,Card,4,4.7,Returned
+944,2024-04-04,53,Books,24274.11,Yes,Card,4,2.9,Delivered
+945,2024-05-22,45,Electronics,9017.63,Yes,UPI,2,3.3,Returned
+946,2024-07-19,45,Beauty,1699.78,No,COD,3,4.4,Delivered
+947,2024-08-28,30,Fashion,3626.29,Yes,COD,7,4.1,Delivered
+948,2024-07-04,26,Beauty,4121.88,No,Card,9,1.4,Delivered
+949,2024-12-17,55,Home & Kitchen,2502.53,No,Wallet,1,1.3,Cancelled
+950,2024-06-29,43,Beauty,697.82,No,Wallet,10,3.3,Returned
+951,2024-09-02,20,Sports,1174.47,Yes,Wallet,3,4.9,Delivered
+952,2024-07-25,24,Books,20948.81,No,COD,10,4.1,Cancelled
+953,2024-10-08,41,Fashion,11733.13,No,COD,6,2.8,Returned
+954,2024-06-04,21,Sports,13640.11,Yes,COD,10,1.3,Cancelled
+955,2024-01-01,34,Electronics,21126.22,Yes,Card,7,3.1,Cancelled
+956,2024-09-22,62,Home & Kitchen,3629.15,Yes,UPI,7,4.8,Cancelled
+957,2024-08-01,51,Books,959.18,No,COD,8,4.7,Returned
+958,2024-10-15,44,Electronics,9073.47,No,Card,7,4.4,Returned
+959,2024-11-17,52,Sports,13854.66,No,Wallet,9,1.2,Returned
+960,2024-08-24,40,Home & Kitchen,23065.87,Yes,UPI,1,4.3,Returned
+961,2024-10-17,39,Beauty,18625.75,Yes,COD,3,2.2,Delivered
+962,2024-09-10,30,Electronics,11594.03,No,Wallet,2,2.1,Delivered
+963,2024-12-13,65,Home & Kitchen,2694.81,No,Wallet,5,2.5,Cancelled
+964,2024-06-05,60,Sports,20845.2,No,COD,5,2.0,Delivered
+965,2024-11-19,29,Electronics,1546.11,Yes,Card,2,2.8,Returned
+966,2024-11-28,29,Electronics,11811.74,Yes,COD,7,4.4,Returned
+967,2024-05-11,30,Home & Kitchen,20348.77,No,Card,4,1.3,Delivered
+968,2024-07-15,30,Sports,14896.06,Yes,Wallet,4,4.1,Delivered
+969,2024-03-30,61,Sports,13005.98,No,Wallet,4,4.2,Delivered
+970,2024-03-15,47,Books,3185.14,No,UPI,9,3.9,Returned
+971,2024-09-25,58,Electronics,24654.13,No,Wallet,3,2.0,Returned
+972,2024-10-27,30,Electronics,15387.8,No,UPI,4,3.1,Cancelled
+973,2024-07-05,58,Beauty,15801.21,Yes,Wallet,10,3.0,Returned
+974,2024-11-09,56,Electronics,23707.44,Yes,Wallet,2,2.7,Returned
+975,2024-01-09,32,Sports,12014.54,No,UPI,9,4.8,Returned
+976,2024-05-30,25,Sports,23568.98,No,UPI,6,2.4,Returned
+977,2024-11-24,41,Electronics,7883.7,Yes,Wallet,4,4.3,Cancelled
+978,2024-07-06,23,Electronics,12526.24,Yes,Wallet,5,1.2,Delivered
+979,2024-08-29,23,Sports,5612.38,No,Card,3,1.6,Cancelled
+980,2024-11-07,18,Electronics,14161.97,Yes,Card,7,2.0,Returned
+981,2024-07-12,55,Home & Kitchen,11902.47,Yes,UPI,7,4.2,Delivered
+982,2024-04-10,33,Books,10183.06,Yes,Wallet,6,1.9,Returned
+983,2024-01-28,41,Books,9070.57,Yes,Card,7,1.5,Returned
+984,2024-10-15,20,Sports,20997.87,Yes,COD,2,4.1,Delivered
+985,2024-07-06,44,Beauty,11042.65,No,Wallet,8,3.2,Delivered
+986,2024-07-16,64,Fashion,15116.23,Yes,Wallet,5,3.2,Cancelled
+987,2024-12-11,50,Fashion,15549.02,Yes,Card,3,1.8,Cancelled
+988,2024-08-28,34,Fashion,10086.55,No,COD,2,2.9,Cancelled
+989,2024-04-02,54,Home & Kitchen,21617.62,No,Card,3,1.8,Returned
+990,2024-05-05,23,Sports,6050.74,Yes,UPI,1,2.1,Cancelled
+991,2024-12-18,38,Electronics,24760.69,No,Wallet,5,2.7,Cancelled
+992,2024-09-04,65,Fashion,22323.65,Yes,Card,6,1.8,Returned
+993,2024-12-09,29,Books,10327.6,Yes,COD,7,4.6,Cancelled
+994,2024-09-10,28,Fashion,22520.52,Yes,Wallet,10,3.9,Returned
+995,2024-11-23,21,Books,7684.27,Yes,UPI,4,2.3,Cancelled
+996,2024-06-28,28,Books,18885.76,Yes,Card,10,2.4,Delivered
+997,2024-08-26,63,Sports,10703.21,Yes,Wallet,6,4.2,Delivered
+998,2024-05-04,44,Beauty,5688.19,Yes,Card,4,2.4,Delivered
+999,2024-11-11,52,Home & Kitchen,7469.66,No,COD,2,3.4,Cancelled
+1000,2024-11-15,57,Fashion,2174.21,No,Card,10,3.1,Returned
+1001,2024-01-31,40,Fashion,5465.47,No,Wallet,6,3.5,Returned
+1002,2024-08-18,65,Fashion,17086.04,No,Card,5,1.8,Delivered
+1003,2024-05-03,50,Electronics,424.35,No,UPI,10,2.1,Returned
+1004,2024-01-13,56,Beauty,17398.55,Yes,COD,2,4.1,Cancelled
+1005,2024-08-05,42,Home & Kitchen,10491.56,Yes,Wallet,4,1.4,Cancelled
+1006,2024-06-09,30,Sports,21173.7,Yes,Wallet,2,4.1,Returned
+1007,2024-08-27,18,Beauty,23343.24,Yes,Wallet,6,1.4,Delivered
+1008,2024-03-20,39,Electronics,2394.39,Yes,Card,4,3.8,Delivered
+1009,2024-12-31,60,Books,14726.56,No,Card,8,1.4,Cancelled
+1010,2024-10-26,35,Books,8799.4,Yes,COD,3,1.1,Delivered
+1011,2024-06-20,44,Books,7992.42,Yes,Wallet,5,1.2,Delivered
+1012,2024-07-09,19,Beauty,3835.26,No,COD,1,2.8,Returned
+1013,2024-08-26,55,Home & Kitchen,24599.86,No,COD,5,2.4,Delivered
+1014,2024-01-28,56,Electronics,6819.51,No,Card,7,3.0,Cancelled
+1015,2024-03-24,23,Sports,16948.66,Yes,Wallet,9,4.6,Cancelled
+1016,2024-09-26,59,Electronics,10312.78,No,Card,7,2.2,Delivered
+1017,2024-04-13,36,Sports,3367.09,Yes,COD,3,1.7,Cancelled
+1018,2024-08-19,45,Beauty,15040.9,Yes,Card,6,2.6,Cancelled
+1019,2024-08-04,44,Electronics,23169.06,Yes,Card,3,4.4,Returned
+1020,2024-10-29,22,Electronics,3961.19,No,Card,10,1.1,Returned
+1021,2024-03-30,45,Books,18549.57,No,UPI,3,2.0,Returned
+1022,2024-03-14,48,Sports,12513.92,No,COD,5,3.7,Delivered
+1023,2024-09-21,43,Electronics,15755.43,Yes,Card,7,3.1,Delivered
+1024,2024-04-14,57,Books,1229.36,No,Card,2,5.0,Cancelled
+1025,2024-12-10,19,Fashion,19779.16,No,Card,3,2.8,Delivered
+1026,2024-05-19,52,Home & Kitchen,4508.75,No,Wallet,9,3.5,Cancelled
+1027,2024-06-01,50,Beauty,17339.16,No,COD,8,4.0,Returned
+1028,2024-12-12,55,Fashion,15392.23,Yes,UPI,2,5.0,Returned
+1029,2024-06-24,33,Books,13069.16,No,UPI,7,3.9,Delivered
+1030,2024-12-04,58,Sports,15863.69,No,Wallet,4,4.4,Cancelled
+1031,2024-07-20,35,Home & Kitchen,17205.25,Yes,Card,3,1.2,Cancelled
+1032,2024-02-03,20,Books,3986.36,No,Card,7,3.7,Delivered
+1033,2024-12-03,58,Home & Kitchen,12475.1,No,COD,3,2.8,Returned
+1034,2024-12-15,54,Sports,23189.52,Yes,Card,2,4.8,Delivered
+1035,2024-04-14,51,Electronics,8618.46,No,Card,4,3.3,Cancelled
+1036,2024-06-10,30,Home & Kitchen,2732.03,Yes,UPI,8,3.2,Cancelled
+1037,2024-11-10,18,Fashion,8216.89,No,Card,9,4.6,Cancelled
+1038,2024-08-03,43,Beauty,20315.19,No,UPI,9,1.3,Returned
+1039,2024-11-12,28,Sports,20333.2,No,UPI,3,2.7,Delivered
+1040,2024-09-25,56,Books,14369.97,No,Wallet,7,4.8,Delivered
+1041,2024-09-12,63,Books,2782.21,No,UPI,8,3.6,Cancelled
+1042,2024-12-15,53,Fashion,6978.78,No,Wallet,4,3.1,Cancelled
+1043,2024-04-09,47,Home & Kitchen,18097.9,Yes,Wallet,7,1.3,Cancelled
+1044,2024-12-04,27,Books,3201.39,Yes,Card,7,4.3,Delivered
+1045,2024-04-22,44,Home & Kitchen,16619.18,No,UPI,5,4.3,Delivered
+1046,2024-01-10,32,Sports,13261.22,No,UPI,4,2.4,Delivered
+1047,2024-09-29,39,Books,20065.84,No,UPI,4,2.1,Cancelled
+1048,2024-07-10,22,Books,21322.78,No,Wallet,4,4.4,Cancelled
+1049,2024-09-30,31,Books,4440.76,No,Card,4,3.6,Cancelled
+1050,2024-07-03,56,Electronics,10849.56,No,COD,2,2.3,Cancelled
+1051,2024-04-19,40,Sports,15755.04,No,COD,2,3.8,Delivered
+1052,2024-06-21,47,Electronics,22656.38,Yes,COD,2,1.6,Returned
+1053,2024-02-04,23,Home & Kitchen,14729.09,No,UPI,9,5.0,Returned
+1054,2024-01-08,36,Home & Kitchen,19643.18,No,Wallet,3,1.1,Returned
+1055,2024-08-18,60,Electronics,9500.86,Yes,Wallet,9,2.0,Cancelled
+1056,2024-06-28,40,Beauty,9558.35,No,UPI,8,4.9,Delivered
+1057,2024-10-09,48,Beauty,13012.91,No,Wallet,5,1.3,Cancelled
+1058,2024-02-29,62,Beauty,24223.04,No,COD,1,2.9,Cancelled
+1059,2024-10-28,21,Fashion,20479.64,Yes,UPI,10,3.0,Delivered
+1060,2024-09-21,33,Home & Kitchen,2540.85,Yes,UPI,6,1.5,Returned
+1061,2024-11-23,50,Beauty,19120.3,No,UPI,4,2.2,Cancelled
+1062,2024-06-24,56,Beauty,22382.93,Yes,Card,10,3.1,Returned
+1063,2024-01-25,29,Beauty,3270.41,No,COD,4,1.4,Delivered
+1064,2024-02-10,39,Beauty,14076.09,Yes,COD,3,4.7,Returned
+1065,2024-09-30,42,Books,979.4,Yes,Wallet,4,2.1,Cancelled
+1066,2024-09-22,65,Fashion,12701.07,No,UPI,6,1.9,Cancelled
+1067,2024-04-14,61,Sports,10475.38,Yes,Wallet,5,2.3,Cancelled
+1068,2024-10-29,19,Books,21381.9,No,COD,5,2.3,Delivered
+1069,2024-08-27,54,Electronics,2547.67,Yes,COD,7,3.3,Cancelled
+1070,2024-08-31,23,Home & Kitchen,20680.3,Yes,Wallet,3,2.0,Delivered
+1071,2024-07-04,32,Sports,22072.88,No,UPI,10,1.3,Cancelled
+1072,2024-04-22,24,Home & Kitchen,10513.68,Yes,COD,10,4.8,Delivered
+1073,2024-01-16,46,Electronics,13589.93,Yes,UPI,1,4.0,Returned
+1074,2024-07-05,29,Books,24448.0,No,Wallet,10,2.4,Returned
+1075,2024-08-08,55,Books,11408.74,Yes,Wallet,1,2.3,Cancelled
+1076,2024-06-26,33,Electronics,6647.91,Yes,Wallet,9,2.6,Delivered
+1077,2024-02-07,34,Beauty,19532.92,Yes,COD,8,4.3,Cancelled
+1078,2024-05-09,58,Electronics,5894.26,Yes,COD,9,1.5,Returned
+1079,2024-12-19,38,Beauty,16441.87,No,UPI,3,1.7,Delivered
+1080,2024-05-10,39,Fashion,17797.95,No,Wallet,2,1.0,Delivered
+1081,2024-06-02,50,Fashion,579.93,No,COD,8,4.4,Delivered
+1082,2024-05-16,48,Home & Kitchen,20832.31,No,Wallet,4,1.5,Delivered
+1083,2024-07-02,58,Books,24340.03,No,COD,10,3.4,Delivered
+1084,2024-07-25,38,Beauty,4504.71,No,UPI,7,3.9,Returned
+1085,2024-01-29,22,Electronics,11252.9,Yes,COD,8,1.9,Delivered
+1086,2024-09-27,59,Beauty,7736.61,Yes,Card,1,3.5,Returned
+1087,2024-06-10,38,Sports,4875.4,No,Card,9,1.6,Cancelled
+1088,2024-05-07,63,Sports,14953.93,No,COD,5,1.0,Delivered
+1089,2024-11-09,53,Home & Kitchen,8206.63,Yes,COD,7,3.4,Returned
+1090,2024-10-30,57,Sports,22739.85,No,COD,3,3.6,Returned
+1091,2024-08-08,57,Home & Kitchen,3243.81,No,Card,3,4.6,Delivered
+1092,2024-07-05,50,Electronics,22171.94,Yes,COD,1,4.5,Returned
+1093,2024-08-07,61,Electronics,9405.51,No,UPI,7,1.7,Delivered
+1094,2024-11-28,59,Sports,8429.03,No,Wallet,6,2.2,Delivered
+1095,2024-08-19,36,Fashion,4861.94,No,Wallet,5,4.8,Cancelled
+1096,2024-04-04,51,Home & Kitchen,10140.14,No,UPI,4,3.4,Returned
+1097,2024-07-19,40,Electronics,21514.76,Yes,COD,4,1.1,Cancelled
+1098,2024-09-22,49,Books,6368.27,Yes,UPI,10,3.6,Cancelled
+1099,2024-11-10,63,Sports,13334.11,No,COD,10,2.6,Returned
+1100,2024-02-09,48,Home & Kitchen,2532.11,No,COD,9,4.0,Cancelled
+1101,2024-11-27,40,Electronics,1279.59,Yes,COD,10,4.5,Cancelled
+1102,2024-04-02,41,Home & Kitchen,11055.57,No,COD,10,2.4,Cancelled
+1103,2024-05-02,44,Sports,13834.64,Yes,COD,6,5.0,Returned
+1104,2024-06-02,46,Books,22066.92,No,Wallet,4,1.8,Delivered
+1105,2024-07-02,50,Beauty,19029.79,Yes,UPI,3,4.4,Cancelled
+1106,2024-11-09,37,Electronics,16939.63,No,COD,8,4.6,Cancelled
+1107,2024-12-01,20,Sports,15419.47,No,Card,3,1.8,Returned
+1108,2024-10-18,44,Beauty,4941.18,Yes,UPI,3,1.4,Returned
+1109,2024-04-02,24,Fashion,14094.87,Yes,Card,3,1.4,Delivered
+1110,2024-09-07,24,Home & Kitchen,22764.97,Yes,Wallet,9,4.5,Returned
+1111,2024-08-29,55,Sports,23192.16,No,Wallet,9,5.0,Delivered
+1112,2024-05-03,44,Beauty,12582.3,Yes,Card,7,4.5,Delivered
+1113,2024-11-28,35,Beauty,22605.32,No,COD,3,2.8,Cancelled
+1114,2024-03-21,49,Sports,12867.9,No,Card,8,2.1,Returned
+1115,2024-09-09,60,Fashion,16728.8,No,Wallet,6,1.1,Cancelled
+1116,2024-02-04,53,Fashion,21450.25,No,Wallet,2,4.6,Delivered
+1117,2024-08-15,20,Electronics,12079.99,No,Wallet,9,2.3,Cancelled
+1118,2024-09-05,22,Home & Kitchen,6136.79,No,Card,3,3.2,Delivered
+1119,2024-12-28,21,Home & Kitchen,2245.86,No,UPI,5,2.4,Returned
+1120,2024-10-05,44,Beauty,9670.02,No,COD,10,1.5,Delivered
+1121,2024-06-12,64,Beauty,15582.36,Yes,COD,3,4.6,Cancelled
+1122,2024-10-22,24,Home & Kitchen,23872.46,No,Card,3,2.3,Cancelled
+1123,2024-12-18,42,Home & Kitchen,18476.46,Yes,Wallet,7,2.4,Cancelled
+1124,2024-11-18,50,Electronics,9808.74,No,COD,10,3.1,Delivered
+1125,2024-04-10,51,Books,19325.51,No,Wallet,8,3.4,Returned
+1126,2024-10-04,60,Fashion,10517.54,No,Wallet,10,1.9,Delivered
+1127,2024-05-07,35,Beauty,20518.94,No,Wallet,4,3.4,Cancelled
+1128,2024-07-11,40,Sports,18983.8,Yes,UPI,6,2.8,Delivered
+1129,2024-09-21,56,Sports,1877.64,Yes,Wallet,4,3.3,Delivered
+1130,2024-07-20,20,Fashion,538.36,Yes,Card,8,1.5,Delivered
+1131,2024-06-26,26,Sports,4851.23,No,Card,2,4.6,Returned
+1132,2024-09-02,31,Books,6222.8,Yes,UPI,5,2.6,Cancelled
+1133,2024-08-09,18,Fashion,2492.5,Yes,COD,2,4.1,Cancelled
+1134,2024-01-19,61,Sports,562.11,Yes,UPI,1,3.7,Delivered
+1135,2024-01-13,25,Books,11480.1,Yes,COD,6,1.2,Cancelled
+1136,2024-08-27,47,Sports,9792.06,No,COD,1,1.1,Delivered
+1137,2024-06-24,54,Beauty,8473.0,No,COD,9,3.7,Returned
+1138,2024-12-07,64,Fashion,21507.01,No,COD,6,2.3,Delivered
+1139,2024-01-25,33,Fashion,13868.56,Yes,Card,4,2.2,Delivered
+1140,2024-07-28,22,Books,7020.0,No,Card,1,1.3,Delivered
+1141,2024-04-25,57,Home & Kitchen,18239.84,Yes,UPI,9,1.3,Cancelled
+1142,2024-11-12,42,Books,18920.21,No,UPI,10,2.9,Returned
+1143,2024-06-16,43,Sports,15525.8,Yes,Wallet,3,5.0,Delivered
+1144,2024-03-24,25,Electronics,13798.06,No,Card,7,1.2,Delivered
+1145,2024-12-15,56,Beauty,13399.22,No,Wallet,5,2.1,Cancelled
+1146,2024-11-02,55,Beauty,23869.08,No,Card,7,2.5,Returned
+1147,2024-08-19,51,Beauty,18522.36,Yes,COD,4,1.5,Cancelled
+1148,2024-07-27,32,Beauty,13235.32,No,Card,7,5.0,Cancelled
+1149,2024-11-13,47,Beauty,24890.31,No,Card,8,3.1,Delivered
+1150,2024-03-23,34,Electronics,22500.64,Yes,UPI,2,3.4,Returned
+1151,2024-09-11,52,Beauty,4830.84,Yes,Card,5,3.6,Delivered
+1152,2024-04-26,62,Home & Kitchen,22110.6,Yes,UPI,9,2.5,Returned
+1153,2024-11-22,58,Sports,10899.21,Yes,Wallet,6,4.0,Returned
+1154,2024-08-20,65,Fashion,15370.09,No,Wallet,1,1.1,Cancelled
+1155,2024-05-30,46,Beauty,7469.68,Yes,UPI,9,4.9,Returned
+1156,2024-08-21,20,Electronics,24368.49,No,COD,9,1.0,Delivered
+1157,2024-02-14,28,Home & Kitchen,10087.92,No,COD,4,4.8,Returned
+1158,2024-10-24,29,Beauty,22553.79,Yes,Card,3,3.2,Returned
+1159,2024-02-14,43,Books,565.65,Yes,UPI,9,3.8,Cancelled
+1160,2024-03-01,23,Books,10694.84,No,COD,7,2.1,Returned
+1161,2024-02-24,36,Electronics,19699.05,Yes,Wallet,9,2.4,Delivered
+1162,2024-10-11,24,Sports,3765.5,Yes,COD,9,1.5,Delivered
+1163,2024-12-27,54,Beauty,19333.41,Yes,Wallet,4,3.2,Delivered
+1164,2024-03-10,23,Books,10788.69,No,Card,3,1.5,Returned
+1165,2024-04-29,29,Sports,4594.92,Yes,Card,9,2.1,Delivered
+1166,2024-01-08,57,Fashion,14388.0,No,Card,6,3.2,Returned
+1167,2024-01-11,65,Beauty,3952.37,Yes,COD,7,4.7,Delivered
+1168,2024-07-08,32,Fashion,9341.21,No,Wallet,5,2.8,Cancelled
+1169,2024-04-10,23,Fashion,15639.82,Yes,Wallet,7,3.5,Cancelled
+1170,2024-08-25,43,Beauty,14658.82,No,Wallet,2,4.5,Returned
+1171,2024-06-01,53,Fashion,9758.17,Yes,COD,5,4.4,Delivered
+1172,2024-02-11,49,Electronics,8849.8,No,COD,8,3.5,Cancelled
+1173,2024-11-24,50,Sports,17974.28,Yes,Wallet,5,1.6,Returned
+1174,2024-11-04,28,Sports,14658.17,Yes,UPI,10,3.9,Returned
+1175,2024-06-24,21,Electronics,19125.89,No,COD,1,4.5,Returned
+1176,2024-05-06,62,Beauty,13830.59,Yes,Card,10,2.1,Cancelled
+1177,2024-11-15,48,Books,3384.25,No,Card,10,1.9,Delivered
+1178,2024-11-28,46,Books,7541.47,No,Card,4,4.6,Returned
+1179,2024-03-14,39,Home & Kitchen,12779.38,Yes,COD,9,1.5,Returned
+1180,2024-11-03,25,Books,2633.25,No,UPI,9,2.3,Delivered
+1181,2024-02-15,50,Fashion,7743.99,No,COD,9,2.0,Cancelled
+1182,2024-01-28,30,Beauty,14933.79,Yes,COD,5,4.6,Returned
+1183,2024-05-13,41,Sports,13614.66,No,COD,6,3.2,Cancelled
+1184,2024-07-03,54,Beauty,17006.53,No,Card,8,4.6,Returned
+1185,2024-11-22,18,Home & Kitchen,22528.26,Yes,Wallet,5,2.7,Delivered
+1186,2024-04-15,31,Sports,19627.68,No,Card,4,1.4,Returned
+1187,2024-03-18,45,Sports,15247.0,No,COD,6,2.2,Returned
+1188,2024-02-26,57,Sports,22262.77,No,Card,3,3.7,Returned
+1189,2024-08-24,52,Electronics,18929.25,Yes,UPI,6,1.7,Returned
+1190,2024-08-20,25,Sports,21295.92,Yes,UPI,8,5.0,Returned
+1191,2024-08-20,21,Home & Kitchen,18243.78,No,Card,7,2.5,Delivered
+1192,2024-10-01,49,Books,8259.74,No,COD,10,3.5,Delivered
+1193,2024-10-24,52,Books,12787.31,Yes,COD,7,2.5,Cancelled
+1194,2024-06-10,36,Books,1163.41,Yes,UPI,2,3.6,Delivered
+1195,2024-09-26,18,Electronics,1256.02,Yes,UPI,5,2.7,Cancelled
+1196,2024-05-28,58,Books,24337.24,No,UPI,9,4.2,Cancelled
+1197,2024-10-12,57,Sports,17078.83,No,UPI,5,1.2,Cancelled
+1198,2024-05-19,39,Fashion,2741.71,No,Card,2,3.6,Returned
+1199,2024-10-20,56,Electronics,5223.6,Yes,Card,8,3.8,Returned
+1200,2024-02-20,54,Books,2957.69,No,UPI,6,4.5,Cancelled
+1201,2024-11-22,21,Books,19827.2,No,Wallet,10,2.2,Cancelled
+1202,2024-01-23,57,Home & Kitchen,24786.35,No,Wallet,8,4.4,Cancelled
+1203,2024-09-01,46,Beauty,11659.76,No,UPI,2,1.0,Cancelled
+1204,2024-04-29,31,Sports,22231.3,Yes,Wallet,8,2.5,Delivered
+1205,2024-02-03,57,Electronics,14840.67,Yes,Wallet,10,4.9,Returned
+1206,2024-07-24,22,Fashion,16697.99,Yes,UPI,7,1.4,Delivered
+1207,2024-04-06,35,Sports,21504.54,Yes,Card,4,3.6,Cancelled
+1208,2024-12-06,28,Electronics,12332.09,No,UPI,7,1.9,Cancelled
+1209,2024-01-16,28,Fashion,16561.59,Yes,UPI,1,3.8,Cancelled
+1210,2024-06-26,52,Fashion,17299.18,Yes,UPI,3,3.8,Cancelled
+1211,2024-11-09,43,Electronics,2609.31,No,UPI,3,2.7,Returned
+1212,2024-10-06,55,Electronics,2649.58,No,Card,2,4.5,Cancelled
+1213,2024-09-16,48,Fashion,23132.53,Yes,Wallet,3,1.6,Returned
+1214,2024-06-06,54,Books,16778.84,Yes,Wallet,8,2.0,Returned
+1215,2024-04-26,58,Beauty,7004.98,Yes,COD,7,2.5,Delivered
+1216,2024-11-09,51,Fashion,11112.73,No,Card,5,1.4,Returned
+1217,2024-09-29,57,Electronics,12577.82,Yes,Wallet,10,1.1,Delivered
+1218,2024-03-29,41,Fashion,13483.18,No,Card,4,3.5,Delivered
+1219,2024-06-02,62,Electronics,16831.4,Yes,Card,6,2.6,Returned
+1220,2024-08-26,27,Sports,7532.57,No,Wallet,10,1.1,Returned
+1221,2024-03-02,50,Home & Kitchen,13629.46,Yes,COD,3,1.8,Delivered
+1222,2024-02-12,48,Home & Kitchen,22642.71,Yes,Wallet,8,1.7,Returned
+1223,2024-09-15,64,Sports,12255.25,No,UPI,3,2.3,Returned
+1224,2024-06-13,52,Sports,18275.96,Yes,Wallet,3,1.0,Cancelled
+1225,2024-08-18,39,Electronics,7672.2,No,Wallet,6,2.7,Returned
+1226,2024-08-27,56,Electronics,2903.19,Yes,UPI,8,4.8,Returned
+1227,2024-09-29,26,Electronics,21744.0,No,Card,1,4.1,Cancelled
+1228,2024-10-16,40,Beauty,23805.52,No,COD,2,2.8,Delivered
+1229,2024-07-26,65,Fashion,23890.42,Yes,UPI,7,2.4,Returned
+1230,2024-02-27,38,Fashion,15890.35,Yes,COD,7,2.9,Delivered
+1231,2024-06-27,25,Electronics,13503.15,Yes,COD,9,3.8,Delivered
+1232,2024-10-04,45,Books,19335.54,No,COD,5,3.1,Delivered
+1233,2024-10-08,26,Fashion,15252.16,No,COD,5,2.9,Returned
+1234,2024-08-31,61,Beauty,9581.5,No,COD,2,3.2,Returned
+1235,2024-07-11,55,Sports,12583.23,Yes,Wallet,7,3.5,Returned
+1236,2024-09-23,45,Books,6954.51,No,UPI,7,2.5,Delivered
+1237,2024-06-08,46,Electronics,13236.83,Yes,Wallet,5,2.1,Cancelled
+1238,2024-10-11,45,Electronics,4829.51,Yes,Wallet,2,4.2,Delivered
+1239,2024-05-03,38,Electronics,5074.46,Yes,COD,1,2.4,Cancelled
+1240,2024-09-18,24,Fashion,925.58,Yes,Wallet,10,1.8,Delivered
+1241,2024-05-23,31,Sports,22812.71,Yes,UPI,9,2.7,Delivered
+1242,2024-12-16,65,Home & Kitchen,14374.69,No,Card,7,1.9,Delivered
+1243,2024-03-06,64,Beauty,3366.9,Yes,Wallet,9,4.4,Returned
+1244,2024-03-17,49,Beauty,9988.65,Yes,Card,6,4.6,Delivered
+1245,2024-06-10,48,Home & Kitchen,7352.42,No,UPI,7,4.1,Returned
+1246,2024-12-14,35,Fashion,3167.21,Yes,COD,6,3.3,Delivered
+1247,2024-11-26,26,Beauty,14961.02,No,UPI,4,2.4,Cancelled
+1248,2024-08-10,60,Beauty,5422.83,Yes,Wallet,9,2.4,Returned
+1249,2024-06-14,32,Sports,6322.46,No,Card,2,3.8,Returned
+1250,2024-07-07,38,Home & Kitchen,7553.64,No,COD,6,4.6,Delivered
+1251,2024-09-06,25,Electronics,19381.3,No,Wallet,5,2.5,Cancelled
+1252,2024-04-20,25,Fashion,3233.98,Yes,COD,9,2.0,Returned
+1253,2024-09-24,39,Home & Kitchen,23462.2,No,Card,6,4.8,Returned
+1254,2024-11-19,43,Books,4788.61,Yes,UPI,10,3.9,Cancelled
+1255,2024-05-23,50,Electronics,7459.81,Yes,Wallet,7,2.5,Returned
+1256,2024-12-19,52,Books,22109.14,Yes,COD,8,2.2,Returned
+1257,2024-08-12,60,Sports,12284.59,No,UPI,10,4.3,Delivered
+1258,2024-05-30,28,Beauty,20147.62,Yes,Card,9,5.0,Delivered
+1259,2024-09-23,64,Home & Kitchen,12207.13,Yes,Wallet,9,2.3,Cancelled
+1260,2024-08-27,64,Home & Kitchen,4892.67,Yes,UPI,7,2.9,Delivered
+1261,2024-02-25,61,Sports,14584.06,Yes,Card,4,4.8,Returned
+1262,2024-11-03,44,Home & Kitchen,23590.91,Yes,Wallet,3,1.2,Returned
+1263,2024-09-27,42,Fashion,14124.96,No,Wallet,9,2.1,Returned
+1264,2024-09-29,60,Electronics,20153.85,Yes,Wallet,5,4.6,Cancelled
+1265,2024-05-09,35,Home & Kitchen,969.67,Yes,Card,9,1.3,Cancelled
+1266,2024-08-26,60,Sports,6322.94,No,Card,10,3.9,Cancelled
+1267,2024-06-21,61,Sports,1525.27,No,UPI,3,1.3,Cancelled
+1268,2024-11-08,61,Books,10589.95,Yes,UPI,9,2.2,Delivered
+1269,2024-12-11,34,Books,19425.94,Yes,Wallet,3,3.8,Cancelled
+1270,2024-02-11,55,Beauty,9339.21,No,Wallet,10,2.1,Returned
+1271,2024-06-18,61,Electronics,18230.46,No,UPI,9,2.8,Returned
+1272,2024-01-25,26,Home & Kitchen,19049.35,Yes,COD,9,2.6,Cancelled
+1273,2024-07-05,64,Sports,16362.06,Yes,UPI,8,1.6,Returned
+1274,2024-10-11,18,Home & Kitchen,6878.82,No,Wallet,7,2.5,Cancelled
+1275,2024-02-01,43,Home & Kitchen,3003.55,Yes,Card,1,4.6,Returned
+1276,2024-07-14,25,Sports,22766.06,No,UPI,2,3.3,Cancelled
+1277,2024-06-04,52,Electronics,21833.12,Yes,Wallet,7,2.7,Returned
+1278,2024-08-05,43,Sports,5367.54,Yes,Wallet,2,1.5,Returned
+1279,2024-08-24,21,Fashion,2978.79,No,COD,2,4.0,Returned
+1280,2024-04-24,55,Beauty,9160.79,No,Wallet,10,4.2,Returned
+1281,2024-03-28,44,Home & Kitchen,24279.65,No,COD,4,1.9,Cancelled
+1282,2024-12-04,63,Fashion,15554.3,No,Wallet,9,1.8,Cancelled
+1283,2024-09-28,21,Books,14888.51,No,UPI,6,2.0,Returned
+1284,2024-06-28,49,Home & Kitchen,1106.21,No,UPI,3,1.3,Delivered
+1285,2024-05-31,39,Electronics,19977.56,No,Wallet,8,1.7,Delivered
+1286,2024-06-16,21,Fashion,15088.73,Yes,Wallet,1,3.0,Delivered
+1287,2024-05-13,58,Books,2030.67,Yes,COD,4,2.9,Cancelled
+1288,2024-09-03,20,Electronics,8452.48,No,COD,7,1.2,Returned
+1289,2024-12-20,23,Fashion,24281.22,Yes,Card,8,2.6,Delivered
+1290,2024-05-15,42,Books,6078.66,No,COD,10,2.3,Returned
+1291,2024-12-19,30,Home & Kitchen,23736.28,Yes,UPI,1,3.8,Delivered
+1292,2024-11-26,54,Home & Kitchen,7277.2,Yes,Card,2,3.4,Returned
+1293,2024-11-25,61,Electronics,4625.29,No,COD,6,4.7,Returned
+1294,2024-10-04,60,Electronics,7681.6,Yes,COD,10,4.2,Cancelled
+1295,2024-10-12,42,Electronics,9209.81,No,UPI,2,4.0,Delivered
+1296,2024-05-22,36,Beauty,23488.59,No,Wallet,9,3.1,Delivered
+1297,2024-05-12,32,Beauty,7682.96,No,COD,2,3.6,Returned
+1298,2024-11-28,34,Beauty,13941.5,Yes,COD,6,1.1,Cancelled
+1299,2024-01-24,54,Home & Kitchen,22814.43,Yes,Card,6,2.3,Delivered
+1300,2024-02-04,65,Beauty,4835.79,Yes,COD,6,1.9,Returned
+1301,2024-12-22,61,Sports,19792.17,No,COD,1,3.2,Returned
+1302,2024-05-04,27,Fashion,11558.1,Yes,UPI,2,4.0,Returned
+1303,2024-07-03,53,Sports,2527.84,Yes,UPI,3,3.2,Returned
+1304,2024-08-15,41,Fashion,3863.79,No,Card,10,2.3,Delivered
+1305,2024-12-26,59,Books,19837.0,No,Wallet,8,1.6,Cancelled
+1306,2024-10-19,27,Electronics,13700.71,No,Card,10,4.1,Delivered
+1307,2024-01-04,56,Books,1247.26,No,Card,9,3.4,Cancelled
+1308,2024-03-27,65,Beauty,17037.61,No,Wallet,6,3.0,Returned
+1309,2024-04-14,21,Books,17832.99,Yes,COD,3,4.7,Returned
+1310,2024-12-19,37,Home & Kitchen,5622.7,Yes,Card,10,3.7,Delivered
+1311,2024-08-06,28,Beauty,8368.29,Yes,Wallet,2,4.3,Returned
+1312,2024-01-08,30,Home & Kitchen,15216.31,No,COD,8,1.4,Delivered
+1313,2024-06-10,53,Home & Kitchen,11717.5,No,Wallet,7,2.2,Delivered
+1314,2024-05-07,57,Electronics,7340.0,Yes,COD,6,3.0,Returned
+1315,2024-09-18,62,Fashion,3705.1,Yes,UPI,3,2.2,Returned
+1316,2024-11-28,41,Beauty,16739.39,Yes,Card,4,2.9,Cancelled
+1317,2024-03-28,38,Sports,17311.63,Yes,UPI,5,4.7,Cancelled
+1318,2024-05-07,62,Fashion,7604.85,Yes,Wallet,2,4.3,Cancelled
+1319,2024-01-21,34,Sports,10575.46,No,Wallet,1,3.5,Returned
+1320,2024-10-17,18,Fashion,18154.41,No,Wallet,9,3.4,Cancelled
+1321,2024-06-29,63,Beauty,19109.16,No,UPI,1,4.8,Cancelled
+1322,2024-06-07,19,Sports,23000.54,Yes,UPI,1,1.3,Returned
+1323,2024-07-11,60,Sports,3774.83,Yes,UPI,10,3.4,Delivered
+1324,2024-04-12,61,Sports,11505.26,No,Card,8,3.6,Delivered
+1325,2024-03-15,36,Electronics,3603.05,Yes,Wallet,5,4.5,Delivered
+1326,2024-09-02,63,Fashion,23588.72,Yes,COD,3,2.3,Cancelled
+1327,2024-07-08,34,Books,14747.03,Yes,Wallet,5,1.2,Returned
+1328,2024-11-06,24,Books,2160.64,Yes,Card,6,2.3,Delivered
+1329,2024-06-09,18,Home & Kitchen,2440.2,Yes,Card,6,1.7,Returned
+1330,2024-09-10,21,Electronics,15194.12,No,UPI,1,4.9,Delivered
+1331,2024-12-09,19,Fashion,9162.03,No,Card,2,4.2,Cancelled
+1332,2024-03-30,39,Fashion,13314.35,No,Wallet,4,1.3,Delivered
+1333,2024-05-30,30,Sports,10813.0,No,UPI,7,2.1,Returned
+1334,2024-06-13,51,Home & Kitchen,6441.11,No,Card,5,3.6,Cancelled
+1335,2024-02-10,56,Beauty,7594.9,No,UPI,7,4.8,Cancelled
+1336,2024-11-24,50,Electronics,9329.35,Yes,Wallet,1,2.5,Delivered
+1337,2024-02-29,44,Sports,15863.37,No,COD,5,2.2,Returned
+1338,2024-07-19,43,Home & Kitchen,6543.94,No,COD,4,2.4,Returned
+1339,2024-09-16,28,Beauty,13734.54,No,Card,6,2.4,Delivered
+1340,2024-12-05,22,Books,13939.75,No,COD,9,3.5,Delivered
+1341,2024-06-11,47,Sports,5128.97,Yes,UPI,4,3.1,Returned
+1342,2024-08-28,27,Home & Kitchen,8859.52,No,COD,6,4.2,Cancelled
+1343,2024-12-05,23,Beauty,22561.6,Yes,COD,5,3.1,Returned
+1344,2024-09-10,54,Books,19656.42,No,COD,7,2.8,Delivered
+1345,2024-08-09,64,Sports,3166.71,Yes,COD,10,3.0,Cancelled
+1346,2024-05-27,52,Sports,16695.05,Yes,Wallet,7,2.3,Delivered
+1347,2024-01-19,27,Fashion,1575.41,Yes,Wallet,9,3.1,Returned
+1348,2024-12-24,29,Beauty,14496.54,Yes,Card,9,2.5,Returned
+1349,2024-07-31,51,Home & Kitchen,14590.86,Yes,Card,6,3.2,Returned
+1350,2024-06-20,46,Electronics,1291.58,No,COD,3,3.2,Delivered
+1351,2024-12-02,38,Books,24720.66,Yes,Card,3,3.9,Delivered
+1352,2024-11-15,58,Fashion,7419.37,Yes,Card,1,4.5,Delivered
+1353,2024-05-01,42,Electronics,8927.41,No,COD,7,2.0,Returned
+1354,2024-10-07,49,Beauty,10870.89,Yes,COD,6,3.2,Delivered
+1355,2024-11-20,42,Home & Kitchen,20204.69,No,COD,1,4.8,Cancelled
+1356,2024-10-17,34,Electronics,13308.88,No,Wallet,2,1.8,Cancelled
+1357,2024-08-22,22,Electronics,13400.94,No,Wallet,9,2.5,Returned
+1358,2024-06-22,61,Sports,8190.87,No,Card,7,2.1,Cancelled
+1359,2024-05-20,39,Sports,22664.54,No,Wallet,5,3.5,Returned
+1360,2024-04-14,25,Fashion,10225.59,No,COD,8,4.0,Delivered
+1361,2024-03-30,49,Sports,14761.55,Yes,Card,6,3.7,Cancelled
+1362,2024-04-20,62,Fashion,3080.05,No,Card,7,2.0,Cancelled
+1363,2024-03-30,27,Sports,12570.57,No,Card,10,2.2,Cancelled
+1364,2024-11-20,33,Electronics,1890.26,No,Card,10,4.7,Cancelled
+1365,2024-11-17,33,Fashion,10770.55,Yes,COD,1,4.1,Returned
+1366,2024-08-03,28,Beauty,6064.53,Yes,Wallet,9,1.5,Returned
+1367,2024-03-04,18,Sports,23270.73,Yes,UPI,2,5.0,Returned
+1368,2024-07-05,35,Home & Kitchen,20718.37,No,Card,7,2.9,Returned
+1369,2024-11-25,19,Beauty,9281.71,No,COD,2,3.4,Returned
+1370,2024-09-26,59,Sports,362.56,No,UPI,4,1.3,Delivered
+1371,2024-12-13,19,Electronics,20105.76,Yes,COD,10,3.2,Cancelled
+1372,2024-05-30,52,Electronics,12441.8,No,COD,5,3.3,Cancelled
+1373,2024-05-04,29,Beauty,22675.3,Yes,Wallet,3,2.1,Returned
+1374,2024-08-11,52,Books,1206.62,No,Card,6,2.1,Delivered
+1375,2024-08-25,64,Books,12461.02,No,COD,1,2.3,Delivered
+1376,2024-11-01,61,Home & Kitchen,4491.07,Yes,COD,1,4.4,Returned
+1377,2024-11-17,58,Home & Kitchen,12911.19,Yes,Wallet,8,1.8,Returned
+1378,2024-03-05,40,Beauty,19990.04,No,Wallet,10,4.8,Returned
+1379,2024-03-05,40,Electronics,23976.58,Yes,UPI,5,4.3,Delivered
+1380,2024-02-27,63,Fashion,12963.97,Yes,Card,6,2.6,Returned
+1381,2024-03-11,38,Books,3266.84,No,Card,8,2.6,Delivered
+1382,2024-12-06,56,Electronics,18850.36,No,Wallet,7,1.8,Delivered
+1383,2024-09-02,58,Fashion,13987.18,No,COD,3,1.1,Returned
+1384,2024-05-23,23,Electronics,12050.26,Yes,UPI,10,3.2,Cancelled
+1385,2024-07-26,20,Beauty,5197.04,Yes,COD,1,1.9,Returned
+1386,2024-10-04,41,Books,4005.4,No,UPI,9,2.9,Returned
+1387,2024-11-18,37,Fashion,14630.92,Yes,Card,3,1.2,Delivered
+1388,2024-04-26,27,Fashion,20580.24,Yes,Card,9,4.4,Delivered
+1389,2024-10-10,35,Beauty,16693.02,Yes,Card,1,2.4,Delivered
+1390,2024-06-02,32,Books,15828.96,Yes,UPI,10,2.8,Returned
+1391,2024-06-06,28,Home & Kitchen,20198.07,No,Card,3,1.1,Returned
+1392,2024-08-02,40,Beauty,965.59,No,COD,5,2.8,Delivered
+1393,2024-11-02,20,Books,10790.33,No,COD,8,3.1,Returned
+1394,2024-06-26,38,Fashion,2520.53,No,UPI,2,1.7,Cancelled
+1395,2024-05-01,37,Sports,10107.62,Yes,Wallet,7,3.8,Delivered
+1396,2024-01-13,53,Sports,20296.0,Yes,Wallet,4,1.0,Delivered
+1397,2024-02-04,26,Beauty,319.72,Yes,UPI,2,2.9,Cancelled
+1398,2024-10-10,48,Home & Kitchen,16052.23,Yes,UPI,1,3.0,Returned
+1399,2024-01-31,60,Home & Kitchen,17777.02,Yes,COD,3,4.7,Cancelled
+1400,2024-05-21,58,Sports,10256.65,No,Card,9,2.2,Cancelled
+1401,2024-10-12,35,Books,16535.97,No,Card,7,1.2,Cancelled
+1402,2024-06-06,35,Books,21511.77,Yes,Wallet,10,1.7,Delivered
+1403,2024-01-16,42,Beauty,16939.35,No,Card,2,2.8,Cancelled
+1404,2024-12-03,54,Books,19627.15,No,Wallet,10,4.3,Delivered
+1405,2024-09-24,36,Beauty,21009.6,Yes,COD,3,2.5,Returned
+1406,2024-04-09,64,Sports,17365.07,No,UPI,5,3.5,Returned
+1407,2024-07-08,34,Home & Kitchen,8685.58,No,COD,9,1.9,Delivered
+1408,2024-08-07,58,Fashion,19297.67,No,Card,2,2.9,Cancelled
+1409,2024-01-17,38,Sports,22168.45,Yes,UPI,4,2.4,Delivered
+1410,2024-05-26,49,Sports,12880.06,Yes,UPI,7,3.3,Returned
+1411,2024-05-15,63,Beauty,18412.85,No,Card,7,4.8,Returned
+1412,2024-05-16,40,Beauty,17065.24,No,Wallet,2,4.7,Delivered
+1413,2024-05-27,61,Sports,1023.35,No,UPI,1,4.9,Delivered
+1414,2024-07-12,57,Home & Kitchen,20138.77,Yes,UPI,4,3.4,Delivered
+1415,2024-10-08,52,Beauty,8977.53,Yes,Wallet,1,2.6,Returned
+1416,2024-12-16,27,Sports,11719.14,No,UPI,7,4.9,Cancelled
+1417,2024-09-29,38,Home & Kitchen,705.16,No,Card,3,2.6,Cancelled
+1418,2024-12-26,25,Fashion,22740.76,No,COD,3,3.4,Cancelled
+1419,2024-04-23,46,Beauty,16229.78,Yes,Wallet,2,2.2,Returned
+1420,2024-07-28,47,Books,21247.65,Yes,COD,3,5.0,Cancelled
+1421,2024-07-07,29,Home & Kitchen,15467.17,No,COD,2,2.3,Delivered
+1422,2024-03-20,46,Fashion,11673.02,Yes,UPI,7,2.0,Delivered
+1423,2024-10-06,49,Fashion,12451.79,Yes,Wallet,6,1.3,Cancelled
+1424,2024-04-26,50,Sports,12728.92,No,UPI,1,2.5,Delivered
+1425,2024-08-25,18,Home & Kitchen,11567.87,Yes,COD,4,4.0,Cancelled
+1426,2024-10-18,54,Electronics,19544.6,No,COD,6,4.7,Delivered
+1427,2024-03-24,25,Sports,10330.76,Yes,Wallet,6,3.5,Returned
+1428,2024-09-05,55,Sports,10331.52,Yes,Wallet,4,3.5,Returned
+1429,2024-07-08,43,Beauty,9640.35,Yes,Wallet,4,1.6,Returned
+1430,2024-08-27,33,Fashion,3097.86,Yes,Wallet,6,4.8,Cancelled
+1431,2024-10-10,55,Fashion,19124.19,Yes,Card,4,4.7,Delivered
+1432,2024-05-11,65,Electronics,9444.11,No,COD,1,3.0,Delivered
+1433,2024-05-19,22,Sports,10951.87,Yes,Card,6,4.1,Cancelled
+1434,2024-11-27,36,Fashion,17422.5,Yes,COD,4,1.2,Cancelled
+1435,2024-04-21,50,Fashion,15134.22,No,COD,4,4.1,Returned
+1436,2024-11-19,56,Beauty,6221.72,Yes,Card,8,1.4,Returned
+1437,2024-04-18,31,Home & Kitchen,19956.23,No,COD,7,4.6,Returned
+1438,2024-03-23,38,Beauty,15244.41,Yes,Card,2,1.4,Cancelled
+1439,2024-06-05,39,Sports,22984.18,No,UPI,10,2.2,Returned
+1440,2024-12-22,39,Books,3855.17,Yes,Wallet,7,4.5,Cancelled
+1441,2024-11-15,30,Home & Kitchen,9737.13,Yes,COD,6,1.8,Cancelled
+1442,2024-05-29,53,Home & Kitchen,15535.45,Yes,UPI,6,3.0,Returned
+1443,2024-05-22,37,Fashion,10580.14,Yes,Wallet,6,2.7,Delivered
+1444,2024-04-08,22,Fashion,14738.24,Yes,Wallet,5,3.8,Delivered
+1445,2024-06-21,21,Sports,22312.58,No,Card,10,1.7,Delivered
+1446,2024-09-30,35,Sports,23872.17,No,Wallet,3,4.7,Returned
+1447,2024-09-12,59,Fashion,3347.99,No,Card,1,1.4,Cancelled
+1448,2024-07-10,43,Books,6380.35,No,UPI,6,2.7,Cancelled
+1449,2024-08-26,45,Books,24366.19,Yes,UPI,5,1.9,Delivered
+1450,2024-12-11,52,Home & Kitchen,15690.81,Yes,UPI,8,2.4,Returned
+1451,2024-11-22,23,Home & Kitchen,20571.62,No,UPI,7,4.7,Returned
+1452,2024-02-01,47,Books,9512.64,No,UPI,7,4.5,Delivered
+1453,2024-07-14,35,Fashion,7992.87,No,COD,3,4.3,Returned
+1454,2024-08-22,21,Electronics,5626.05,Yes,COD,4,4.2,Cancelled
+1455,2024-12-07,56,Beauty,2626.38,No,COD,3,2.2,Cancelled
+1456,2024-11-05,25,Electronics,10860.66,Yes,Card,10,4.6,Delivered
+1457,2024-02-19,24,Electronics,21380.45,Yes,Card,4,2.8,Delivered
+1458,2024-06-20,61,Sports,12592.17,Yes,UPI,8,1.2,Delivered
+1459,2024-12-12,62,Electronics,18960.44,No,COD,6,2.0,Delivered
+1460,2024-10-07,63,Books,23577.32,No,COD,1,3.7,Delivered
+1461,2024-12-26,33,Home & Kitchen,21573.28,Yes,UPI,3,4.8,Returned
+1462,2024-11-23,60,Sports,3035.21,No,Card,8,3.7,Delivered
+1463,2024-04-28,22,Sports,1732.69,Yes,Wallet,1,3.5,Returned
+1464,2024-07-12,38,Electronics,1645.41,Yes,UPI,1,2.8,Returned
+1465,2024-12-14,22,Home & Kitchen,24422.57,Yes,UPI,9,4.7,Delivered
+1466,2024-09-29,55,Books,9015.34,Yes,UPI,10,2.3,Delivered
+1467,2024-10-20,27,Home & Kitchen,11851.27,No,UPI,7,3.8,Cancelled
+1468,2024-08-01,57,Fashion,11322.12,No,Wallet,10,2.7,Returned
+1469,2024-04-26,47,Home & Kitchen,2055.07,Yes,COD,7,1.3,Returned
+1470,2024-10-24,39,Home & Kitchen,6138.25,No,Card,10,2.3,Cancelled
+1471,2024-01-27,49,Fashion,15893.21,No,COD,4,2.1,Returned
+1472,2024-07-18,60,Sports,17791.44,Yes,Wallet,2,1.7,Delivered
+1473,2024-05-15,61,Beauty,5202.73,Yes,UPI,8,2.1,Returned
+1474,2024-09-08,52,Fashion,5646.76,Yes,Wallet,5,2.2,Returned
+1475,2024-05-03,24,Sports,1689.62,No,UPI,4,1.3,Returned
+1476,2024-12-30,37,Home & Kitchen,6295.28,No,UPI,2,2.0,Cancelled
+1477,2024-10-11,64,Fashion,4064.78,No,UPI,1,3.0,Delivered
+1478,2024-02-19,45,Home & Kitchen,15418.26,No,COD,3,3.4,Returned
+1479,2024-10-10,54,Sports,10922.29,No,COD,2,1.2,Cancelled
+1480,2024-02-16,18,Beauty,18837.07,Yes,UPI,1,3.8,Returned
+1481,2024-06-11,40,Beauty,18202.77,No,UPI,7,4.1,Cancelled
+1482,2024-04-05,52,Electronics,17244.99,Yes,Card,1,2.2,Returned
+1483,2024-12-07,35,Books,3220.63,Yes,Card,1,1.4,Returned
+1484,2024-01-28,48,Home & Kitchen,626.92,No,Card,1,3.8,Delivered
+1485,2024-02-21,22,Fashion,17614.73,No,Wallet,3,1.1,Delivered
+1486,2024-08-15,25,Beauty,1163.33,Yes,Wallet,4,4.3,Returned
+1487,2024-03-03,38,Beauty,14507.81,No,UPI,2,2.2,Returned
+1488,2024-02-16,48,Home & Kitchen,24844.88,No,UPI,4,2.4,Returned
+1489,2024-08-06,52,Home & Kitchen,13436.83,No,COD,9,1.7,Delivered
+1490,2024-04-10,40,Home & Kitchen,17211.72,No,Wallet,2,4.9,Delivered
+1491,2024-04-23,44,Fashion,2745.71,No,Card,1,2.7,Cancelled
+1492,2024-11-13,64,Books,24878.45,No,Card,1,3.8,Cancelled
+1493,2024-12-12,29,Beauty,20920.01,No,Card,8,2.2,Cancelled
+1494,2024-07-01,65,Electronics,20721.52,No,Card,1,4.7,Cancelled
+1495,2024-02-16,20,Sports,5590.79,Yes,UPI,7,1.4,Returned
+1496,2024-03-08,50,Electronics,24590.36,No,Card,5,4.5,Returned
+1497,2024-08-31,43,Fashion,13318.64,Yes,UPI,5,3.8,Returned
+1498,2024-08-26,55,Beauty,20221.31,No,UPI,1,2.5,Cancelled
+1499,2024-04-08,60,Books,8482.41,No,UPI,9,2.2,Returned
+1500,2024-05-07,50,Sports,20993.99,Yes,Card,6,2.6,Cancelled
+1501,2024-05-04,36,Electronics,18131.67,No,COD,3,4.7,Cancelled
+1502,2024-03-10,56,Sports,14722.67,Yes,UPI,8,1.2,Delivered
+1503,2024-11-19,59,Books,21143.38,No,UPI,8,2.0,Delivered
+1504,2024-11-05,48,Home & Kitchen,11324.12,No,Card,4,4.1,Returned
+1505,2024-06-04,62,Books,8750.39,Yes,COD,7,3.5,Delivered
+1506,2024-02-09,37,Electronics,20366.37,Yes,Wallet,10,3.0,Delivered
+1507,2024-06-13,40,Sports,2964.67,Yes,UPI,9,1.5,Returned
+1508,2024-04-16,65,Beauty,2231.52,Yes,Card,7,4.2,Returned
+1509,2024-01-17,36,Home & Kitchen,12296.19,No,Card,3,4.3,Cancelled
+1510,2024-12-13,43,Books,15265.99,No,UPI,6,3.8,Cancelled
+1511,2024-12-29,58,Books,519.22,Yes,Card,6,5.0,Cancelled
+1512,2024-02-13,34,Books,24999.0,Yes,COD,10,2.6,Cancelled
+1513,2024-04-05,27,Fashion,19783.95,Yes,COD,8,4.0,Cancelled
+1514,2024-06-02,50,Books,5573.77,No,UPI,9,3.2,Returned
+1515,2024-10-14,36,Electronics,23800.73,No,COD,5,2.9,Returned
+1516,2024-03-08,31,Electronics,23887.0,Yes,COD,5,2.8,Delivered
+1517,2024-07-09,25,Books,1776.2,Yes,COD,5,3.5,Returned
+1518,2024-05-30,42,Sports,3262.87,Yes,Card,8,2.8,Returned
+1519,2024-08-19,30,Beauty,5108.9,Yes,COD,5,1.8,Delivered
+1520,2024-11-30,39,Sports,12847.31,No,UPI,3,2.4,Cancelled
+1521,2024-03-31,29,Fashion,12422.09,Yes,Card,9,1.5,Delivered
+1522,2024-06-14,40,Home & Kitchen,3950.69,No,COD,10,1.1,Returned
+1523,2024-04-30,58,Books,21317.34,No,Card,7,3.5,Cancelled
+1524,2024-11-16,54,Electronics,7481.65,No,Wallet,7,4.7,Delivered
+1525,2024-12-11,29,Beauty,23722.04,No,COD,6,2.0,Cancelled
+1526,2024-07-04,29,Electronics,5488.43,Yes,Wallet,1,2.2,Returned
+1527,2024-10-03,31,Books,5596.69,Yes,COD,7,2.1,Returned
+1528,2024-04-05,35,Fashion,23075.44,Yes,COD,1,2.6,Returned
+1529,2024-10-08,61,Fashion,14371.04,Yes,Wallet,4,4.2,Delivered
+1530,2024-09-30,43,Books,3112.55,No,UPI,2,3.7,Cancelled
+1531,2024-07-11,26,Fashion,14959.05,Yes,UPI,6,3.0,Returned
+1532,2024-04-24,34,Home & Kitchen,22949.68,Yes,UPI,9,2.0,Returned
+1533,2024-12-10,34,Electronics,15029.57,No,UPI,7,1.1,Returned
+1534,2024-11-18,63,Electronics,5009.07,No,Card,5,4.8,Cancelled
+1535,2024-05-06,62,Electronics,4365.04,No,COD,8,1.2,Delivered
+1536,2024-08-04,31,Beauty,6910.14,Yes,UPI,2,3.6,Cancelled
+1537,2024-06-25,33,Electronics,4744.38,No,Card,5,1.7,Returned
+1538,2024-11-01,65,Home & Kitchen,22711.3,No,COD,6,2.0,Returned
+1539,2024-07-07,20,Sports,22695.61,Yes,Wallet,8,4.4,Returned
+1540,2024-03-26,34,Beauty,19849.31,No,Wallet,9,1.9,Returned
+1541,2024-02-09,36,Sports,5054.59,No,COD,5,3.5,Cancelled
+1542,2024-06-01,24,Books,10783.63,No,COD,1,3.1,Delivered
+1543,2024-01-17,24,Books,2482.97,Yes,COD,2,3.4,Returned
+1544,2024-06-18,40,Sports,14246.64,Yes,COD,3,2.2,Delivered
+1545,2024-07-03,60,Fashion,17024.4,No,COD,6,3.0,Returned
+1546,2024-09-24,20,Electronics,24519.56,No,Wallet,3,1.8,Delivered
+1547,2024-06-04,31,Beauty,4144.71,No,Wallet,1,2.2,Returned
+1548,2024-05-29,30,Sports,14691.64,No,UPI,8,4.6,Delivered
+1549,2024-03-29,48,Home & Kitchen,9389.06,No,Wallet,9,4.8,Returned
+1550,2024-12-04,57,Home & Kitchen,10487.35,Yes,COD,1,3.9,Delivered
+1551,2024-07-08,33,Fashion,9319.15,No,UPI,4,2.0,Returned
+1552,2024-08-11,27,Sports,21652.95,No,Wallet,2,1.4,Cancelled
+1553,2024-06-20,49,Electronics,24956.63,No,Wallet,10,3.7,Cancelled
+1554,2024-01-28,54,Electronics,18507.87,Yes,Card,1,1.7,Cancelled
+1555,2024-11-27,51,Fashion,7509.51,No,Wallet,2,3.4,Cancelled
+1556,2024-04-27,53,Sports,18691.07,No,Card,2,3.2,Delivered
+1557,2024-07-08,33,Sports,21455.89,No,COD,3,2.6,Cancelled
+1558,2024-08-22,46,Electronics,19667.02,No,COD,6,3.5,Returned
+1559,2024-07-20,57,Books,15929.44,Yes,Card,7,3.4,Cancelled
+1560,2024-07-30,63,Books,24265.65,Yes,Wallet,8,2.0,Delivered
+1561,2024-12-28,49,Electronics,16238.87,No,COD,4,1.9,Returned
+1562,2024-05-30,43,Beauty,17804.63,Yes,Wallet,5,1.7,Delivered
+1563,2024-03-19,31,Beauty,4256.89,No,COD,9,1.1,Cancelled
+1564,2024-09-01,31,Beauty,17346.63,Yes,UPI,1,4.2,Returned
+1565,2024-05-19,51,Fashion,7788.23,Yes,Card,1,1.0,Delivered
+1566,2024-04-19,30,Home & Kitchen,8048.7,No,Card,2,1.0,Cancelled
+1567,2024-10-28,30,Beauty,24231.87,No,Card,10,3.5,Cancelled
+1568,2024-03-18,64,Electronics,6346.35,No,Wallet,3,2.2,Delivered
+1569,2024-05-14,30,Home & Kitchen,9315.87,No,UPI,3,5.0,Delivered
+1570,2024-09-01,48,Beauty,3800.85,No,UPI,1,3.4,Cancelled
+1571,2024-05-14,24,Home & Kitchen,4076.9,Yes,UPI,4,3.3,Delivered
+1572,2024-11-09,35,Electronics,23181.12,Yes,COD,5,3.9,Cancelled
+1573,2024-09-15,49,Beauty,5484.09,Yes,Card,3,4.5,Cancelled
+1574,2024-02-06,57,Fashion,18616.6,Yes,UPI,3,1.2,Delivered
+1575,2024-06-11,24,Electronics,17572.6,No,UPI,5,3.7,Delivered
+1576,2024-05-18,37,Sports,12815.89,No,Wallet,1,1.9,Cancelled
+1577,2024-08-01,23,Fashion,1282.5,No,UPI,8,3.9,Returned
+1578,2024-03-01,37,Home & Kitchen,22722.29,Yes,Wallet,2,1.4,Cancelled
+1579,2024-01-13,22,Fashion,21043.9,No,COD,10,4.1,Returned
+1580,2024-02-04,46,Beauty,13652.79,Yes,COD,10,1.6,Cancelled
+1581,2024-04-30,61,Beauty,6407.3,Yes,UPI,4,1.2,Cancelled
+1582,2024-03-24,49,Books,4574.89,Yes,Card,3,2.0,Delivered
+1583,2024-03-28,37,Home & Kitchen,23737.66,Yes,Card,5,1.1,Cancelled
+1584,2024-06-14,59,Beauty,4797.42,No,COD,6,4.1,Delivered
+1585,2024-12-25,53,Sports,22235.09,No,Wallet,1,2.1,Delivered
+1586,2024-03-09,61,Fashion,19643.72,Yes,Card,5,3.6,Returned
+1587,2024-07-15,54,Electronics,8287.42,No,COD,7,4.8,Returned
+1588,2024-09-30,26,Home & Kitchen,22871.52,No,COD,1,3.7,Delivered
+1589,2024-07-08,42,Sports,20270.96,No,Card,7,2.4,Cancelled
+1590,2024-07-28,40,Books,16329.14,Yes,Card,1,3.6,Cancelled
+1591,2024-03-16,60,Beauty,4696.77,Yes,UPI,7,2.3,Cancelled
+1592,2024-05-07,61,Electronics,11944.37,No,UPI,9,1.9,Delivered
+1593,2024-04-27,24,Electronics,9999.18,No,COD,1,3.8,Returned
+1594,2024-08-16,19,Sports,2638.44,Yes,UPI,10,4.9,Returned
+1595,2024-05-09,27,Home & Kitchen,22817.58,Yes,COD,8,3.0,Delivered
+1596,2024-04-09,18,Fashion,8337.17,No,Card,6,2.6,Returned
+1597,2024-08-05,64,Sports,17116.73,Yes,Wallet,7,2.1,Cancelled
+1598,2024-07-10,21,Beauty,10709.58,Yes,Card,10,1.9,Cancelled
+1599,2024-11-24,56,Sports,2425.43,Yes,UPI,10,3.2,Cancelled
+1600,2024-08-14,28,Beauty,4656.59,No,COD,4,1.1,Delivered
+1601,2024-02-20,59,Fashion,21487.23,No,UPI,8,4.1,Cancelled
+1602,2024-12-20,62,Books,12762.0,Yes,Card,2,3.9,Cancelled
+1603,2024-08-09,59,Sports,20555.21,No,Card,2,3.3,Delivered
+1604,2024-01-24,23,Sports,16666.74,No,Wallet,1,3.4,Cancelled
+1605,2024-03-29,50,Books,3603.59,Yes,UPI,10,2.7,Returned
+1606,2024-03-14,48,Sports,7412.03,No,Wallet,3,4.1,Returned
+1607,2024-10-11,45,Electronics,9203.66,Yes,UPI,10,2.9,Returned
+1608,2024-03-25,33,Books,4112.19,Yes,Card,6,1.1,Returned
+1609,2024-03-31,46,Electronics,660.47,Yes,COD,2,3.6,Delivered
+1610,2024-03-17,31,Electronics,21935.45,No,Wallet,5,1.2,Cancelled
+1611,2024-01-06,18,Beauty,21337.86,No,Card,5,4.1,Returned
+1612,2024-05-24,64,Home & Kitchen,21035.21,Yes,COD,5,4.0,Returned
+1613,2024-01-18,34,Home & Kitchen,6347.16,Yes,UPI,1,4.7,Cancelled
+1614,2024-12-04,27,Home & Kitchen,11723.84,Yes,UPI,5,1.4,Returned
+1615,2024-09-15,45,Books,10205.94,Yes,COD,1,3.3,Delivered
+1616,2024-05-07,40,Books,13386.26,Yes,COD,3,2.2,Returned
+1617,2024-08-31,43,Fashion,23911.32,Yes,COD,7,4.8,Delivered
+1618,2024-12-15,61,Home & Kitchen,19327.78,No,UPI,10,4.5,Cancelled
+1619,2024-02-03,18,Electronics,19236.71,No,UPI,3,3.5,Cancelled
+1620,2024-07-25,31,Fashion,19625.34,Yes,UPI,8,4.7,Cancelled
+1621,2024-11-23,19,Sports,12354.31,No,Card,4,1.1,Returned
+1622,2024-01-25,32,Books,12594.39,Yes,Wallet,4,3.0,Returned
+1623,2024-08-02,52,Beauty,12716.86,Yes,COD,10,2.2,Returned
+1624,2024-02-18,55,Home & Kitchen,14714.78,Yes,Wallet,6,3.6,Returned
+1625,2024-05-24,27,Electronics,4111.08,Yes,Wallet,6,5.0,Returned
+1626,2024-02-22,19,Beauty,21329.61,Yes,UPI,4,3.6,Delivered
+1627,2024-09-04,65,Fashion,17845.04,Yes,UPI,2,4.5,Cancelled
+1628,2024-04-14,60,Sports,3791.72,No,UPI,8,3.5,Returned
+1629,2024-04-07,52,Beauty,22857.89,Yes,Wallet,4,4.0,Cancelled
+1630,2024-08-31,61,Fashion,13703.08,Yes,Card,10,4.8,Delivered
+1631,2024-12-18,22,Books,20213.16,No,COD,5,4.3,Returned
+1632,2024-04-27,20,Electronics,15761.22,No,Card,5,3.1,Returned
+1633,2024-06-17,23,Sports,9612.17,No,Wallet,2,3.6,Returned
+1634,2024-03-25,29,Books,4638.08,Yes,COD,10,4.3,Cancelled
+1635,2024-10-12,32,Home & Kitchen,1578.81,No,COD,1,1.8,Returned
+1636,2024-04-08,56,Sports,14330.81,Yes,Wallet,9,2.2,Cancelled
+1637,2024-12-15,34,Sports,5102.15,No,Wallet,5,1.7,Delivered
+1638,2024-08-03,19,Beauty,24061.95,Yes,COD,5,2.3,Cancelled
+1639,2024-12-24,35,Fashion,7794.7,No,COD,1,2.1,Cancelled
+1640,2024-11-04,54,Electronics,5838.54,Yes,Wallet,9,2.4,Returned
+1641,2024-11-18,61,Home & Kitchen,23761.06,No,UPI,3,4.1,Returned
+1642,2024-01-11,34,Books,18488.06,Yes,Wallet,6,1.5,Cancelled
+1643,2024-11-11,50,Fashion,552.51,Yes,UPI,5,4.2,Cancelled
+1644,2024-03-13,27,Books,7615.14,No,COD,8,4.0,Cancelled
+1645,2024-06-06,21,Sports,10206.64,Yes,COD,1,4.4,Returned
+1646,2024-10-10,49,Sports,6387.24,Yes,COD,9,3.1,Cancelled
+1647,2024-01-09,50,Sports,9475.04,No,UPI,6,1.0,Returned
+1648,2024-01-17,65,Sports,7399.82,Yes,Wallet,1,4.9,Returned
+1649,2024-09-18,31,Electronics,16929.96,No,COD,9,4.2,Returned
+1650,2024-05-26,50,Sports,18951.71,Yes,Card,5,1.5,Delivered
+1651,2024-05-01,64,Electronics,15156.51,Yes,Wallet,9,2.7,Delivered
+1652,2024-04-12,42,Fashion,11159.79,No,Wallet,8,3.6,Returned
+1653,2024-10-04,40,Books,11946.79,Yes,Wallet,2,1.7,Delivered
+1654,2024-11-14,22,Beauty,8268.46,Yes,Wallet,5,2.0,Returned
+1655,2024-01-09,45,Electronics,14085.07,No,COD,7,1.5,Delivered
+1656,2024-07-20,20,Beauty,13690.71,No,UPI,8,2.3,Returned
+1657,2024-07-19,27,Electronics,12918.72,Yes,UPI,9,4.1,Delivered
+1658,2024-08-04,54,Beauty,15045.36,Yes,Wallet,7,3.3,Delivered
+1659,2024-10-17,42,Books,5963.46,Yes,Card,4,2.7,Cancelled
+1660,2024-07-12,40,Home & Kitchen,13588.85,Yes,COD,3,4.3,Returned
+1661,2024-10-26,21,Sports,2966.44,No,Wallet,7,2.1,Returned
+1662,2024-10-30,46,Sports,9673.49,Yes,COD,1,1.5,Returned
+1663,2024-07-26,48,Sports,13478.33,Yes,Card,7,4.6,Delivered
+1664,2024-11-21,55,Fashion,9024.65,Yes,Card,4,1.9,Returned
+1665,2024-03-04,29,Books,2358.88,Yes,COD,1,2.9,Cancelled
+1666,2024-10-05,28,Fashion,9271.52,Yes,Card,6,2.2,Delivered
+1667,2024-06-02,40,Fashion,5276.67,Yes,Card,4,1.0,Returned
+1668,2024-04-21,31,Sports,22855.01,Yes,UPI,10,4.5,Delivered
+1669,2024-04-29,43,Sports,2519.24,No,Card,9,4.8,Delivered
+1670,2024-02-10,49,Fashion,8396.68,Yes,UPI,9,1.7,Cancelled
+1671,2024-07-12,35,Fashion,4214.12,Yes,Wallet,6,3.4,Delivered
+1672,2024-01-21,40,Electronics,7475.45,No,Wallet,1,5.0,Cancelled
+1673,2024-02-22,25,Sports,23987.65,No,UPI,7,1.1,Returned
+1674,2024-03-07,34,Sports,5853.28,No,COD,2,3.2,Cancelled
+1675,2024-01-28,19,Home & Kitchen,17937.05,No,COD,4,1.2,Returned
+1676,2024-12-12,42,Home & Kitchen,24713.38,No,Card,9,4.3,Cancelled
+1677,2024-12-02,48,Fashion,10986.9,Yes,Wallet,3,1.9,Delivered
+1678,2024-09-06,26,Fashion,24313.01,No,COD,3,2.1,Cancelled
+1679,2024-11-15,41,Fashion,11184.91,No,COD,2,1.1,Cancelled
+1680,2024-01-17,38,Sports,455.33,Yes,COD,7,2.5,Delivered
+1681,2024-01-14,34,Sports,24465.07,Yes,Wallet,4,4.4,Returned
+1682,2024-04-06,19,Fashion,21963.46,Yes,Wallet,3,3.6,Delivered
+1683,2024-07-31,29,Books,17816.36,Yes,Wallet,9,4.4,Cancelled
+1684,2024-02-01,32,Electronics,19102.9,Yes,Card,8,1.8,Returned
+1685,2024-02-16,38,Fashion,24764.79,Yes,UPI,6,1.2,Cancelled
+1686,2024-09-26,37,Electronics,9738.03,No,UPI,1,2.2,Cancelled
+1687,2024-09-08,63,Beauty,11529.43,No,COD,5,3.0,Delivered
+1688,2024-08-21,42,Beauty,20495.96,Yes,COD,9,1.1,Delivered
+1689,2024-06-13,58,Home & Kitchen,15428.03,No,COD,9,3.3,Delivered
+1690,2024-09-28,62,Fashion,21981.58,Yes,Card,4,4.4,Cancelled
+1691,2024-10-09,63,Electronics,24016.13,No,Card,4,2.7,Delivered
+1692,2024-09-11,47,Beauty,14095.12,Yes,UPI,2,4.5,Returned
+1693,2024-02-09,35,Beauty,13406.54,No,UPI,6,4.2,Delivered
+1694,2024-09-03,23,Sports,21459.37,No,Wallet,3,4.8,Cancelled
+1695,2024-12-04,18,Home & Kitchen,24523.73,Yes,Wallet,10,4.3,Cancelled
+1696,2024-04-28,52,Books,6433.73,Yes,Card,4,1.8,Cancelled
+1697,2024-09-19,43,Sports,17310.6,No,Card,10,2.3,Returned
+1698,2024-08-01,33,Beauty,16182.21,No,Card,2,1.4,Returned
+1699,2024-06-01,45,Beauty,19229.04,No,COD,8,1.9,Returned
+1700,2024-12-31,44,Home & Kitchen,4862.84,No,UPI,2,3.8,Cancelled
+1701,2024-10-21,60,Electronics,21011.1,Yes,COD,3,1.4,Returned
+1702,2024-07-02,56,Sports,2749.12,No,Card,7,2.5,Delivered
+1703,2024-01-04,53,Beauty,16041.76,Yes,COD,6,3.4,Cancelled
+1704,2024-01-21,23,Beauty,16107.42,Yes,Wallet,7,2.9,Cancelled
+1705,2024-06-01,35,Home & Kitchen,8157.52,Yes,UPI,4,2.2,Returned
+1706,2024-08-19,53,Electronics,5092.57,No,UPI,3,4.4,Returned
+1707,2024-06-06,40,Electronics,21911.95,No,Wallet,5,5.0,Returned
+1708,2024-02-21,40,Fashion,18207.73,Yes,COD,7,1.5,Returned
+1709,2024-11-30,54,Home & Kitchen,4985.48,No,UPI,3,1.8,Returned
+1710,2024-03-01,59,Home & Kitchen,4841.51,Yes,COD,2,3.4,Returned
+1711,2024-06-09,29,Books,15174.15,Yes,UPI,5,1.2,Returned
+1712,2024-07-08,60,Home & Kitchen,11787.33,Yes,COD,9,3.1,Returned
+1713,2024-06-02,50,Electronics,16715.44,No,Card,2,4.5,Returned
+1714,2024-02-09,53,Home & Kitchen,5126.04,No,UPI,9,2.5,Cancelled
+1715,2024-01-13,21,Fashion,21944.5,Yes,UPI,1,3.6,Cancelled
+1716,2024-02-11,52,Fashion,3157.68,No,Card,8,1.2,Returned
+1717,2024-10-13,34,Electronics,16986.43,No,Card,10,4.5,Returned
+1718,2024-07-17,40,Books,24509.52,No,COD,5,4.8,Cancelled
+1719,2024-10-13,38,Electronics,18879.84,No,UPI,9,3.5,Delivered
+1720,2024-08-23,19,Home & Kitchen,9460.74,No,COD,1,1.7,Cancelled
+1721,2024-10-18,24,Sports,18756.91,No,Card,3,1.4,Returned
+1722,2024-01-12,20,Sports,8497.41,No,COD,2,4.8,Returned
+1723,2024-01-04,64,Sports,18490.21,Yes,Card,5,1.6,Delivered
+1724,2024-12-03,52,Beauty,15879.41,No,COD,5,1.9,Returned
+1725,2024-02-01,38,Beauty,2119.25,Yes,Card,6,1.4,Cancelled
+1726,2024-10-26,26,Beauty,24607.57,Yes,Wallet,8,1.3,Returned
+1727,2024-08-16,47,Beauty,23953.95,No,COD,4,3.9,Delivered
+1728,2024-04-08,24,Electronics,21467.03,Yes,UPI,10,5.0,Cancelled
+1729,2024-03-07,18,Electronics,1797.48,No,COD,2,1.7,Cancelled
+1730,2024-09-22,60,Sports,19107.03,No,COD,1,3.2,Delivered
+1731,2024-03-03,31,Home & Kitchen,11766.04,Yes,UPI,5,2.3,Cancelled
+1732,2024-03-21,19,Books,15546.92,No,COD,4,2.7,Returned
+1733,2024-04-16,62,Books,1368.58,Yes,COD,4,1.9,Cancelled
+1734,2024-11-16,38,Electronics,19143.51,No,Card,9,3.2,Cancelled
+1735,2024-01-17,26,Electronics,16037.65,Yes,Card,7,1.2,Delivered
+1736,2024-03-02,31,Electronics,14803.99,Yes,UPI,7,1.0,Returned
+1737,2024-07-01,47,Books,15859.59,Yes,Card,8,1.5,Delivered
+1738,2024-10-17,61,Beauty,17112.03,Yes,Wallet,9,3.6,Delivered
+1739,2024-12-06,48,Electronics,12933.63,Yes,UPI,4,4.3,Cancelled
+1740,2024-03-29,26,Electronics,8523.29,No,COD,4,4.6,Returned
+1741,2024-10-14,30,Fashion,23049.25,Yes,UPI,8,4.8,Returned
+1742,2024-09-29,42,Sports,780.22,No,Card,2,1.6,Delivered
+1743,2024-04-20,65,Fashion,14229.55,No,Wallet,5,2.7,Delivered
+1744,2024-04-14,59,Fashion,16201.89,Yes,Card,9,4.4,Delivered
+1745,2024-09-11,49,Beauty,10413.14,Yes,UPI,3,4.6,Cancelled
+1746,2024-08-31,61,Sports,12375.37,No,Card,2,3.3,Returned
+1747,2024-10-02,46,Home & Kitchen,22675.92,No,Card,7,2.7,Cancelled
+1748,2024-12-06,63,Home & Kitchen,5520.79,No,Wallet,3,1.2,Cancelled
+1749,2024-07-23,34,Home & Kitchen,22883.86,No,UPI,6,4.0,Returned
+1750,2024-12-27,59,Electronics,4046.27,No,Wallet,4,1.2,Delivered
+1751,2024-08-03,50,Electronics,7054.27,No,COD,1,4.6,Returned
+1752,2024-03-22,29,Beauty,24060.52,No,Wallet,1,4.7,Delivered
+1753,2024-12-06,20,Electronics,9384.44,No,COD,2,3.4,Cancelled
+1754,2024-12-02,38,Books,12038.71,Yes,COD,3,1.1,Returned
+1755,2024-07-13,64,Sports,14872.33,No,Card,6,5.0,Cancelled
+1756,2024-02-15,37,Beauty,8912.41,Yes,Wallet,1,3.4,Returned
+1757,2024-09-21,23,Books,14613.9,Yes,Card,9,2.0,Cancelled
+1758,2024-06-09,60,Books,14352.13,Yes,COD,3,3.6,Delivered
+1759,2024-03-19,49,Home & Kitchen,819.41,No,COD,6,3.2,Cancelled
+1760,2024-04-23,38,Fashion,18573.97,Yes,UPI,3,2.2,Returned
+1761,2024-10-27,24,Electronics,14309.95,No,UPI,4,1.7,Returned
+1762,2024-02-03,26,Electronics,2639.91,No,COD,10,4.4,Cancelled
+1763,2024-02-05,53,Books,24235.95,No,Card,6,3.2,Returned
+1764,2024-03-27,49,Electronics,4379.25,Yes,Wallet,2,3.8,Delivered
+1765,2024-07-05,60,Electronics,21346.12,Yes,UPI,4,2.3,Cancelled
+1766,2024-06-05,45,Sports,23158.45,No,Wallet,7,2.0,Delivered
+1767,2024-01-23,19,Sports,11678.71,Yes,Wallet,10,3.6,Cancelled
+1768,2024-02-12,39,Fashion,22551.74,No,Wallet,2,3.5,Delivered
+1769,2024-05-11,50,Books,4279.15,Yes,Card,2,1.0,Returned
+1770,2024-10-02,48,Home & Kitchen,11899.04,Yes,Wallet,9,3.4,Returned
+1771,2024-11-08,38,Home & Kitchen,18824.47,No,Wallet,1,2.8,Delivered
+1772,2024-04-02,59,Books,17514.41,Yes,UPI,1,1.2,Delivered
+1773,2024-11-24,61,Sports,15301.36,Yes,UPI,5,2.7,Cancelled
+1774,2024-04-15,23,Fashion,6117.35,No,Wallet,10,4.0,Delivered
+1775,2024-05-21,32,Sports,4300.86,Yes,Wallet,1,4.2,Delivered
+1776,2024-09-08,35,Sports,15053.94,No,Card,2,4.3,Returned
+1777,2024-04-07,52,Beauty,6143.62,No,Card,4,2.9,Delivered
+1778,2024-07-20,64,Books,9047.42,Yes,UPI,3,2.4,Delivered
+1779,2024-06-16,37,Sports,20646.21,Yes,Wallet,10,3.1,Delivered
+1780,2024-06-22,65,Home & Kitchen,21518.78,No,UPI,4,4.3,Delivered
+1781,2024-03-03,23,Sports,15910.81,Yes,Card,3,4.6,Cancelled
+1782,2024-06-29,35,Electronics,17030.22,Yes,Wallet,5,4.7,Cancelled
+1783,2024-01-20,21,Beauty,5204.33,No,Card,6,2.9,Returned
+1784,2024-01-01,41,Books,22814.37,No,COD,8,4.4,Cancelled
+1785,2024-08-24,55,Electronics,24177.76,No,COD,8,3.1,Returned
+1786,2024-05-23,55,Beauty,15175.99,No,Wallet,3,2.9,Delivered
+1787,2024-10-12,28,Electronics,15812.35,No,Card,8,1.1,Delivered
+1788,2024-10-21,39,Home & Kitchen,10298.51,No,Card,5,2.5,Delivered
+1789,2024-09-12,45,Beauty,24517.57,No,UPI,5,4.8,Returned
+1790,2024-08-30,55,Home & Kitchen,19507.82,Yes,COD,5,5.0,Delivered
+1791,2024-09-30,52,Fashion,7022.08,No,UPI,6,4.1,Cancelled
+1792,2024-10-11,31,Beauty,2746.7,Yes,COD,7,1.5,Returned
+1793,2024-08-08,18,Beauty,12768.73,Yes,UPI,9,4.2,Delivered
+1794,2024-02-22,19,Home & Kitchen,14999.55,Yes,Wallet,6,2.9,Returned
+1795,2024-11-07,51,Fashion,350.61,Yes,UPI,3,4.9,Cancelled
+1796,2024-11-09,25,Beauty,15308.47,Yes,UPI,2,3.5,Delivered
+1797,2024-12-28,44,Electronics,16539.52,No,COD,1,4.0,Returned
+1798,2024-03-01,22,Home & Kitchen,22800.24,Yes,Card,1,3.4,Cancelled
+1799,2024-04-14,41,Home & Kitchen,18287.72,No,Wallet,3,1.8,Returned
+1800,2024-06-24,18,Beauty,15021.81,Yes,COD,7,3.0,Returned
+1801,2024-05-01,62,Sports,20633.55,No,Card,6,1.1,Returned
+1802,2024-12-10,42,Sports,823.4,Yes,UPI,3,1.8,Cancelled
+1803,2024-02-13,48,Sports,9629.17,Yes,UPI,9,4.9,Returned
+1804,2024-01-27,27,Fashion,17393.43,Yes,COD,8,2.6,Returned
+1805,2024-11-16,45,Electronics,4015.22,No,COD,9,2.3,Delivered
+1806,2024-08-30,59,Beauty,2217.91,Yes,UPI,3,4.6,Cancelled
+1807,2024-06-20,51,Beauty,17945.04,Yes,Card,8,3.1,Cancelled
+1808,2024-10-14,62,Fashion,19930.06,Yes,Wallet,4,1.8,Cancelled
+1809,2024-05-21,21,Fashion,20747.41,Yes,UPI,3,3.6,Cancelled
+1810,2024-10-11,33,Beauty,20955.74,Yes,Wallet,2,1.4,Returned
+1811,2024-07-09,18,Electronics,10522.66,Yes,Card,9,2.0,Cancelled
+1812,2024-12-16,33,Home & Kitchen,23031.04,Yes,Card,10,4.7,Returned
+1813,2024-03-05,24,Books,960.99,No,UPI,7,4.9,Returned
+1814,2024-08-28,57,Fashion,23030.34,No,UPI,7,4.5,Delivered
+1815,2024-03-30,43,Fashion,17099.24,No,Card,2,2.9,Delivered
+1816,2024-08-22,47,Books,5751.15,No,UPI,9,2.9,Cancelled
+1817,2024-11-24,25,Home & Kitchen,22500.85,Yes,Card,7,1.0,Cancelled
+1818,2024-05-06,53,Electronics,18993.25,No,Card,10,4.8,Returned
+1819,2024-04-29,32,Fashion,7896.26,Yes,UPI,3,3.3,Delivered
+1820,2024-12-30,39,Home & Kitchen,13479.11,Yes,Wallet,4,1.7,Returned
+1821,2024-12-13,53,Fashion,14928.04,Yes,COD,8,3.8,Cancelled
+1822,2024-11-10,56,Books,22906.9,No,Wallet,8,4.3,Returned
+1823,2024-01-02,36,Books,13309.18,Yes,Card,2,3.2,Returned
+1824,2024-10-09,19,Fashion,9571.37,Yes,COD,2,1.9,Delivered
+1825,2024-04-25,53,Sports,3456.75,No,UPI,3,2.0,Cancelled
+1826,2024-02-28,55,Beauty,1272.83,Yes,Wallet,5,1.8,Cancelled
+1827,2024-02-26,44,Electronics,21485.48,Yes,Wallet,10,4.5,Returned
+1828,2024-05-20,49,Beauty,24084.55,No,UPI,5,2.5,Cancelled
+1829,2024-03-29,49,Books,12822.21,Yes,Card,1,1.6,Returned
+1830,2024-12-11,31,Fashion,9763.76,Yes,COD,8,3.7,Cancelled
+1831,2024-06-25,18,Sports,14472.71,Yes,Card,6,1.4,Cancelled
+1832,2024-08-17,30,Electronics,22186.96,Yes,Wallet,3,3.4,Delivered
+1833,2024-05-31,29,Beauty,9472.41,No,UPI,10,1.9,Delivered
+1834,2024-05-07,30,Books,22793.66,Yes,Card,6,2.2,Returned
+1835,2024-11-08,63,Fashion,14291.57,Yes,Wallet,1,3.3,Delivered
+1836,2024-11-07,53,Beauty,14205.6,Yes,Card,7,2.4,Cancelled
+1837,2024-02-14,48,Sports,13380.26,No,Wallet,7,2.6,Returned
+1838,2024-08-30,50,Beauty,23394.77,No,Card,4,2.5,Cancelled
+1839,2024-03-31,38,Beauty,3664.83,Yes,Wallet,10,2.3,Delivered
+1840,2024-07-13,26,Books,1946.43,Yes,Card,2,2.7,Delivered
+1841,2024-02-28,61,Books,20277.27,Yes,UPI,7,1.4,Cancelled
+1842,2024-01-28,61,Beauty,1461.0,No,Wallet,2,2.0,Returned
+1843,2024-05-31,20,Home & Kitchen,10143.41,Yes,Wallet,8,2.0,Returned
+1844,2024-11-05,55,Home & Kitchen,11127.77,Yes,Wallet,8,1.3,Returned
+1845,2024-02-15,55,Sports,18070.51,No,UPI,8,1.3,Cancelled
+1846,2024-09-12,43,Sports,15905.26,No,UPI,10,5.0,Cancelled
+1847,2024-06-18,49,Beauty,16550.12,Yes,Card,7,1.8,Returned
+1848,2024-03-30,60,Beauty,24756.56,No,Card,3,5.0,Cancelled
+1849,2024-01-03,18,Electronics,10441.95,Yes,Card,9,2.1,Returned
+1850,2024-12-26,61,Beauty,15826.19,No,UPI,7,4.9,Delivered
+1851,2024-01-28,40,Home & Kitchen,23658.89,Yes,UPI,2,1.9,Delivered
+1852,2024-03-06,18,Home & Kitchen,23064.19,Yes,UPI,1,4.4,Returned
+1853,2024-07-21,25,Beauty,4442.95,No,Card,5,4.9,Cancelled
+1854,2024-03-29,57,Home & Kitchen,18330.78,No,Card,8,2.1,Returned
+1855,2024-10-07,55,Sports,19806.73,Yes,Card,1,3.4,Cancelled
+1856,2024-09-24,45,Sports,3826.32,No,Wallet,9,1.2,Delivered
+1857,2024-11-15,52,Beauty,24998.67,Yes,Wallet,4,3.6,Cancelled
+1858,2024-06-27,27,Home & Kitchen,8948.63,No,Wallet,6,1.2,Cancelled
+1859,2024-12-17,33,Electronics,4648.35,Yes,Card,3,4.2,Cancelled
+1860,2024-06-22,19,Fashion,24525.24,No,Card,5,4.5,Returned
+1861,2024-04-17,28,Electronics,3543.47,Yes,UPI,6,4.9,Delivered
+1862,2024-01-09,26,Fashion,15172.86,Yes,COD,4,4.0,Returned
+1863,2024-03-28,48,Sports,6106.65,No,COD,5,3.7,Returned
+1864,2024-03-19,46,Books,19842.19,No,COD,6,2.0,Returned
+1865,2024-08-11,50,Fashion,8522.13,Yes,Card,3,1.2,Cancelled
+1866,2024-11-28,45,Beauty,651.86,No,UPI,4,2.7,Delivered
+1867,2024-02-10,38,Beauty,9996.24,Yes,Wallet,4,3.7,Returned
+1868,2024-03-22,40,Home & Kitchen,10725.39,Yes,Card,6,2.5,Delivered
+1869,2024-07-06,32,Fashion,24878.38,Yes,UPI,3,4.3,Returned
+1870,2024-05-18,57,Beauty,23067.37,Yes,COD,1,1.4,Returned
+1871,2024-12-18,59,Beauty,11532.74,Yes,UPI,8,4.3,Returned
+1872,2024-08-15,60,Books,19536.05,No,Card,8,3.6,Cancelled
+1873,2024-12-26,26,Sports,12135.09,No,UPI,1,1.4,Returned
+1874,2024-05-27,62,Home & Kitchen,22069.53,No,Card,5,1.9,Returned
+1875,2024-12-02,41,Electronics,7532.41,Yes,UPI,2,2.4,Delivered
+1876,2024-07-17,55,Fashion,18761.49,Yes,COD,1,2.6,Cancelled
+1877,2024-01-16,55,Fashion,22902.91,Yes,COD,3,1.1,Delivered
+1878,2024-05-30,39,Books,4149.22,No,COD,3,2.1,Delivered
+1879,2024-11-18,44,Books,19859.25,No,Wallet,6,3.4,Returned
+1880,2024-08-25,21,Books,1739.57,No,UPI,3,1.1,Delivered
+1881,2024-07-24,51,Beauty,569.21,No,Card,8,3.7,Delivered
+1882,2024-10-22,61,Home & Kitchen,21801.22,No,COD,2,1.2,Returned
+1883,2024-01-08,64,Fashion,13117.35,No,Card,9,3.2,Returned
+1884,2024-06-27,61,Fashion,8688.67,Yes,Wallet,6,1.8,Cancelled
+1885,2024-12-02,51,Fashion,22332.09,Yes,UPI,3,2.9,Cancelled
+1886,2024-04-26,24,Home & Kitchen,23424.99,Yes,Card,3,3.1,Delivered
+1887,2024-02-07,56,Fashion,18373.93,Yes,COD,9,3.8,Returned
+1888,2024-10-15,42,Beauty,15855.08,No,Wallet,2,1.3,Delivered
+1889,2024-02-28,65,Sports,8403.36,Yes,Wallet,5,4.7,Delivered
+1890,2024-08-07,41,Fashion,24550.59,No,Wallet,4,4.1,Delivered
+1891,2024-04-04,46,Sports,4353.53,Yes,Card,5,3.0,Delivered
+1892,2024-03-25,59,Beauty,16721.53,Yes,UPI,2,2.2,Cancelled
+1893,2024-09-15,63,Fashion,20414.46,Yes,Wallet,7,3.2,Delivered
+1894,2024-11-11,23,Books,14983.67,Yes,COD,5,2.1,Cancelled
+1895,2024-10-29,36,Beauty,24897.08,Yes,Wallet,4,4.2,Cancelled
+1896,2024-09-27,28,Beauty,18113.49,Yes,COD,10,3.2,Delivered
+1897,2024-05-07,52,Electronics,18317.77,No,Wallet,6,3.0,Delivered
+1898,2024-10-25,36,Electronics,23331.44,No,Wallet,4,1.4,Delivered
+1899,2024-01-07,27,Home & Kitchen,316.52,Yes,Wallet,2,3.6,Cancelled
+1900,2024-08-15,33,Beauty,17211.83,No,UPI,6,1.9,Returned
+1901,2024-06-10,60,Electronics,4998.88,No,Card,4,1.2,Delivered
+1902,2024-02-27,51,Fashion,747.88,No,Wallet,3,1.8,Returned
+1903,2024-04-18,52,Fashion,12257.04,No,UPI,5,4.3,Delivered
+1904,2024-10-25,59,Electronics,22272.1,Yes,Card,2,2.6,Cancelled
+1905,2024-12-19,53,Beauty,24923.92,No,Wallet,5,1.4,Cancelled
+1906,2024-03-28,33,Fashion,4363.12,Yes,Wallet,6,3.0,Cancelled
+1907,2024-09-29,37,Books,12948.16,No,Card,7,3.8,Delivered
+1908,2024-02-20,48,Books,17415.73,Yes,COD,3,1.6,Returned
+1909,2024-05-17,24,Fashion,17480.62,Yes,Card,4,3.1,Delivered
+1910,2024-05-28,41,Home & Kitchen,3735.33,No,COD,3,1.0,Delivered
+1911,2024-08-16,59,Beauty,13967.08,No,COD,4,2.0,Returned
+1912,2024-02-16,57,Beauty,19212.95,Yes,Card,4,2.7,Cancelled
+1913,2024-06-11,30,Home & Kitchen,19340.92,No,UPI,8,1.3,Cancelled
+1914,2024-05-14,29,Beauty,2463.76,No,Card,2,1.3,Cancelled
+1915,2024-07-25,37,Books,19780.28,Yes,UPI,4,1.9,Delivered
+1916,2024-04-22,49,Sports,23834.87,Yes,Wallet,7,2.9,Cancelled
+1917,2024-09-24,50,Books,15754.41,Yes,Card,4,2.1,Returned
+1918,2024-11-27,65,Fashion,20666.74,Yes,UPI,9,2.3,Delivered
+1919,2024-07-25,20,Fashion,16354.96,No,Card,2,2.7,Returned
+1920,2024-09-07,29,Home & Kitchen,13378.38,No,Wallet,5,4.4,Returned
+1921,2024-10-16,32,Home & Kitchen,11311.1,Yes,Card,4,2.5,Returned
+1922,2024-08-31,28,Fashion,21980.97,No,COD,8,2.3,Returned
+1923,2024-04-17,24,Beauty,7160.32,Yes,UPI,7,4.0,Returned
+1924,2024-11-20,57,Fashion,20561.17,Yes,COD,2,2.5,Delivered
+1925,2024-07-03,27,Sports,13177.91,No,Wallet,4,3.2,Cancelled
+1926,2024-03-26,41,Books,13188.25,Yes,Wallet,1,1.1,Delivered
+1927,2024-11-28,59,Electronics,4866.63,Yes,Wallet,3,2.6,Cancelled
+1928,2024-07-19,40,Electronics,12471.01,No,COD,10,2.2,Delivered
+1929,2024-07-15,49,Sports,9494.04,Yes,COD,8,1.7,Cancelled
+1930,2024-04-08,62,Beauty,13309.65,No,Wallet,3,3.9,Cancelled
+1931,2024-04-04,49,Fashion,11365.33,Yes,COD,1,1.8,Cancelled
+1932,2024-03-18,55,Home & Kitchen,24971.32,No,Card,3,1.3,Delivered
+1933,2024-10-12,27,Books,22312.21,No,UPI,6,4.0,Cancelled
+1934,2024-01-23,25,Fashion,15174.67,Yes,UPI,1,3.1,Returned
+1935,2024-06-19,57,Electronics,24146.76,No,UPI,5,2.6,Cancelled
+1936,2024-08-08,37,Home & Kitchen,21612.28,Yes,Card,3,1.2,Returned
+1937,2024-08-16,22,Home & Kitchen,1235.75,Yes,COD,10,3.7,Returned
+1938,2024-11-09,35,Beauty,5468.79,Yes,UPI,5,4.9,Returned
+1939,2024-09-21,38,Beauty,18951.0,No,Card,6,3.8,Cancelled
+1940,2024-12-14,49,Sports,14591.95,No,Wallet,2,3.6,Returned
+1941,2024-11-11,30,Beauty,22353.21,No,UPI,10,4.0,Delivered
+1942,2024-07-14,18,Beauty,22725.15,Yes,COD,4,1.1,Delivered
+1943,2024-06-06,39,Sports,8616.96,Yes,COD,5,1.8,Returned
+1944,2024-08-15,27,Sports,3572.17,Yes,COD,3,3.6,Returned
+1945,2024-11-11,37,Books,16604.32,Yes,COD,7,1.7,Delivered
+1946,2024-01-09,32,Beauty,15714.42,Yes,COD,2,2.2,Delivered
+1947,2024-03-22,33,Home & Kitchen,11806.19,Yes,Wallet,9,3.7,Returned
+1948,2024-05-05,25,Books,1141.57,No,Card,3,4.4,Returned
+1949,2024-02-01,49,Home & Kitchen,5811.02,No,COD,7,4.5,Delivered
+1950,2024-07-14,65,Beauty,5446.3,Yes,Card,1,2.6,Returned
+1951,2024-06-05,34,Fashion,8150.18,No,Card,1,2.5,Delivered
+1952,2024-12-02,23,Beauty,909.56,No,Wallet,8,3.2,Delivered
+1953,2024-02-02,22,Books,18129.51,Yes,Wallet,10,1.6,Cancelled
+1954,2024-07-27,34,Home & Kitchen,15990.6,Yes,Wallet,6,1.7,Delivered
+1955,2024-02-26,43,Beauty,18931.55,No,Card,7,3.9,Cancelled
+1956,2024-05-19,20,Books,1771.86,Yes,UPI,7,1.1,Returned
+1957,2024-11-28,52,Books,6818.66,Yes,COD,5,4.0,Cancelled
+1958,2024-05-03,35,Books,16950.81,No,UPI,2,3.9,Delivered
+1959,2024-04-24,54,Home & Kitchen,4999.28,No,Card,7,1.4,Delivered
+1960,2024-11-22,20,Beauty,24259.69,No,Card,2,2.6,Delivered
+1961,2024-04-27,26,Electronics,16883.33,No,Card,10,4.1,Delivered
+1962,2024-11-20,26,Beauty,3361.97,Yes,UPI,4,2.9,Cancelled
+1963,2024-05-18,51,Home & Kitchen,1197.31,Yes,Wallet,6,4.6,Returned
+1964,2024-02-07,51,Fashion,16767.34,No,Wallet,4,2.1,Delivered
+1965,2024-01-12,56,Sports,19160.22,No,Wallet,1,3.1,Cancelled
+1966,2024-02-06,45,Fashion,19956.86,Yes,UPI,6,4.6,Delivered
+1967,2024-06-03,50,Books,8497.34,Yes,Card,10,2.9,Returned
+1968,2024-12-11,36,Home & Kitchen,12556.81,Yes,Card,2,2.7,Cancelled
+1969,2024-07-25,26,Beauty,3494.94,Yes,Card,1,2.4,Returned
+1970,2024-04-27,49,Electronics,12240.77,Yes,Card,3,1.5,Delivered
+1971,2024-06-14,65,Electronics,24168.77,Yes,Card,10,3.9,Returned
+1972,2024-09-24,62,Home & Kitchen,14764.84,Yes,Card,7,3.4,Cancelled
+1973,2024-10-28,33,Fashion,8233.0,No,Card,6,4.1,Delivered
+1974,2024-06-29,45,Sports,11004.27,No,COD,9,2.6,Delivered
+1975,2024-05-29,60,Electronics,17776.48,No,COD,5,2.0,Cancelled
+1976,2024-10-20,35,Books,7071.52,No,Card,9,2.3,Delivered
+1977,2024-06-04,45,Electronics,9209.98,Yes,COD,3,3.4,Returned
+1978,2024-04-13,63,Electronics,10460.17,Yes,UPI,6,3.0,Delivered
+1979,2024-04-10,45,Electronics,21029.34,Yes,UPI,4,1.3,Cancelled
+1980,2024-10-08,22,Sports,2861.66,No,Wallet,7,2.8,Returned
+1981,2024-09-14,30,Fashion,3826.64,Yes,Card,8,1.5,Cancelled
+1982,2024-01-26,39,Fashion,10373.24,No,Card,10,1.9,Returned
+1983,2024-10-11,45,Fashion,18594.63,No,Wallet,5,3.7,Returned
+1984,2024-08-27,55,Books,2510.47,Yes,UPI,9,1.1,Delivered
+1985,2024-02-14,50,Fashion,23055.5,Yes,UPI,4,4.0,Cancelled
+1986,2024-06-06,25,Books,4676.49,No,COD,6,1.4,Cancelled
+1987,2024-05-05,61,Sports,11024.9,No,Card,8,4.2,Cancelled
+1988,2024-06-16,41,Electronics,6935.92,Yes,Wallet,2,2.4,Cancelled
+1989,2024-10-26,25,Sports,2654.35,Yes,UPI,8,1.3,Delivered
+1990,2024-01-08,19,Sports,11939.77,Yes,COD,3,3.2,Returned
+1991,2024-09-26,30,Sports,21321.4,No,Card,4,4.3,Returned
+1992,2024-01-23,46,Fashion,4338.86,Yes,Wallet,9,1.1,Cancelled
+1993,2024-09-05,64,Home & Kitchen,19485.24,Yes,Card,3,3.3,Cancelled
+1994,2024-04-14,45,Books,3732.06,Yes,COD,8,2.6,Cancelled
+1995,2024-10-16,29,Books,4431.42,Yes,Card,9,2.5,Cancelled
+1996,2024-05-15,45,Sports,12569.33,Yes,COD,5,1.3,Cancelled
+1997,2024-12-08,58,Beauty,14328.44,No,UPI,2,4.8,Delivered
+1998,2024-12-07,29,Books,14069.4,Yes,Wallet,10,3.2,Delivered
+1999,2024-11-25,18,Books,8722.1,No,Wallet,6,2.7,Delivered
+2000,2024-02-07,20,Home & Kitchen,22154.19,Yes,UPI,7,2.8,Returned
+2001,2024-12-03,28,Books,1414.27,Yes,Card,4,3.6,Returned
+2002,2024-06-22,59,Beauty,16098.32,No,Wallet,3,3.4,Delivered
+2003,2024-01-14,30,Sports,3746.78,No,COD,5,4.5,Returned
+2004,2024-09-25,33,Books,9259.11,No,COD,9,1.7,Returned
+2005,2024-02-07,52,Sports,1047.78,Yes,Wallet,9,1.2,Delivered
+2006,2024-01-26,65,Books,19180.77,No,Wallet,2,3.8,Delivered
+2007,2024-12-24,57,Home & Kitchen,18671.91,Yes,Wallet,7,3.2,Delivered
+2008,2024-02-08,42,Books,13731.98,Yes,COD,7,4.8,Cancelled
+2009,2024-12-24,24,Beauty,8158.03,Yes,Card,5,4.3,Delivered
+2010,2024-12-22,29,Fashion,4034.28,Yes,UPI,7,4.9,Delivered
+2011,2024-07-07,20,Electronics,9122.73,No,Card,10,2.9,Returned
+2012,2024-09-04,41,Fashion,11944.89,No,Wallet,9,4.2,Returned
+2013,2024-06-12,43,Beauty,24608.23,No,COD,1,3.4,Cancelled
+2014,2024-09-26,49,Electronics,21747.8,No,UPI,2,4.1,Cancelled
+2015,2024-01-26,40,Electronics,3032.98,Yes,COD,6,3.6,Cancelled
+2016,2024-02-09,58,Fashion,7761.11,Yes,COD,8,4.0,Delivered
+2017,2024-05-19,28,Sports,20993.08,No,UPI,10,2.3,Delivered
+2018,2024-11-19,27,Sports,14905.89,Yes,Card,8,1.5,Returned
+2019,2024-09-30,26,Fashion,9360.99,Yes,Card,9,4.0,Returned
+2020,2024-03-14,60,Sports,18574.59,Yes,COD,4,2.8,Cancelled
+2021,2024-01-18,51,Fashion,3354.18,No,Card,1,4.2,Cancelled
+2022,2024-07-02,56,Sports,15988.87,No,UPI,9,3.3,Returned
+2023,2024-12-16,40,Fashion,1994.46,No,COD,3,2.3,Delivered
+2024,2024-10-02,59,Electronics,3835.31,No,UPI,10,4.1,Delivered
+2025,2024-05-06,25,Books,16965.28,No,Wallet,9,2.5,Cancelled
+2026,2024-08-12,35,Fashion,2064.07,No,UPI,5,2.6,Cancelled
+2027,2024-03-20,25,Sports,2249.24,Yes,COD,2,4.3,Returned
+2028,2024-05-20,39,Books,18790.48,Yes,Wallet,5,3.0,Cancelled
+2029,2024-05-06,48,Books,19050.2,Yes,UPI,2,1.7,Returned
+2030,2024-05-02,31,Books,3971.79,No,Wallet,10,4.2,Cancelled
+2031,2024-11-15,25,Electronics,10680.33,Yes,COD,7,3.5,Delivered
+2032,2024-03-22,20,Books,13035.48,Yes,UPI,3,2.4,Cancelled
+2033,2024-04-12,30,Fashion,13075.05,Yes,UPI,2,3.6,Cancelled
+2034,2024-12-05,43,Beauty,1116.19,Yes,COD,9,2.2,Returned
+2035,2024-07-22,57,Sports,10105.24,Yes,UPI,4,4.6,Delivered
+2036,2024-09-25,63,Fashion,2315.27,Yes,Wallet,3,3.5,Cancelled
+2037,2024-08-13,27,Fashion,12322.14,Yes,Wallet,1,2.9,Returned
+2038,2024-08-31,18,Electronics,21870.91,Yes,Wallet,1,2.5,Returned
+2039,2024-10-25,32,Home & Kitchen,3841.2,Yes,COD,6,2.7,Returned
+2040,2024-05-21,43,Fashion,2983.92,Yes,COD,6,1.9,Delivered
+2041,2024-09-22,59,Beauty,7678.05,Yes,Wallet,7,3.2,Cancelled
+2042,2024-11-22,36,Electronics,18644.52,No,COD,3,4.6,Cancelled
+2043,2024-08-25,34,Sports,12209.61,No,COD,3,3.9,Cancelled
+2044,2024-08-31,59,Beauty,6025.08,No,Wallet,1,1.3,Returned
+2045,2024-06-09,33,Electronics,23273.3,No,UPI,5,3.8,Returned
+2046,2024-10-04,50,Books,19258.03,No,Card,10,3.4,Delivered
+2047,2024-09-08,55,Home & Kitchen,1482.24,No,COD,3,2.7,Delivered
+2048,2024-05-10,32,Sports,18627.25,Yes,Wallet,2,3.0,Cancelled
+2049,2024-05-27,36,Sports,24643.93,No,UPI,5,2.4,Cancelled
+2050,2024-05-20,60,Sports,6222.22,Yes,UPI,5,3.4,Cancelled
+2051,2024-01-09,60,Electronics,20225.15,No,Card,4,1.5,Cancelled
+2052,2024-09-01,48,Books,10181.05,Yes,Wallet,4,3.9,Delivered
+2053,2024-06-17,27,Electronics,8012.38,No,Card,4,1.2,Delivered
+2054,2024-08-19,42,Fashion,23247.9,Yes,COD,1,2.0,Returned
+2055,2024-01-16,45,Sports,1349.66,Yes,UPI,6,3.6,Delivered
+2056,2024-05-10,39,Home & Kitchen,20220.82,Yes,Card,2,1.3,Cancelled
+2057,2024-12-13,18,Fashion,17581.58,Yes,UPI,9,2.0,Cancelled
+2058,2024-12-30,63,Electronics,7783.04,Yes,Wallet,7,4.0,Delivered
+2059,2024-04-17,43,Fashion,3243.5,No,COD,2,4.8,Cancelled
+2060,2024-08-06,39,Books,5927.56,No,UPI,7,2.0,Delivered
+2061,2024-05-09,63,Home & Kitchen,3588.47,Yes,UPI,7,3.5,Returned
+2062,2024-07-05,28,Beauty,19602.26,No,Wallet,4,2.7,Cancelled
+2063,2024-11-15,24,Home & Kitchen,4502.08,Yes,Card,2,1.7,Cancelled
+2064,2024-01-02,58,Books,8080.27,No,COD,5,2.9,Delivered
+2065,2024-12-15,60,Home & Kitchen,21411.9,Yes,UPI,4,2.4,Delivered
+2066,2024-05-28,47,Books,4562.0,Yes,UPI,3,2.2,Delivered
+2067,2024-11-18,24,Sports,4175.03,No,UPI,4,4.0,Returned
+2068,2024-12-08,47,Beauty,12068.83,Yes,UPI,8,3.4,Delivered
+2069,2024-12-28,41,Fashion,14570.04,No,Wallet,4,2.5,Cancelled
+2070,2024-06-29,46,Electronics,3033.81,Yes,Card,9,2.9,Returned
+2071,2024-03-09,64,Fashion,2146.59,No,COD,3,1.1,Returned
+2072,2024-01-14,45,Fashion,16273.44,No,UPI,5,2.0,Returned
+2073,2024-04-13,37,Beauty,1959.04,No,Card,5,2.8,Cancelled
+2074,2024-01-07,39,Beauty,24540.69,Yes,COD,10,4.2,Returned
+2075,2024-03-13,50,Fashion,3916.71,Yes,Wallet,5,3.1,Cancelled
+2076,2024-01-20,54,Electronics,17205.48,No,UPI,4,1.3,Returned
+2077,2024-08-04,18,Books,7694.49,No,Card,2,4.5,Returned
+2078,2024-11-24,39,Electronics,17053.61,No,Card,3,4.2,Delivered
+2079,2024-07-15,21,Home & Kitchen,20151.79,No,Wallet,7,3.5,Cancelled
+2080,2024-12-17,62,Beauty,18147.96,Yes,Wallet,10,3.8,Delivered
+2081,2024-07-26,56,Home & Kitchen,18559.46,Yes,COD,8,2.1,Cancelled
+2082,2024-03-28,42,Fashion,12050.35,No,UPI,10,2.1,Delivered
+2083,2024-03-22,20,Electronics,7238.44,Yes,Wallet,4,4.1,Returned
+2084,2024-08-09,45,Books,8869.92,Yes,Card,9,2.2,Cancelled
+2085,2024-04-28,33,Books,11710.88,Yes,Wallet,2,3.3,Returned
+2086,2024-04-20,63,Beauty,20646.1,No,UPI,4,1.9,Cancelled
+2087,2024-06-08,31,Sports,22219.61,No,Card,3,2.3,Cancelled
+2088,2024-09-11,47,Sports,18106.39,No,COD,2,1.2,Delivered
+2089,2024-02-01,40,Electronics,1909.47,Yes,UPI,8,1.5,Delivered
+2090,2024-12-05,50,Sports,24980.27,No,UPI,3,1.2,Cancelled
+2091,2024-05-16,37,Beauty,12389.01,Yes,Wallet,7,2.3,Returned
+2092,2024-12-23,60,Beauty,2704.15,Yes,UPI,2,3.6,Cancelled
+2093,2024-07-18,48,Sports,16520.23,Yes,UPI,7,2.7,Cancelled
+2094,2024-11-26,51,Books,16702.49,Yes,Wallet,3,4.5,Delivered
+2095,2024-11-07,34,Home & Kitchen,9611.7,Yes,Card,7,3.5,Returned
+2096,2024-06-15,64,Beauty,24466.04,Yes,COD,5,1.7,Cancelled
+2097,2024-07-10,53,Electronics,836.19,No,UPI,10,2.4,Returned
+2098,2024-11-09,26,Sports,6144.96,Yes,Card,10,3.6,Cancelled
+2099,2024-05-26,34,Fashion,13284.9,Yes,Card,3,1.3,Delivered
+2100,2024-03-17,49,Sports,18266.59,Yes,UPI,2,4.6,Cancelled
+2101,2024-11-27,23,Books,19626.64,No,UPI,2,1.6,Cancelled
+2102,2024-03-05,62,Home & Kitchen,5988.28,No,Card,7,2.1,Cancelled
+2103,2024-03-30,31,Fashion,12439.79,No,Card,8,3.3,Cancelled
+2104,2024-07-22,49,Books,15339.45,No,Card,8,4.3,Returned
+2105,2024-05-11,21,Home & Kitchen,2442.59,Yes,UPI,3,4.7,Returned
+2106,2024-02-25,31,Electronics,17529.66,No,Card,8,5.0,Cancelled
+2107,2024-10-03,32,Sports,23570.9,No,Wallet,1,3.2,Returned
+2108,2024-02-21,39,Sports,13092.09,Yes,Wallet,4,4.4,Delivered
+2109,2024-01-18,54,Fashion,15708.35,No,Card,6,4.1,Cancelled
+2110,2024-06-16,44,Home & Kitchen,7250.62,No,COD,3,2.7,Cancelled
+2111,2024-03-04,40,Electronics,18727.3,No,COD,2,2.2,Delivered
+2112,2024-11-22,27,Beauty,2021.29,Yes,Card,5,4.5,Cancelled
+2113,2024-12-03,55,Beauty,17863.24,Yes,COD,7,1.4,Delivered
+2114,2024-11-19,33,Beauty,23958.35,Yes,Card,8,1.6,Delivered
+2115,2024-04-02,28,Sports,13545.21,No,Wallet,2,4.6,Cancelled
+2116,2024-11-22,20,Books,13955.07,No,Card,4,3.8,Delivered
+2117,2024-05-26,44,Electronics,4879.64,Yes,Wallet,6,1.1,Returned
+2118,2024-02-18,38,Electronics,6361.5,Yes,COD,5,4.1,Delivered
+2119,2024-04-15,44,Fashion,1740.62,Yes,Card,5,2.3,Returned
+2120,2024-11-19,59,Sports,3734.62,Yes,UPI,2,3.2,Returned
+2121,2024-05-06,55,Books,11401.13,Yes,COD,3,4.3,Returned
+2122,2024-03-24,27,Electronics,2513.33,Yes,Card,5,1.7,Cancelled
+2123,2024-07-08,27,Fashion,4946.01,Yes,Wallet,9,1.9,Delivered
+2124,2024-09-17,38,Beauty,11128.07,Yes,UPI,6,1.0,Delivered
+2125,2024-02-11,58,Electronics,24518.99,Yes,COD,8,3.2,Delivered
+2126,2024-11-21,39,Beauty,24968.24,Yes,Card,3,4.0,Returned
+2127,2024-01-24,46,Electronics,22320.52,No,Card,7,1.2,Returned
+2128,2024-07-08,22,Beauty,12160.23,Yes,Card,6,3.4,Delivered
+2129,2024-09-30,51,Fashion,10764.14,Yes,Card,6,2.1,Returned
+2130,2024-08-07,42,Home & Kitchen,3865.53,Yes,Wallet,5,2.7,Returned
+2131,2024-09-06,33,Fashion,15687.96,No,Card,7,3.3,Cancelled
+2132,2024-09-14,61,Beauty,7367.9,Yes,Card,10,2.2,Returned
+2133,2024-05-08,36,Sports,1483.55,Yes,COD,5,4.4,Cancelled
+2134,2024-01-09,48,Electronics,7620.93,No,UPI,2,1.4,Returned
+2135,2024-07-02,36,Sports,11063.12,Yes,COD,8,2.7,Delivered
+2136,2024-07-24,30,Home & Kitchen,16607.01,Yes,UPI,3,4.5,Delivered
+2137,2024-11-09,33,Books,11274.8,No,COD,5,3.8,Returned
+2138,2024-07-28,40,Sports,19363.8,Yes,UPI,3,4.8,Cancelled
+2139,2024-06-29,26,Beauty,16744.52,No,Card,4,2.2,Returned
+2140,2024-05-07,39,Fashion,3454.42,Yes,Card,10,2.3,Cancelled
+2141,2024-05-01,54,Electronics,6972.49,No,UPI,6,2.6,Returned
+2142,2024-04-30,62,Electronics,13944.17,Yes,Wallet,1,2.1,Cancelled
+2143,2024-04-09,49,Electronics,11334.73,No,UPI,4,4.8,Returned
+2144,2024-04-24,44,Books,15358.68,No,Wallet,10,2.4,Cancelled
+2145,2024-05-31,64,Beauty,22146.21,No,COD,7,4.6,Cancelled
+2146,2024-01-19,32,Books,20692.46,No,Wallet,1,2.6,Cancelled
+2147,2024-01-22,51,Home & Kitchen,2686.11,Yes,UPI,2,2.1,Delivered
+2148,2024-11-22,43,Home & Kitchen,15475.81,No,UPI,2,4.7,Returned
+2149,2024-06-07,21,Fashion,24544.92,Yes,Card,7,2.9,Cancelled
+2150,2024-04-19,33,Home & Kitchen,14176.13,Yes,COD,2,2.9,Delivered
+2151,2024-08-21,36,Sports,22764.28,No,UPI,5,1.4,Cancelled
+2152,2024-10-01,28,Electronics,11918.64,Yes,Card,8,1.1,Delivered
+2153,2024-02-11,21,Fashion,12151.87,Yes,Wallet,2,4.5,Cancelled
+2154,2024-12-20,37,Beauty,15953.38,Yes,COD,2,4.3,Delivered
+2155,2024-10-24,38,Home & Kitchen,1221.09,Yes,Wallet,6,4.1,Delivered
+2156,2024-09-15,61,Home & Kitchen,23395.92,Yes,Card,8,3.0,Returned
+2157,2024-11-29,43,Books,2548.05,No,COD,2,3.2,Cancelled
+2158,2024-04-06,61,Books,20873.74,Yes,COD,7,1.6,Delivered
+2159,2024-10-07,58,Fashion,22209.77,No,Card,1,4.2,Cancelled
+2160,2024-12-04,31,Beauty,22537.85,Yes,COD,10,1.5,Cancelled
+2161,2024-09-08,44,Books,5363.99,No,Wallet,2,3.0,Returned
+2162,2024-01-14,37,Sports,3111.98,Yes,Wallet,9,4.6,Returned
+2163,2024-06-20,21,Electronics,20782.98,Yes,Wallet,8,2.8,Cancelled
+2164,2024-07-17,44,Home & Kitchen,11170.66,Yes,Card,8,3.5,Cancelled
+2165,2024-08-24,26,Fashion,18415.87,No,Wallet,9,3.8,Returned
+2166,2024-01-27,41,Beauty,20623.88,Yes,UPI,10,4.2,Returned
+2167,2024-08-12,52,Fashion,14628.22,Yes,Wallet,2,4.2,Cancelled
+2168,2024-09-08,39,Sports,3919.69,Yes,COD,5,4.5,Delivered
+2169,2024-07-22,56,Sports,22803.82,No,Wallet,8,1.9,Cancelled
+2170,2024-02-02,63,Home & Kitchen,6681.47,Yes,COD,6,4.3,Delivered
+2171,2024-08-20,40,Home & Kitchen,4180.85,Yes,Wallet,5,2.7,Cancelled
+2172,2024-11-16,20,Books,4904.43,Yes,Card,1,2.1,Delivered
+2173,2024-03-29,19,Books,5535.77,Yes,COD,3,1.8,Returned
+2174,2024-11-20,26,Sports,21223.77,No,Wallet,3,4.0,Returned
+2175,2024-10-13,63,Fashion,5824.08,No,UPI,10,2.3,Returned
+2176,2024-04-23,53,Beauty,16013.85,Yes,COD,5,1.2,Cancelled
+2177,2024-06-27,50,Sports,13161.15,Yes,UPI,7,2.3,Returned
+2178,2024-06-24,30,Fashion,7576.49,Yes,COD,10,1.8,Returned
+2179,2024-08-22,48,Beauty,21591.13,Yes,Wallet,1,2.3,Returned
+2180,2024-08-24,27,Books,22997.11,Yes,Card,7,1.7,Returned
+2181,2024-04-28,40,Home & Kitchen,1041.91,Yes,UPI,5,2.4,Cancelled
+2182,2024-06-30,35,Fashion,11241.51,No,COD,1,4.0,Cancelled
+2183,2024-02-26,33,Books,4917.87,No,COD,1,1.8,Cancelled
+2184,2024-01-29,29,Electronics,14066.53,Yes,Wallet,7,4.9,Cancelled
+2185,2024-03-01,55,Fashion,23678.02,Yes,COD,3,2.3,Delivered
+2186,2024-10-23,25,Fashion,19291.06,No,COD,1,3.8,Cancelled
+2187,2024-04-07,31,Fashion,4538.69,Yes,Wallet,6,1.9,Cancelled
+2188,2024-11-26,34,Home & Kitchen,19545.31,No,UPI,3,2.2,Cancelled
+2189,2024-09-20,31,Home & Kitchen,16384.38,No,Wallet,2,3.4,Returned
+2190,2024-11-12,27,Beauty,6873.75,Yes,Wallet,3,4.5,Returned
+2191,2024-05-18,38,Sports,6712.13,No,COD,1,4.9,Cancelled
+2192,2024-01-23,52,Home & Kitchen,723.25,No,Card,3,4.3,Returned
+2193,2024-01-19,53,Books,15097.97,No,Card,3,4.6,Cancelled
+2194,2024-06-29,30,Electronics,8306.5,Yes,Wallet,9,1.4,Cancelled
+2195,2024-01-23,46,Books,23400.37,No,Wallet,4,4.2,Cancelled
+2196,2024-10-20,58,Electronics,20983.8,Yes,Wallet,2,2.0,Delivered
+2197,2024-08-08,32,Fashion,7391.07,No,UPI,3,4.7,Returned
+2198,2024-09-17,35,Home & Kitchen,19324.81,Yes,Wallet,8,1.1,Cancelled
+2199,2024-05-21,31,Electronics,1749.08,No,COD,6,2.6,Cancelled
+2200,2024-11-07,62,Books,6728.29,Yes,COD,1,2.2,Cancelled
+2201,2024-06-22,57,Sports,12477.15,No,Card,7,3.9,Cancelled
+2202,2024-12-28,57,Fashion,10669.15,Yes,COD,3,4.9,Cancelled
+2203,2024-07-12,65,Home & Kitchen,811.57,No,UPI,5,1.2,Delivered
+2204,2024-10-20,26,Electronics,19724.32,No,UPI,3,3.6,Delivered
+2205,2024-03-03,20,Home & Kitchen,10887.97,Yes,Card,3,2.7,Delivered
+2206,2024-03-25,23,Fashion,24811.36,No,COD,10,4.8,Returned
+2207,2024-03-08,48,Electronics,16705.84,No,COD,1,1.0,Delivered
+2208,2024-12-29,35,Sports,19922.13,No,Wallet,10,4.6,Delivered
+2209,2024-03-04,50,Beauty,14161.59,Yes,COD,2,4.0,Delivered
+2210,2024-10-04,29,Books,15953.1,No,COD,1,4.9,Delivered
+2211,2024-08-03,44,Fashion,15773.47,No,Wallet,3,2.2,Delivered
+2212,2024-11-29,65,Books,16481.37,No,Wallet,8,3.9,Delivered
+2213,2024-05-07,19,Sports,10553.19,No,Card,7,1.8,Delivered
+2214,2024-01-04,30,Home & Kitchen,10114.62,No,COD,4,4.3,Returned
+2215,2024-05-14,57,Electronics,16881.98,Yes,Card,1,1.8,Returned
+2216,2024-07-28,47,Beauty,10062.46,No,UPI,8,2.1,Delivered
+2217,2024-06-29,28,Electronics,10370.9,Yes,Wallet,3,4.4,Delivered
+2218,2024-12-19,61,Beauty,17658.93,Yes,Card,10,2.9,Cancelled
+2219,2024-08-20,56,Home & Kitchen,4111.12,No,Wallet,3,4.2,Cancelled
+2220,2024-12-21,39,Home & Kitchen,10922.57,No,UPI,2,4.3,Returned
+2221,2024-06-28,41,Books,22212.41,Yes,Wallet,4,4.3,Returned
+2222,2024-04-30,43,Fashion,21589.99,Yes,Wallet,3,4.6,Cancelled
+2223,2024-07-28,27,Fashion,20619.54,No,COD,8,4.1,Returned
+2224,2024-01-04,65,Books,23041.56,Yes,Card,2,3.6,Delivered
+2225,2024-04-07,41,Fashion,896.27,Yes,Wallet,7,1.4,Cancelled
+2226,2024-01-24,28,Fashion,6161.48,Yes,Wallet,8,2.6,Delivered
+2227,2024-03-09,34,Fashion,6130.91,No,Wallet,10,1.7,Returned
+2228,2024-03-13,59,Beauty,7375.5,No,COD,4,1.2,Delivered
+2229,2024-06-21,27,Sports,6047.14,Yes,COD,3,2.9,Returned
+2230,2024-01-25,20,Home & Kitchen,20194.71,No,Card,4,4.4,Returned
+2231,2024-07-06,41,Beauty,10774.56,No,COD,1,1.8,Cancelled
+2232,2024-07-17,36,Electronics,11098.24,Yes,UPI,4,2.9,Cancelled
+2233,2024-08-20,52,Books,2895.01,Yes,COD,10,3.1,Cancelled
+2234,2024-01-17,34,Beauty,12255.9,No,COD,6,3.4,Returned
+2235,2024-06-23,23,Beauty,14033.56,Yes,UPI,4,2.9,Cancelled
+2236,2024-10-12,33,Beauty,4066.2,No,COD,5,1.7,Returned
+2237,2024-02-12,25,Home & Kitchen,9426.57,No,Card,6,1.9,Delivered
+2238,2024-10-22,64,Home & Kitchen,3864.44,No,Card,2,2.5,Delivered
+2239,2024-11-09,48,Electronics,12444.22,No,UPI,3,1.2,Delivered
+2240,2024-04-10,25,Home & Kitchen,3461.25,No,COD,10,4.1,Cancelled
+2241,2024-08-13,30,Sports,17422.11,Yes,Wallet,5,1.0,Delivered
+2242,2024-11-19,18,Books,12902.17,Yes,Card,1,3.9,Cancelled
+2243,2024-08-07,48,Beauty,4266.43,No,Card,2,4.0,Cancelled
+2244,2024-09-12,21,Electronics,22671.1,Yes,Card,3,4.4,Returned
+2245,2024-02-01,64,Electronics,15783.95,No,Wallet,9,4.6,Cancelled
+2246,2024-08-13,31,Fashion,19782.97,Yes,COD,8,4.9,Cancelled
+2247,2024-09-27,60,Fashion,24441.71,No,Wallet,4,4.3,Delivered
+2248,2024-09-07,63,Books,18056.36,No,COD,3,4.0,Delivered
+2249,2024-02-18,38,Home & Kitchen,1268.49,Yes,Wallet,7,3.0,Returned
+2250,2024-09-01,58,Home & Kitchen,4543.94,No,Card,1,4.0,Cancelled
+2251,2024-09-26,43,Electronics,3028.69,Yes,COD,10,3.0,Returned
+2252,2024-08-22,27,Books,18303.58,No,Wallet,3,2.8,Cancelled
+2253,2024-05-07,54,Fashion,18328.76,Yes,COD,4,4.2,Returned
+2254,2024-01-25,42,Electronics,4121.34,No,UPI,5,2.6,Cancelled
+2255,2024-01-08,31,Books,9894.51,Yes,UPI,7,2.2,Returned
+2256,2024-11-08,48,Sports,22637.42,Yes,Card,1,3.9,Delivered
+2257,2024-11-03,24,Fashion,22145.2,No,COD,9,1.4,Cancelled
+2258,2024-07-01,31,Fashion,2584.54,Yes,Wallet,3,1.2,Cancelled
+2259,2024-03-10,30,Beauty,22730.01,Yes,UPI,8,1.8,Delivered
+2260,2024-03-09,50,Electronics,2917.77,Yes,COD,1,2.1,Cancelled
+2261,2024-06-09,22,Beauty,14556.54,Yes,Wallet,3,2.3,Delivered
+2262,2024-12-17,21,Electronics,7969.82,No,Card,10,4.1,Cancelled
+2263,2024-06-16,42,Books,24577.71,Yes,COD,1,4.4,Returned
+2264,2024-04-26,31,Home & Kitchen,7056.25,No,COD,4,2.4,Returned
+2265,2024-08-17,35,Fashion,14591.25,Yes,Card,5,3.9,Cancelled
+2266,2024-09-20,23,Sports,24138.05,No,COD,1,1.6,Returned
+2267,2024-02-15,29,Books,15620.6,Yes,COD,3,2.0,Delivered
+2268,2024-06-10,52,Beauty,2812.5,Yes,Wallet,2,2.8,Returned
+2269,2024-12-24,43,Beauty,3300.22,Yes,UPI,5,3.5,Returned
+2270,2024-08-21,20,Sports,23571.08,Yes,COD,2,1.4,Returned
+2271,2024-10-26,27,Fashion,10456.43,Yes,UPI,8,3.3,Cancelled
+2272,2024-09-07,32,Sports,6393.62,No,UPI,2,1.3,Delivered
+2273,2024-11-25,63,Sports,1811.6,No,UPI,9,3.8,Returned
+2274,2024-09-29,47,Beauty,3452.79,No,Card,2,2.4,Delivered
+2275,2024-08-25,44,Electronics,6253.63,No,Wallet,2,2.6,Delivered
+2276,2024-10-28,55,Home & Kitchen,3554.98,No,UPI,3,2.7,Returned
+2277,2024-03-18,45,Books,3775.08,Yes,UPI,7,1.6,Delivered
+2278,2024-05-27,58,Electronics,1610.42,No,Wallet,9,4.2,Delivered
+2279,2024-06-13,56,Books,18267.73,Yes,Card,5,2.7,Cancelled
+2280,2024-03-09,50,Beauty,20434.1,No,COD,9,1.2,Cancelled
+2281,2024-06-30,20,Sports,24200.66,No,COD,5,1.2,Delivered
+2282,2024-07-21,39,Sports,13695.73,No,COD,3,1.2,Delivered
+2283,2024-11-06,23,Home & Kitchen,14587.98,No,COD,3,2.6,Returned
+2284,2024-05-28,44,Electronics,24376.9,No,Card,1,3.7,Cancelled
+2285,2024-02-23,55,Home & Kitchen,869.34,Yes,Wallet,3,2.1,Cancelled
+2286,2024-10-20,42,Electronics,6003.13,Yes,Card,4,3.8,Delivered
+2287,2024-10-12,30,Home & Kitchen,20364.25,Yes,Wallet,4,2.9,Delivered
+2288,2024-06-12,48,Beauty,7747.11,Yes,Wallet,9,2.9,Delivered
+2289,2024-10-26,38,Fashion,3848.99,No,Wallet,6,4.4,Returned
+2290,2024-04-12,34,Fashion,22506.07,Yes,Card,10,2.2,Delivered
+2291,2024-10-28,55,Fashion,19452.71,No,Card,6,4.3,Returned
+2292,2024-04-11,51,Fashion,15451.17,No,UPI,3,3.3,Cancelled
+2293,2024-10-14,65,Sports,5943.99,No,Wallet,9,1.4,Returned
+2294,2024-09-05,60,Beauty,8370.69,No,Wallet,3,3.7,Cancelled
+2295,2024-08-14,36,Beauty,18052.3,No,UPI,3,2.2,Cancelled
+2296,2024-05-20,55,Fashion,1903.96,No,UPI,6,4.7,Delivered
+2297,2024-01-24,54,Fashion,16644.49,No,Wallet,1,3.4,Returned
+2298,2024-07-25,35,Beauty,12351.82,Yes,UPI,8,4.2,Delivered
+2299,2024-03-28,36,Electronics,24100.14,No,Card,9,1.7,Delivered
+2300,2024-06-18,38,Books,18937.83,Yes,Card,5,3.4,Cancelled
+2301,2024-08-03,64,Beauty,17351.5,No,UPI,1,4.3,Delivered
+2302,2024-05-07,39,Books,9257.85,No,Wallet,4,4.1,Cancelled
+2303,2024-02-12,59,Electronics,21304.59,No,Wallet,1,2.2,Cancelled
+2304,2024-09-04,35,Fashion,5955.9,No,UPI,8,1.4,Cancelled
+2305,2024-12-23,55,Beauty,2712.04,No,Wallet,4,2.3,Cancelled
+2306,2024-07-14,49,Beauty,4823.98,Yes,Card,8,4.7,Cancelled
+2307,2024-03-18,20,Books,8744.86,No,Wallet,3,3.4,Delivered
+2308,2024-02-28,28,Home & Kitchen,20794.98,Yes,COD,8,4.2,Cancelled
+2309,2024-04-28,28,Sports,15348.81,No,Wallet,3,1.8,Returned
+2310,2024-07-31,23,Electronics,20207.9,No,Card,7,3.1,Cancelled
+2311,2024-08-24,26,Beauty,15066.84,No,Wallet,3,4.6,Returned
+2312,2024-03-21,43,Electronics,20826.74,No,UPI,1,3.0,Returned
+2313,2024-05-18,62,Home & Kitchen,9184.33,No,UPI,2,1.8,Delivered
+2314,2024-10-20,34,Home & Kitchen,12579.28,Yes,COD,3,2.4,Returned
+2315,2024-01-27,37,Beauty,11955.11,No,Wallet,7,3.8,Cancelled
+2316,2024-11-26,34,Books,19291.09,No,Card,9,4.5,Cancelled
+2317,2024-07-02,22,Beauty,16885.22,No,Card,1,1.8,Cancelled
+2318,2024-05-29,61,Books,10071.31,No,COD,4,2.5,Delivered
+2319,2024-12-12,53,Beauty,5223.34,No,Card,6,4.8,Returned
+2320,2024-07-04,34,Beauty,13301.96,Yes,Wallet,2,4.1,Returned
+2321,2024-02-09,37,Fashion,15587.18,No,Wallet,8,4.8,Returned
+2322,2024-02-23,38,Beauty,24525.44,No,UPI,7,3.4,Cancelled
+2323,2024-09-25,35,Books,16333.87,Yes,UPI,8,2.7,Delivered
+2324,2024-03-13,29,Fashion,15408.95,Yes,UPI,10,4.1,Delivered
+2325,2024-07-05,41,Fashion,11322.25,No,UPI,9,4.0,Returned
+2326,2024-12-08,35,Fashion,7001.09,No,Card,4,2.2,Cancelled
+2327,2024-11-14,48,Beauty,4050.37,Yes,COD,8,3.9,Delivered
+2328,2024-01-17,37,Sports,7044.02,Yes,Wallet,7,1.9,Returned
+2329,2024-01-03,56,Sports,5867.42,No,UPI,8,3.6,Returned
+2330,2024-05-17,33,Sports,5970.6,Yes,Card,5,1.0,Delivered
+2331,2024-05-18,31,Electronics,12972.11,No,Card,9,1.6,Cancelled
+2332,2024-05-01,34,Books,3766.82,No,Wallet,5,2.4,Cancelled
+2333,2024-07-27,24,Fashion,12010.36,Yes,Wallet,7,4.1,Cancelled
+2334,2024-03-21,35,Sports,10146.06,Yes,UPI,1,2.4,Returned
+2335,2024-01-11,21,Electronics,546.1,No,UPI,2,2.4,Returned
+2336,2024-04-21,55,Sports,917.22,No,COD,7,4.3,Cancelled
+2337,2024-12-21,35,Home & Kitchen,6175.59,No,COD,9,2.9,Returned
+2338,2024-12-26,54,Fashion,2810.58,Yes,Wallet,8,1.2,Delivered
+2339,2024-03-02,37,Sports,6194.24,No,UPI,10,2.8,Returned
+2340,2024-02-07,52,Books,14439.1,Yes,UPI,5,2.1,Cancelled
+2341,2024-07-17,39,Beauty,20236.76,No,Wallet,5,2.0,Cancelled
+2342,2024-01-17,60,Beauty,15361.18,Yes,UPI,10,4.2,Delivered
+2343,2024-01-23,30,Home & Kitchen,15986.75,Yes,Card,5,3.8,Cancelled
+2344,2024-08-10,51,Home & Kitchen,17661.78,Yes,Card,1,2.6,Cancelled
+2345,2024-03-28,22,Fashion,15887.47,Yes,Wallet,10,4.0,Cancelled
+2346,2024-10-15,36,Beauty,3253.13,Yes,Wallet,10,1.1,Returned
+2347,2024-03-27,24,Home & Kitchen,9942.66,No,COD,6,1.5,Delivered
+2348,2024-10-16,62,Electronics,22785.92,Yes,Card,4,1.4,Delivered
+2349,2024-10-05,20,Beauty,19043.42,No,Card,4,3.0,Returned
+2350,2024-09-17,52,Home & Kitchen,12883.99,Yes,Wallet,3,1.6,Cancelled
+2351,2024-01-29,54,Beauty,17894.27,Yes,Wallet,8,4.3,Returned
+2352,2024-12-27,26,Electronics,20043.9,Yes,COD,7,2.1,Cancelled
+2353,2024-08-25,28,Electronics,18979.39,Yes,COD,2,2.6,Returned
+2354,2024-09-27,36,Fashion,11624.7,Yes,UPI,6,3.2,Delivered
+2355,2024-07-10,55,Beauty,13031.7,Yes,UPI,6,2.2,Returned
+2356,2024-03-18,20,Fashion,21354.22,Yes,COD,2,1.4,Delivered
+2357,2024-11-28,40,Books,10974.85,No,Card,2,3.1,Delivered
+2358,2024-03-25,51,Sports,1624.45,Yes,Wallet,8,3.8,Returned
+2359,2024-05-18,54,Fashion,21488.62,Yes,Wallet,2,1.6,Cancelled
+2360,2024-04-29,34,Sports,8940.81,No,Wallet,3,4.9,Cancelled
+2361,2024-08-09,26,Beauty,7363.42,Yes,Wallet,4,2.3,Returned
+2362,2024-06-05,55,Electronics,4313.31,No,Card,2,5.0,Delivered
+2363,2024-07-25,29,Sports,4806.88,No,UPI,10,4.6,Delivered
+2364,2024-12-28,57,Sports,5449.86,No,COD,9,3.5,Returned
+2365,2024-12-11,52,Sports,18381.02,No,COD,1,2.8,Cancelled
+2366,2024-03-26,61,Fashion,10819.79,No,Wallet,2,1.2,Cancelled
+2367,2024-07-10,43,Electronics,12569.51,No,Wallet,2,3.9,Returned
+2368,2024-10-14,52,Electronics,11759.79,Yes,Wallet,9,1.3,Cancelled
+2369,2024-11-06,33,Sports,20262.96,Yes,Card,8,3.7,Returned
+2370,2024-09-30,21,Books,15909.95,Yes,Card,1,4.7,Returned
+2371,2024-11-03,61,Beauty,20941.86,Yes,UPI,6,3.7,Cancelled
+2372,2024-01-25,28,Fashion,7916.45,No,COD,3,1.1,Returned
+2373,2024-09-07,19,Books,15951.95,Yes,COD,9,1.7,Delivered
+2374,2024-09-07,40,Home & Kitchen,19880.54,No,Card,9,4.9,Cancelled
+2375,2024-03-23,37,Electronics,20381.75,No,COD,8,2.9,Delivered
+2376,2024-09-27,65,Fashion,15967.49,No,Wallet,1,3.2,Cancelled
+2377,2024-12-19,35,Books,3404.94,No,Card,9,4.7,Delivered
+2378,2024-03-15,49,Fashion,9955.33,No,UPI,10,2.4,Returned
+2379,2024-03-22,19,Beauty,3978.02,No,Wallet,3,3.0,Delivered
+2380,2024-06-13,33,Sports,6266.32,Yes,UPI,4,3.1,Returned
+2381,2024-11-04,19,Fashion,8522.78,No,UPI,4,1.4,Delivered
+2382,2024-07-02,32,Home & Kitchen,2448.08,Yes,UPI,3,3.2,Returned
+2383,2024-01-11,64,Beauty,3046.59,Yes,UPI,8,2.1,Cancelled
+2384,2024-01-10,56,Beauty,4617.88,No,Card,10,4.2,Cancelled
+2385,2024-05-05,49,Sports,20134.38,Yes,Card,8,3.6,Returned
+2386,2024-08-23,37,Electronics,12382.57,Yes,UPI,1,4.6,Delivered
+2387,2024-02-19,26,Electronics,5329.51,No,Wallet,4,1.9,Returned
+2388,2024-11-07,31,Beauty,8787.33,Yes,Card,1,2.9,Delivered
+2389,2024-04-29,47,Beauty,19002.75,No,COD,10,4.8,Cancelled
+2390,2024-06-13,51,Beauty,5372.0,Yes,COD,1,2.7,Cancelled
+2391,2024-03-01,27,Books,9043.78,No,COD,8,3.5,Delivered
+2392,2024-10-29,54,Books,23434.37,Yes,COD,10,2.6,Delivered
+2393,2024-05-14,47,Books,16528.69,Yes,Wallet,5,2.8,Cancelled
+2394,2024-10-24,56,Sports,15857.88,Yes,COD,10,3.7,Returned
+2395,2024-09-22,29,Sports,19975.23,Yes,COD,3,3.2,Returned
+2396,2024-08-23,20,Home & Kitchen,10805.25,Yes,UPI,1,2.3,Delivered
+2397,2024-04-02,26,Sports,2713.46,Yes,Card,6,1.2,Delivered
+2398,2024-05-07,26,Books,14254.37,Yes,UPI,6,4.3,Delivered
+2399,2024-09-30,51,Books,2485.97,Yes,COD,9,4.1,Cancelled
+2400,2024-01-21,58,Electronics,6870.1,Yes,COD,5,1.5,Cancelled
+2401,2024-10-03,45,Beauty,11388.59,Yes,Wallet,8,1.3,Returned
+2402,2024-04-01,65,Beauty,8185.53,Yes,Wallet,8,1.6,Delivered
+2403,2024-05-09,34,Sports,21921.67,No,COD,5,1.3,Returned
+2404,2024-12-10,49,Electronics,19481.1,Yes,Wallet,1,1.3,Delivered
+2405,2024-10-24,49,Beauty,15952.39,No,COD,6,4.9,Returned
+2406,2024-06-23,56,Fashion,10902.09,Yes,UPI,9,2.1,Cancelled
+2407,2024-11-05,35,Books,8364.18,Yes,Card,10,4.5,Cancelled
+2408,2024-11-03,51,Sports,18840.04,Yes,Card,8,2.1,Delivered
+2409,2024-03-12,18,Beauty,20338.86,No,Wallet,7,4.0,Returned
+2410,2024-02-05,41,Electronics,4635.31,Yes,COD,6,1.8,Cancelled
+2411,2024-03-04,57,Books,10396.36,No,Card,10,1.9,Delivered
+2412,2024-05-18,63,Home & Kitchen,22273.31,No,Card,8,4.9,Delivered
+2413,2024-06-11,22,Electronics,15260.66,Yes,UPI,5,2.3,Cancelled
+2414,2024-12-31,37,Fashion,22628.61,Yes,UPI,6,1.6,Delivered
+2415,2024-09-22,39,Home & Kitchen,2947.93,No,Card,5,1.4,Cancelled
+2416,2024-12-04,51,Books,4586.24,Yes,UPI,10,3.3,Delivered
+2417,2024-10-28,18,Home & Kitchen,21404.39,No,UPI,3,2.4,Returned
+2418,2024-07-09,39,Fashion,17585.09,No,COD,2,1.3,Returned
+2419,2024-03-29,61,Electronics,4216.78,No,Wallet,7,3.3,Returned
+2420,2024-10-03,18,Beauty,6561.84,Yes,Wallet,2,4.9,Cancelled
+2421,2024-02-15,33,Books,15613.57,No,Wallet,1,2.1,Cancelled
+2422,2024-01-13,24,Beauty,6939.36,Yes,UPI,1,1.2,Delivered
+2423,2024-02-17,22,Books,9239.11,No,UPI,7,2.4,Cancelled
+2424,2024-03-11,59,Beauty,14759.61,No,COD,8,4.8,Delivered
+2425,2024-08-29,51,Sports,14604.65,No,Wallet,1,2.0,Delivered
+2426,2024-12-06,34,Home & Kitchen,23737.72,No,Wallet,8,4.7,Delivered
+2427,2024-03-27,18,Electronics,13883.79,No,UPI,2,4.7,Returned
+2428,2024-12-11,41,Sports,12950.47,No,Card,6,4.7,Returned
+2429,2024-01-26,24,Beauty,19885.31,No,Card,5,3.9,Cancelled
+2430,2024-08-13,52,Electronics,13959.68,No,COD,8,2.0,Returned
+2431,2024-07-07,19,Books,17464.58,No,Wallet,2,4.8,Delivered
+2432,2024-11-09,50,Fashion,13903.59,No,COD,10,1.3,Delivered
+2433,2024-06-05,25,Home & Kitchen,15881.39,No,UPI,3,4.2,Delivered
+2434,2024-02-19,57,Home & Kitchen,19092.4,Yes,COD,6,1.6,Delivered
+2435,2024-03-25,43,Sports,19224.78,No,COD,10,3.4,Delivered
+2436,2024-03-24,30,Beauty,3242.26,Yes,UPI,4,1.1,Delivered
+2437,2024-08-24,38,Beauty,22165.11,No,Wallet,6,1.5,Cancelled
+2438,2024-10-06,36,Fashion,6491.6,Yes,UPI,7,3.0,Cancelled
+2439,2024-11-28,20,Books,8966.47,No,UPI,7,4.6,Delivered
+2440,2024-03-20,45,Home & Kitchen,20880.02,Yes,COD,4,2.9,Delivered
+2441,2024-10-02,20,Books,15783.89,Yes,COD,7,1.0,Cancelled
+2442,2024-03-25,28,Beauty,8757.67,No,UPI,7,4.4,Returned
+2443,2024-01-22,20,Sports,8214.77,Yes,Wallet,3,3.8,Cancelled
+2444,2024-06-15,31,Sports,9794.69,No,Card,8,4.9,Cancelled
+2445,2024-09-18,20,Books,8742.53,Yes,COD,1,3.4,Returned
+2446,2024-07-19,23,Electronics,13714.96,No,UPI,8,1.2,Returned
+2447,2024-01-22,61,Fashion,8207.71,No,COD,7,2.4,Delivered
+2448,2024-10-01,20,Home & Kitchen,17898.3,No,COD,7,4.2,Returned
+2449,2024-11-30,47,Home & Kitchen,21950.62,No,UPI,2,3.1,Returned
+2450,2024-02-18,60,Fashion,11419.17,Yes,COD,8,5.0,Delivered
+2451,2024-12-24,42,Home & Kitchen,22801.14,No,Card,8,1.2,Cancelled
+2452,2024-06-22,56,Electronics,3764.44,No,UPI,4,3.2,Returned
+2453,2024-12-06,27,Beauty,10210.15,Yes,Card,4,4.1,Delivered
+2454,2024-07-23,51,Beauty,5843.98,No,UPI,7,3.1,Delivered
+2455,2024-05-12,45,Electronics,9339.32,No,UPI,6,4.2,Cancelled
+2456,2024-02-01,31,Sports,21401.95,No,Card,5,4.1,Delivered
+2457,2024-07-30,20,Electronics,5359.37,No,UPI,10,4.3,Delivered
+2458,2024-02-22,36,Home & Kitchen,24879.69,Yes,UPI,3,1.4,Returned
+2459,2024-09-29,26,Beauty,20480.25,Yes,UPI,9,3.2,Returned
+2460,2024-04-19,39,Electronics,18815.1,Yes,Card,1,4.3,Cancelled
+2461,2024-03-23,27,Books,16331.82,Yes,COD,2,3.2,Returned
+2462,2024-02-24,56,Electronics,1494.6,Yes,COD,5,2.8,Cancelled
+2463,2024-07-31,50,Home & Kitchen,18990.03,No,UPI,2,2.1,Delivered
+2464,2024-02-17,36,Books,5632.0,No,UPI,10,4.6,Returned
+2465,2024-10-22,25,Sports,18201.02,No,Card,3,4.5,Cancelled
+2466,2024-03-13,58,Electronics,7712.35,No,Card,4,1.8,Cancelled
+2467,2024-05-20,23,Fashion,5866.24,No,Wallet,5,4.4,Delivered
+2468,2024-12-05,36,Fashion,889.48,Yes,UPI,7,4.0,Returned
+2469,2024-07-06,25,Fashion,1683.35,No,COD,3,4.8,Returned
+2470,2024-10-10,35,Beauty,18146.27,No,COD,3,3.2,Cancelled
+2471,2024-07-19,39,Fashion,17018.66,Yes,COD,10,2.7,Cancelled
+2472,2024-03-01,54,Fashion,13086.69,Yes,Card,10,2.9,Delivered
+2473,2024-10-17,21,Fashion,16919.16,Yes,UPI,4,1.5,Returned
+2474,2024-04-12,20,Sports,23159.03,No,Card,7,2.5,Cancelled
+2475,2024-09-16,25,Sports,2049.37,Yes,Wallet,1,2.2,Cancelled
+2476,2024-02-09,56,Sports,22033.26,Yes,UPI,6,4.6,Returned
+2477,2024-03-03,45,Beauty,13807.76,Yes,Card,9,1.8,Cancelled
+2478,2024-01-06,24,Books,8600.23,Yes,UPI,1,1.9,Cancelled
+2479,2024-01-22,62,Home & Kitchen,8820.97,No,COD,5,4.0,Returned
+2480,2024-11-18,50,Electronics,12668.82,No,UPI,2,1.7,Cancelled
+2481,2024-10-04,37,Sports,23957.33,Yes,Wallet,4,3.8,Delivered
+2482,2024-10-05,22,Books,12386.04,No,COD,2,2.3,Cancelled
+2483,2024-04-02,55,Electronics,15257.93,No,COD,6,3.7,Cancelled
+2484,2024-08-04,50,Books,10059.65,No,UPI,6,2.3,Delivered
+2485,2024-08-20,33,Beauty,16161.89,No,Wallet,4,1.3,Cancelled
+2486,2024-02-26,28,Fashion,23861.61,No,COD,5,3.9,Returned
+2487,2024-05-12,40,Fashion,18507.91,Yes,Wallet,8,3.0,Cancelled
+2488,2024-05-20,57,Fashion,8196.49,Yes,Wallet,7,4.6,Cancelled
+2489,2024-08-17,59,Home & Kitchen,20564.83,Yes,Card,1,3.3,Returned
+2490,2024-09-30,60,Beauty,14917.35,No,UPI,9,4.9,Delivered
+2491,2024-05-02,31,Home & Kitchen,12649.53,No,Wallet,2,1.9,Cancelled
+2492,2024-02-10,32,Sports,11924.74,Yes,UPI,8,3.8,Cancelled
+2493,2024-09-28,57,Home & Kitchen,7060.69,Yes,UPI,2,1.3,Delivered
+2494,2024-08-20,48,Fashion,24928.34,No,COD,1,4.6,Delivered
+2495,2024-12-05,44,Beauty,17727.75,No,COD,3,2.6,Cancelled
+2496,2024-09-17,64,Electronics,22089.19,No,COD,2,4.4,Delivered
+2497,2024-12-21,52,Beauty,21708.81,Yes,Card,2,4.6,Cancelled
+2498,2024-01-19,26,Home & Kitchen,8458.92,Yes,UPI,9,4.8,Cancelled
+2499,2024-02-20,20,Sports,1156.52,No,COD,3,4.6,Cancelled
+2500,2024-01-26,30,Sports,7489.6,No,COD,4,3.2,Cancelled
+2501,2024-09-05,58,Sports,11540.63,No,Card,3,1.4,Cancelled
+2502,2024-03-19,50,Electronics,22209.13,No,UPI,5,2.7,Returned
+2503,2024-06-03,57,Books,14986.92,No,Wallet,10,3.1,Cancelled
+2504,2024-02-03,36,Fashion,9016.63,No,UPI,4,4.5,Cancelled
+2505,2024-10-24,59,Beauty,21647.47,No,Card,4,1.4,Delivered
+2506,2024-08-05,64,Books,9176.35,No,UPI,2,4.8,Returned
+2507,2024-08-16,48,Home & Kitchen,17010.13,No,Card,10,2.6,Cancelled
+2508,2024-04-12,27,Sports,23073.92,No,UPI,8,2.4,Delivered
+2509,2024-08-30,18,Beauty,24744.66,No,Card,5,3.1,Returned
+2510,2024-06-26,25,Beauty,8872.96,Yes,COD,8,3.1,Returned
+2511,2024-01-08,20,Books,18742.68,No,COD,8,3.8,Delivered
+2512,2024-03-25,31,Sports,24636.51,No,Card,1,2.2,Cancelled
+2513,2024-10-18,23,Fashion,15246.23,Yes,UPI,3,3.1,Delivered
+2514,2024-12-04,60,Home & Kitchen,20605.34,Yes,Card,7,1.2,Returned
+2515,2024-02-06,36,Beauty,602.49,Yes,Card,1,1.7,Delivered
+2516,2024-02-22,41,Electronics,15545.93,Yes,COD,7,3.9,Cancelled
+2517,2024-07-25,19,Electronics,22995.64,Yes,COD,6,3.2,Cancelled
+2518,2024-06-04,27,Sports,8218.62,No,UPI,4,3.4,Cancelled
+2519,2024-04-13,54,Books,19578.31,No,UPI,3,5.0,Delivered
+2520,2024-01-04,65,Home & Kitchen,21653.15,Yes,COD,1,2.3,Delivered
+2521,2024-11-30,28,Home & Kitchen,16143.88,Yes,COD,9,5.0,Cancelled
+2522,2024-06-06,31,Fashion,1024.86,Yes,UPI,9,4.3,Cancelled
+2523,2024-04-11,52,Electronics,1245.2,Yes,COD,9,4.6,Cancelled
+2524,2024-08-14,20,Electronics,18467.84,Yes,Wallet,3,3.0,Returned
+2525,2024-10-24,37,Books,6119.19,No,Card,4,1.4,Cancelled
+2526,2024-09-02,48,Sports,7853.66,Yes,UPI,5,3.0,Returned
+2527,2024-04-01,21,Fashion,529.14,No,UPI,2,4.2,Delivered
+2528,2024-07-26,56,Electronics,11186.44,Yes,Wallet,8,4.7,Returned
+2529,2024-01-27,51,Sports,6463.38,Yes,Wallet,7,3.8,Cancelled
+2530,2024-01-29,19,Books,7047.71,No,UPI,7,2.3,Returned
+2531,2024-05-21,39,Beauty,2103.84,Yes,Wallet,3,1.8,Returned
+2532,2024-01-03,22,Sports,6102.74,No,Card,6,4.6,Returned
+2533,2024-10-19,56,Beauty,17404.57,Yes,UPI,2,2.6,Delivered
+2534,2024-05-21,35,Books,20070.65,No,Card,1,1.4,Cancelled
+2535,2024-11-23,52,Sports,23099.79,No,UPI,10,2.0,Delivered
+2536,2024-04-12,35,Electronics,4480.48,No,COD,5,2.8,Returned
+2537,2024-04-09,31,Electronics,17061.09,Yes,UPI,6,4.2,Delivered
+2538,2024-02-23,39,Fashion,19749.29,Yes,Card,9,3.6,Returned
+2539,2024-04-21,25,Electronics,21786.95,No,Wallet,1,1.9,Returned
+2540,2024-03-03,30,Books,3297.27,No,COD,6,1.2,Returned
+2541,2024-03-01,46,Beauty,16302.49,Yes,UPI,6,4.4,Returned
+2542,2024-12-16,61,Beauty,2419.43,No,Wallet,1,3.8,Delivered
+2543,2024-11-07,43,Sports,881.5,No,UPI,2,1.8,Returned
+2544,2024-12-11,65,Electronics,1850.53,Yes,Wallet,1,4.9,Returned
+2545,2024-07-31,40,Fashion,8281.89,No,UPI,6,1.4,Returned
+2546,2024-07-18,46,Sports,12566.19,Yes,Card,5,2.1,Returned
+2547,2024-04-14,27,Sports,7815.7,Yes,COD,4,2.6,Returned
+2548,2024-03-08,42,Fashion,8828.93,Yes,Wallet,7,2.1,Delivered
+2549,2024-03-01,48,Sports,5394.92,Yes,Card,1,4.6,Cancelled
+2550,2024-11-26,57,Beauty,9182.98,Yes,UPI,10,2.6,Cancelled
+2551,2024-11-11,50,Home & Kitchen,8401.93,Yes,COD,4,4.1,Returned
+2552,2024-03-02,20,Fashion,5558.53,No,Card,6,3.1,Cancelled
+2553,2024-12-06,32,Books,12628.63,Yes,UPI,5,4.9,Delivered
+2554,2024-07-26,60,Books,14655.17,No,Wallet,2,1.7,Delivered
+2555,2024-04-10,50,Electronics,10842.32,Yes,COD,7,2.4,Delivered
+2556,2024-02-25,38,Fashion,4665.67,No,Card,3,2.0,Cancelled
+2557,2024-10-12,34,Home & Kitchen,21314.91,No,Card,6,2.7,Returned
+2558,2024-06-29,26,Sports,22484.61,Yes,Card,9,1.4,Returned
+2559,2024-08-13,51,Books,4328.75,Yes,UPI,3,2.7,Cancelled
+2560,2024-12-28,27,Books,24878.32,Yes,Card,9,3.2,Returned
+2561,2024-01-30,23,Beauty,13987.06,Yes,Card,8,4.4,Cancelled
+2562,2024-12-14,61,Electronics,3937.78,Yes,Wallet,8,1.6,Delivered
+2563,2024-04-21,19,Sports,18403.61,No,COD,10,2.3,Returned
+2564,2024-05-30,26,Home & Kitchen,1168.83,Yes,Wallet,8,1.1,Delivered
+2565,2024-12-16,29,Books,6835.4,No,UPI,3,4.2,Returned
+2566,2024-12-12,23,Books,2176.17,Yes,Wallet,5,1.7,Cancelled
+2567,2024-12-16,20,Home & Kitchen,2589.69,Yes,Wallet,8,1.2,Returned
+2568,2024-08-23,51,Fashion,14941.26,No,UPI,5,3.5,Cancelled
+2569,2024-10-29,29,Fashion,24751.16,No,Card,8,2.0,Cancelled
+2570,2024-08-29,24,Books,22647.71,Yes,UPI,1,4.3,Returned
+2571,2024-09-20,19,Books,15721.19,No,Wallet,8,2.4,Delivered
+2572,2024-02-26,26,Sports,15282.94,No,Wallet,3,3.3,Returned
+2573,2024-10-08,53,Beauty,14935.75,Yes,Wallet,9,3.9,Cancelled
+2574,2024-09-09,54,Electronics,21362.09,No,UPI,1,1.1,Returned
+2575,2024-01-28,51,Sports,7045.05,Yes,UPI,7,4.5,Cancelled
+2576,2024-08-20,51,Electronics,18557.96,Yes,Card,3,1.7,Delivered
+2577,2024-02-17,61,Home & Kitchen,10025.66,Yes,COD,2,3.3,Cancelled
+2578,2024-10-08,18,Fashion,3750.72,No,COD,6,1.0,Returned
+2579,2024-01-08,39,Home & Kitchen,14546.35,No,UPI,8,4.8,Cancelled
+2580,2024-12-20,61,Beauty,3319.87,No,UPI,3,1.8,Returned
+2581,2024-01-16,44,Sports,19801.4,Yes,Wallet,4,4.3,Delivered
+2582,2024-06-27,34,Books,11065.99,No,COD,4,2.3,Delivered
+2583,2024-01-26,25,Beauty,5627.19,No,COD,10,2.7,Delivered
+2584,2024-11-21,61,Fashion,18963.18,No,UPI,6,2.0,Returned
+2585,2024-04-21,49,Books,24833.06,No,Wallet,5,3.2,Delivered
+2586,2024-12-04,62,Sports,24975.93,No,Wallet,9,2.2,Cancelled
+2587,2024-06-05,49,Fashion,8259.6,No,Card,2,1.6,Delivered
+2588,2024-03-30,32,Home & Kitchen,3653.34,No,UPI,10,3.9,Returned
+2589,2024-08-11,32,Sports,7583.39,Yes,Wallet,1,4.7,Returned
+2590,2024-11-30,65,Home & Kitchen,18203.85,Yes,Card,9,3.7,Delivered
+2591,2024-03-22,34,Electronics,7163.5,Yes,UPI,1,5.0,Cancelled
+2592,2024-01-06,25,Home & Kitchen,6620.7,No,Wallet,6,1.9,Cancelled
+2593,2024-09-01,44,Fashion,18207.79,No,Card,1,2.5,Cancelled
+2594,2024-04-07,45,Beauty,16949.94,No,Wallet,5,2.1,Delivered
+2595,2024-01-26,44,Beauty,14119.68,Yes,Wallet,5,1.3,Returned
+2596,2024-10-05,18,Home & Kitchen,21661.49,Yes,COD,2,3.9,Cancelled
+2597,2024-03-04,54,Fashion,16413.42,Yes,UPI,4,4.7,Cancelled
+2598,2024-09-08,29,Home & Kitchen,7348.17,Yes,Card,3,2.4,Returned
+2599,2024-05-17,56,Beauty,23219.46,No,UPI,2,2.0,Cancelled
+2600,2024-12-06,20,Books,5951.48,No,UPI,1,1.2,Cancelled
