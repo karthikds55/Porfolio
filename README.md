@@ -118,3 +118,12 @@ If you want to reuse this repo as a template:
 ## About me
 **Karthik — Data Engineer (5+ years).**  
 I build scalable ETL/ELT pipelines, analytics-ready models, and reliable orchestration with a focus on quality, observability, and performance.
+
+Languages: SQL (advanced), Python
+Data Engineering: ETL/ELT, orchestration (Airflow/Dagster/Prefect), data modeling (Kimball, SCD), CDC (if applicable)
+Processing: Spark / PySpark, distributed compute (Databricks if relevant)
+Warehousing/Lakehouse: Snowflake / BigQuery / Redshift / Synapse; Delta/Iceberg (if used)
+Transformation: dbt, incremental models, documentation + lineage
+Streaming (if you use it): Kafka / Kinesis / Pub/Sub
+Quality & Observability: dbt tests / Great Expectations, SLAs, monitoring/alerting (Datadog/Grafana/CloudWatch, etc.)
+Cloud/DevOps: AWS/Azure/GCP, Docker, CI/CD (GitHub Actions/Jenkins), Terraform (nice-to-have)
