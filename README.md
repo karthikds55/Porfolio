@@ -1,129 +1,97 @@
-# DataEngineering
+<!-- Animated typing header -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1200&color=00C2FF&center=true&vCenter=true&width=900&lines=Cloud+Data+Engineer+%7C+5%2B+years;AWS+%2F+Azure+%2F+GCP+%7C+ETL%2FELT+%7C+Data+Modeling;SQL+%7C+Python+%7C+Spark+%7C+Airflow;Reliable+pipelines+with+quality%2C+observability+%26+cost+focus" alt="Typing SVG" />
+</p>
 
-A hands-on **Data Engineering portfolio repo**: build an end-to-end pipeline (**ingest → transform → test → orchestrate**) with production-style structure, docs, and CI.
+<h1 align="center">Hi, I'm Karthik</h1>
 
-- **Goal:** ship reusable templates + real mini-projects you can run locally
-- **Focus:** reliability (tests/monitoring), performance (partitioning), and clarity (docs)
+<p align="center">
+  <b>Cloud Data Engineer (5+ years)</b> building scalable, reliable data platforms on <b>AWS/Azure/GCP</b>.<br/>
+  I specialize in <b>SQL + Python</b>, orchestration, data modeling, and production-grade pipelines with quality + observability.
+</p>
 
----
-
-## Quick start (choose your path)
-
-### Path A — Explore the structure (2 minutes)
-- Browse the folders in **Repo structure**
-- Read **docs/architecture/README.md** for the high-level flow
-
-### Path B — Run the demo pipeline (15–30 minutes)
-> Coming soon: a working example pipeline (raw → staging → marts) + tests + orchestration.
-
-**Prereqs**
-- Python 3.10+ (or 3.11)
-- Docker (recommended)
-- (Optional) dbt + a warehouse (DuckDB/Snowflake/BigQuery)
+<p align="center">
+  <!-- Replace links -->
+  <a href="https://www.linkedin.com/in/karthikdarapaneni/">LinkedIn</a> •
+  <a href="https://github.com/karthikds55">GitHub</a> •
+  <a href="mailto:darapuneni.karthik@gmail.com">Email</a> •
+  <a href="https://YOUR-PORTFOLIO.com">Portfolio</a>
+</p>
 
 ---
 
-## What you’ll find here
-
-### ✅ Ingestion
-Pull data from APIs/files/databases and land it in a raw zone.
-- Batch loads (CSV/JSON)
-- API ingestion patterns
-- Incremental loads (template)
-
-### ✅ Transforms
-Turn raw data into analytics-ready tables.
-- Staging models
-- Dimensional marts (facts/dims)
-- Incremental models (template)
-
-### ✅ Data Quality
-Trust your data with automated checks.
-- Schema & null checks
-- Row count / freshness checks
-- Business rule validations
-
-### ✅ Orchestration
-Schedule, retry, backfill, and monitor workflows.
-- DAG templates (Airflow/Dagster/Prefect-ready)
-- Local dev pattern + production considerations
-
-### ✅ Infra (optional)
-Infrastructure scaffolding for cloud deployments.
-- Terraform folder structure
-- Notes on IAM/secrets/logging
+## Contents
+- [Featured projects](#featured-projects)
+- [Core skills](#core-skills)
+- [Cloud toolkit](#cloud-toolkit)
+- [How I work](#how-i-work)
+- [Stats](#stats)
 
 ---
 
-## Repo structure
+## Featured projects
+> Replace the placeholders with your real repos. I can rewrite these “impact-first” once you share links.
 
-```text
-docs/
-  architecture/        # diagrams + design notes
-src/
-  ingestion/           # extract/load jobs
-  transforms/          # dbt/Spark SQL models
-  quality/             # validation + test framework
-  orchestration/       # DAG definitions + scheduling helpers
-  utils/               # configs, helpers, shared libs
-infra/
-  terraform/           # IaC scaffolding
-data/
-  sample/              # small local datasets for demos
-notebooks/             # exploration + prototypes
-.github/workflows/     # CI checks
-```
+### 1) DataEngineering (Templates + E2E pipelines)
+**Outcome:** reusable templates for ingestion → transforms → tests → orchestration  
+**Focus:** clean structure, quality checks, and production patterns  
+**Tech:** SQL • Python • Airflow • dbt/Spark • Cloud Storage/Warehouse  
+**Repo:** https://github.com/karthikds55/DataEngineering
+
+### 2) Cloud ELT Pipeline (example)
+**Outcome:** automated ELT into a warehouse with incremental loads + testing  
+**Tech:** Airflow/Prefect • dbt • Snowflake/BigQuery/Redshift • Terraform
+
+### 3) Streaming Pipeline (example)
+**Outcome:** near real-time ingestion with partitioned storage + curated tables  
+**Tech:** Kafka/Kinesis/PubSub • Spark Structured Streaming • Lakehouse
 
 ---
 
-## Featured project(s) (add your real ones here)
-Use this section to make the repo feel like a portfolio.
-
-### Project 1 — End-to-end demo pipeline (WIP)
-**Problem:** Build a reproducible pipeline with quality checks and orchestration.  
-**Deliverables (planned):**
-- raw → staging → marts flow
-- automated tests + data quality gates
-- orchestration DAG + backfill example
-- CI to lint/test
-
-> When you add a project, include: **dataset/source**, **stack**, and **impact** (runtime improvement, cost savings, reliability).
+## Core skills
+- **Data Engineering:** ETL/ELT, batch + streaming, CDC (if applicable), orchestration, backfills
+- **Modeling:** Kimball (facts/dims), SCD, marts, schema design, governance basics
+- **Quality & Reliability:** tests (dbt/GE), data contracts mindset, SLAs/SLOs, alerting
+- **Performance & Cost:** partitioning/clustering, file formats (Parquet), query optimization
+- **Dev Practices:** Git, CI/CD, Docker, documentation-first pipelines
 
 ---
 
-## Roadmap (interactive checklist)
+## Cloud toolkit (pick what you actually use)
+<details>
+  <summary><b>AWS</b></summary>
 
-### MVP
-- [ ] Add a complete demo pipeline (raw → staging → mart)
-- [ ] Add data quality checks (schema, freshness, duplicates)
-- [ ] Add orchestration DAG (schedule + retries + backfill)
-- [ ] Add CI: formatting + lint + unit tests
+- S3, IAM, Glue, Lambda, Athena, EMR
+- Redshift, CloudWatch, Step Functions
+</details>
 
-### Nice-to-have
-- [ ] Add observability: logging + metrics + alerting notes
-- [ ] Add incremental loads + idempotency patterns
-- [ ] Add a streaming example (Kafka/Kinesis) *(optional)*
-- [ ] Add cloud deployment notes (AWS/Azure/GCP)
+<details>
+  <summary><b>Azure</b></summary>
+
+- ADLS Gen2, ADF, Synapse, Databricks
+- Azure Functions, Monitor
+</details>
+
+<details>
+  <summary><b>GCP</b></summary>
+
+- GCS, BigQuery, Dataflow, Pub/Sub
+- Cloud Composer, Cloud Functions, Cloud Logging
+</details>
 
 ---
 
-## How to contribute / reuse
-If you want to reuse this repo as a template:
-1. Fork it
-2. Replace sample data sources with your own
-3. Keep the structure, tests, and docs consistent
+## How I work
+- Build **idempotent** pipelines (safe re-runs, reliable backfills)
+- Ship with **tests + monitoring** (quality gates before dashboards break)
+- Prefer **simple, explainable designs** (documented tradeoffs, clean ownership)
 
 ---
 
-## About me
-**Karthik — Data Engineer (5+ years).**  
-I build scalable ETL/ELT pipelines, analytics-ready models, and reliable orchestration with a focus on quality, observability, and performance.
+## Stats
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=karthikds55&show_icons=true&theme=tokyonight" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=karthikds55&layout=compact&theme=tokyonight" />
+</p>
 
-Languages: SQL (advanced), Python
-Data Engineering: ETL/ELT, orchestration (Airflow/Dagster/Prefect), data modeling (Kimball, SCD), CDC (if applicable)
-Processing: Spark / PySpark, distributed compute (Databricks if relevant)
-Warehousing/Lakehouse: Snowflake / BigQuery / Redshift / Synapse; Delta/Iceberg (if used)
-Transformation: dbt, incremental models, documentation + lineage
-Streaming (if you use it): Kafka / Kinesis / Pub/Sub
-Quality & Observability: dbt tests / Great Expectations, SLAs, monitoring/alerting (Datadog/Grafana/CloudWatch, etc.)
-Cloud/DevOps: AWS/Azure/GCP, Docker, CI/CD (GitHub Actions/Jenkins), Terraform (nice-to-have)
+<!-- Optional: add the snake animation later (see section B) -->
