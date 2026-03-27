@@ -15,16 +15,25 @@ build/
 # Jupyter Notebooks
 .ipynb_checkpoints/
 
-# Data outputs (keep raw, ignore processed outputs)
+# Data outputs (keep raw, ignore generated outputs)
 data/staging/
 data/marts/
 data/output/
+data/db/
 *.parquet
 *.feather
+
+# Logs
+logs/
 
 # Reports (generated)
 reports/*.html
 reports/*.json
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Environment
 .env
