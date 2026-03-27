@@ -39,6 +39,59 @@
 
 ---
 
+## Quick Start — Git Bash Setup
+
+Clone the repo and check out the `data-engineering` branch in Git Bash:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/karthikds55/DataEngineering.git
+cd DataEngineering
+
+# 2. Fetch all remote branches
+git fetch --all
+
+# 3. Check out the data-engineering branch
+git checkout data-engineering
+
+# 4. Install Python dependencies
+pip install -r requirements.txt
+
+# 5. Run the full pipeline (ingest → transform → quality checks)
+python -m pipelines.ingest
+python -m pipelines.transform
+python -m transforms.quality_checks
+
+# 6. Run the test suite
+pytest tests/
+```
+
+> **Already on the branch?**  Run `git branch` to confirm — you should see `* data-engineering`.
+
+---
+
+## Project Structure
+
+```
+DataEngineering/
+├── data/
+│   ├── raw/           # Source files (CSV, JSON, …)
+│   ├── staging/       # Post-ingest, pre-transform layer
+│   └── marts/         # Aggregated mart tables
+├── notebooks/         # Exploratory & profiling notebooks
+├── pipelines/
+│   ├── ingest.py      # Raw → staging ingestion
+│   └── transform.py   # Staging → mart transforms
+├── transforms/
+│   └── quality_checks.py  # Schema, null, range checks
+├── tests/
+│   └── test_pipelines.py  # pytest unit tests
+├── reports/           # Generated HTML profiling reports
+└── requirements.txt
+```
+
+---
+
 ## Featured Work
 
 <p>
