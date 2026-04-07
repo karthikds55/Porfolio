@@ -8,8 +8,9 @@ Each [PASS] / [FAIL] result is written to QualityCheckResults_CL in Log Analytic
 replacing the CloudWatch metric filter on /ecommerce/pipeline/quality.
 """
 
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
 
 try:
     from monitoring.pipeline_telemetry import PipelineRun, quality_check_telemetry
@@ -21,19 +22,30 @@ except ImportError:
 STAGING_DIR = Path(__file__).parent.parent / "data" / "staging"
 
 
+def _ensure_columns_exist(df: pd.DataFrame, columns: list[str], context: str) -> None:
+    """Make missing-column failures explicit and easier to debug."""
+
+    missing_columns = [col for col in columns if col not in df.columns]
+    if missing_columns:
+        raise ValueError(f"{context} missing columns: {missing_columns}")
+
+
 def check_no_nulls(df: pd.DataFrame, columns: list[str]) -> list[str]:
     """Return list of columns that have null values."""
+    _ensure_columns_exist(df, columns, "Null check")
     return [col for col in columns if df[col].isnull().any()]
 
 
 def check_no_duplicates(df: pd.DataFrame, key: str) -> bool:
     """Return True if no duplicate key values exist."""
+    _ensure_columns_exist(df, [key], "Duplicate check")
     return not df[key].duplicated().any()
 
 
 def check_value_range(df: pd.DataFrame, column: str, min_val: float, max_val: float) -> bool:
     """Return True if all values in column fall within [min_val, max_val]."""
-    return df[column].between(min_val, max_val).all()
+    _ensure_columns_exist(df, [column], "Range check")
+    return df[column].dropna().between(min_val, max_val).all()
 
 
 def run_checks(df: pd.DataFrame, run: "PipelineRun | None" = None) -> None:

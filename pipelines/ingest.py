@@ -7,8 +7,9 @@ and AZURE_LOG_ANALYTICS_* environment variables are set (see monitoring/README.m
 Runs normally without them – telemetry is silently skipped.
 """
 
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
 
 # Optional Azure Monitor integration (no-op if env vars / SDK not present)
 try:
@@ -20,16 +21,53 @@ except ImportError:
 
 RAW_DIR = Path(__file__).parent.parent / "data" / "raw"
 STAGING_DIR = Path(__file__).parent.parent / "data" / "staging"
+REQUIRED_COLUMNS = {
+    "order_id",
+    "order_date",
+    "order_value",
+    "discount_applied",
+    "delivery_time_days",
+    "customer_rating",
+}
+
+
+def _validate_input_schema(df: pd.DataFrame) -> None:
+    """Fail fast with a clear error when the source CSV shape changes."""
+
+    missing_columns = sorted(REQUIRED_COLUMNS.difference(df.columns))
+    if missing_columns:
+        raise ValueError(
+            "Raw orders file is missing required columns: "
+            + ", ".join(missing_columns)
+        )
+
+
+def _coerce_discount_flag(value: object) -> object:
+    """Normalize Yes/No style values into booleans without hiding bad data."""
+
+    if pd.isna(value):
+        return pd.NA
+
+    normalized = str(value).strip().lower()
+    if normalized in {"yes", "true", "1"}:
+        return True
+    if normalized in {"no", "false", "0"}:
+        return False
+    return pd.NA
 
 
 def ingest_orders(raw_path: Path = RAW_DIR / "daily_ecommerce_orders.csv") -> pd.DataFrame:
     """Load raw ecommerce orders CSV and apply basic dtype coercions."""
+    if not raw_path.exists():
+        raise FileNotFoundError(f"Raw orders file not found: {raw_path}")
+
     df = pd.read_csv(raw_path)
+    _validate_input_schema(df)
     df["order_date"] = pd.to_datetime(df["order_date"])
     df["order_value"] = pd.to_numeric(df["order_value"], errors="coerce")
     df["delivery_time_days"] = pd.to_numeric(df["delivery_time_days"], errors="coerce")
     df["customer_rating"] = pd.to_numeric(df["customer_rating"], errors="coerce")
-    df["discount_applied"] = df["discount_applied"].map({"Yes": True, "No": False})
+    df["discount_applied"] = df["discount_applied"].map(_coerce_discount_flag).astype("boolean")
     return df
 
 

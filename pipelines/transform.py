@@ -7,8 +7,9 @@ and AZURE_LOG_ANALYTICS_* environment variables are set (see monitoring/README.m
 Runs normally without them – telemetry is silently skipped.
 """
 
-import pandas as pd
 from pathlib import Path
+
+import pandas as pd
 
 try:
     from monitoring.pipeline_telemetry import PipelineRun, stage_telemetry
@@ -19,16 +20,42 @@ except ImportError:
 
 STAGING_DIR = Path(__file__).parent.parent / "data" / "staging"
 MARTS_DIR = Path(__file__).parent.parent / "data" / "marts"
+DAILY_SUMMARY_COLUMNS = {
+    "order_id",
+    "order_date",
+    "order_value",
+    "customer_rating",
+    "order_status",
+}
+CATEGORY_SUMMARY_COLUMNS = {
+    "order_id",
+    "product_category",
+    "order_value",
+    "customer_rating",
+}
+
+
+def _validate_columns(df: pd.DataFrame, required_columns: set[str], context: str) -> None:
+    """Raise a readable error instead of letting pandas fail deep in a groupby."""
+
+    missing_columns = sorted(required_columns.difference(df.columns))
+    if missing_columns:
+        raise ValueError(
+            f"{context} is missing required columns: {', '.join(missing_columns)}"
+        )
 
 
 def load_staging(name: str = "orders_staging") -> pd.DataFrame:
     path = STAGING_DIR / f"{name}.csv"
+    if not path.exists():
+        raise FileNotFoundError(f"Staging file not found: {path}")
     df = pd.read_csv(path, parse_dates=["order_date"])
     return df
 
 
 def build_daily_summary(df: pd.DataFrame) -> pd.DataFrame:
     """Aggregate orders by date: total revenue, order count, avg rating."""
+    _validate_columns(df, DAILY_SUMMARY_COLUMNS, "Daily summary input")
     summary = (
         df.groupby("order_date")
         .agg(
@@ -46,6 +73,7 @@ def build_daily_summary(df: pd.DataFrame) -> pd.DataFrame:
 
 def build_category_summary(df: pd.DataFrame) -> pd.DataFrame:
     """Aggregate orders by product category."""
+    _validate_columns(df, CATEGORY_SUMMARY_COLUMNS, "Category summary input")
     summary = (
         df.groupby("product_category")
         .agg(
