@@ -1,0 +1,73 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys an Azure Monitor Action Group for the pipeline operations team. Supports email and webhook (e.g. Teams/Slack) notification channels.",
+    "migrated_from": "AWS SNS Topics"
+  },
+  "parameters": {
+    "actionGroupName": {
+      "type": "string",
+      "defaultValue": "ag-ecommerce-pipeline-ops"
+    },
+    "actionGroupShortName": {
+      "type": "string",
+      "defaultValue": "ecomm-ops",
+      "maxLength": 12
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "global"
+    },
+    "emailReceivers": {
+      "type": "array",
+      "defaultValue": [
+        {
+          "name": "DataEngTeam",
+          "emailAddress": "__ALERT_EMAIL__",
+          "useCommonAlertSchema": true
+        }
+      ],
+      "metadata": {
+        "description": "List of email receiver objects. Each must have: name, emailAddress, useCommonAlertSchema."
+      }
+    },
+    "webhookReceivers": {
+      "type": "array",
+      "defaultValue": [],
+      "metadata": {
+        "description": "Optional webhook receivers (e.g. Teams or Slack incoming webhook URL). Each must have: name, serviceUri, useCommonAlertSchema."
+      }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Insights/actionGroups",
+      "apiVersion": "2023-01-01",
+      "name": "[parameters('actionGroupName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "groupShortName": "[parameters('actionGroupShortName')]",
+        "enabled": true,
+        "emailReceivers": "[parameters('emailReceivers')]",
+        "webhookReceivers": "[parameters('webhookReceivers')]",
+        "smsReceivers": [],
+        "azureAppPushReceivers": []
+      }
+    }
+  ],
+  "outputs": {
+    "actionGroupId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/actionGroups', parameters('actionGroupName'))]"
+    }
+  }
+}

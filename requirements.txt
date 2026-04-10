@@ -2,3 +2,6 @@ pandas
 pytest
 jupyter
 notebook
+# Azure Monitor / Application Insights SDK (optional – pipeline degrades gracefully without it)
+# Install when deploying to Azure: pip install opencensus-ext-azure
+opencensus-ext-azure

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Central configuration for the e-commerce orders pipeline Azure monitoring stack.",
+  "azure": {
+    "subscriptionId": "__SUBSCRIPTION_ID__",
+    "resourceGroupName": "rg-ecommerce-pipeline-monitoring",
+    "location": "eastus",
+    "tenantId": "__TENANT_ID__",
+    "tags": {
+      "project": "ecommerce-orders-pipeline",
+      "environment": "production",
+      "migrated_from": "aws",
+      "owner": "data-engineering"
+    }
+  },
+  "logAnalytics": {
+    "workspaceName": "law-ecommerce-pipeline",
+    "sku": "PerGB2018",
+    "retentionInDays": 90,
+    "dailyQuotaGb": 5
+  },
+  "applicationInsights": {
+    "name": "appi-ecommerce-pipeline",
+    "kind": "other",
+    "samplingPercentage": 100
+  },
+  "alerts": {
+    "actionGroupName": "ag-ecommerce-pipeline-ops",
+    "actionGroupShortName": "ecomm-ops",
+    "emailReceivers": [
+      {
+        "name": "DataEngTeam",
+        "emailAddress": "__ALERT_EMAIL__",
+        "useCommonAlertSchema": true
+      }
+    ],
+    "rules": {
+      "pipelineFailure": {
+        "name": "alert-pipeline-failure",
+        "description": "Fires when ingest or transform pipeline exits with an error.",
+        "severity": 1,
+        "windowSizeMinutes": 5,
+        "frequencyMinutes": 5
+      },
+      "qualityCheckFail": {
+        "name": "alert-quality-check-fail",
+        "description": "Fires when a data quality check reports FAIL.",
+        "severity": 2,
+        "windowSizeMinutes": 10,
+        "frequencyMinutes": 5
+      },
+      "highNullRate": {
+        "name": "alert-high-null-rate",
+        "description": "Fires when null rate in order_value exceeds 5 %.",
+        "severity": 2,
+        "thresholdPercent": 5,
+        "windowSizeMinutes": 15,
+        "frequencyMinutes": 5
+      },
+      "longPipelineDuration": {
+        "name": "alert-long-pipeline-duration",
+        "description": "Fires when pipeline run duration exceeds 10 minutes.",
+        "severity": 3,
+        "thresholdSeconds": 600,
+        "windowSizeMinutes": 15,
+        "frequencyMinutes": 5
+      }
+    }
+  },
+  "dashboard": {
+    "name": "dash-ecommerce-pipeline",
+    "title": "E-Commerce Orders Pipeline – Azure Monitor Dashboard"
+  }
+}

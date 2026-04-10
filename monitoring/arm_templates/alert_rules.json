@@ -1,0 +1,207 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys all Scheduled Query (Log Analytics) alert rules for the e-commerce orders pipeline. Four rules are created: pipeline failure, quality check FAIL, high null rate, and long pipeline duration.",
+    "migrated_from": "AWS CloudWatch Alarms"
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "logAnalyticsWorkspaceId": {
+      "type": "string",
+      "metadata": {
+        "description": "Full resource ID of the Log Analytics Workspace."
+      }
+    },
+    "appInsightsId": {
+      "type": "string",
+      "metadata": {
+        "description": "Full resource ID of the Application Insights component."
+      }
+    },
+    "actionGroupId": {
+      "type": "string",
+      "metadata": {
+        "description": "Full resource ID of the Action Group for alert notifications."
+      }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "variables": {
+    "dataSourceId": "[parameters('appInsightsId')]"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-pipeline-failure",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Pipeline Failure – Ingest or Transform",
+        "description": "Fires when an ingest or transform pipeline step logs an ERROR-level event. Replaces AWS CloudWatch alarm on Lambda/Glue job failure.",
+        "severity": 1,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT5M",
+        "scopes": ["[parameters('appInsightsId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AppTraces | where SeverityLevel >= 3 and (Properties.pipeline == 'ingest' or Properties.pipeline == 'transform') | where Properties.event_type == 'pipeline_error'",
+              "timeAggregation": "Count",
+              "operator": "GreaterThan",
+              "threshold": 0,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "actions": {
+          "actionGroups": ["[parameters('actionGroupId')]"],
+          "customProperties": {
+            "runbook": "https://wiki.example.com/runbooks/pipeline-failure"
+          }
+        },
+        "autoMitigate": true
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-quality-check-fail",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Data Quality Check – FAIL",
+        "description": "Fires when any data quality check emits a FAIL result. Replaces AWS CloudWatch Logs metric filter on quality check output.",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT10M",
+        "scopes": ["[parameters('appInsightsId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AppTraces | where Properties.event_type == 'quality_check' and Properties.result == 'FAIL'",
+              "timeAggregation": "Count",
+              "operator": "GreaterThan",
+              "threshold": 0,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "actions": {
+          "actionGroups": ["[parameters('actionGroupId')]"],
+          "customProperties": {
+            "runbook": "https://wiki.example.com/runbooks/quality-check-failure"
+          }
+        },
+        "autoMitigate": true
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-high-null-rate",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "High Null Rate – order_value > 5%",
+        "description": "Fires when the null rate for order_value exceeds 5 %. Replaces AWS CloudWatch custom metric alarm on data completeness.",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT15M",
+        "scopes": ["[parameters('appInsightsId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AppMetrics | where Name == 'null_rate_percent' and Properties.column == 'order_value' | summarize AvgNullRate = avg(Sum)",
+              "timeAggregation": "Average",
+              "metricMeasureColumn": "AvgNullRate",
+              "operator": "GreaterThan",
+              "threshold": 5,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "actions": {
+          "actionGroups": ["[parameters('actionGroupId')]"]
+        },
+        "autoMitigate": true
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-long-pipeline-duration",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Long Pipeline Duration > 10 min",
+        "description": "Fires when any single pipeline run takes longer than 600 seconds. Replaces AWS CloudWatch Glue job duration alarm.",
+        "severity": 3,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT15M",
+        "scopes": ["[parameters('appInsightsId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AppMetrics | where Name == 'pipeline_duration_seconds' | summarize MaxDuration = max(Sum)",
+              "timeAggregation": "Maximum",
+              "metricMeasureColumn": "MaxDuration",
+              "operator": "GreaterThan",
+              "threshold": 600,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "actions": {
+          "actionGroups": ["[parameters('actionGroupId')]"]
+        },
+        "autoMitigate": true
+      }
+    }
+  ],
+  "outputs": {
+    "pipelineFailureAlertId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/scheduledQueryRules', 'alert-pipeline-failure')]"
+    },
+    "qualityCheckFailAlertId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/scheduledQueryRules', 'alert-quality-check-fail')]"
+    },
+    "highNullRateAlertId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/scheduledQueryRules', 'alert-high-null-rate')]"
+    },
+    "longDurationAlertId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/scheduledQueryRules', 'alert-long-pipeline-duration')]"
+    }
+  }
+}

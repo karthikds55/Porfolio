@@ -1,0 +1,146 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys an Azure Log Analytics Workspace for the e-commerce orders pipeline. All pipeline telemetry (structured logs, quality-check results, custom metrics) is routed here.",
+    "migrated_from": "AWS CloudWatch Logs"
+  },
+  "parameters": {
+    "workspaceName": {
+      "type": "string",
+      "defaultValue": "law-ecommerce-pipeline",
+      "metadata": {
+        "description": "Name of the Log Analytics Workspace."
+      }
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {
+        "description": "Azure region for all resources."
+      }
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "PerGB2018",
+      "allowedValues": ["Free", "PerNode", "PerGB2018", "Standard", "Premium"],
+      "metadata": {
+        "description": "Pricing tier for the workspace."
+      }
+    },
+    "retentionInDays": {
+      "type": "int",
+      "defaultValue": 90,
+      "minValue": 30,
+      "maxValue": 730,
+      "metadata": {
+        "description": "Data retention period in days."
+      }
+    },
+    "dailyQuotaGb": {
+      "type": "int",
+      "defaultValue": 5,
+      "metadata": {
+        "description": "Daily ingestion cap in GB. Set to -1 for unlimited."
+      }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "apiVersion": "2023-09-01",
+      "name": "[parameters('workspaceName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "sku": {
+          "name": "[parameters('sku')]"
+        },
+        "retentionInDays": "[parameters('retentionInDays')]",
+        "workspaceCapping": {
+          "dailyQuotaGb": "[parameters('dailyQuotaGb')]"
+        },
+        "features": {
+          "enableDataExport": true,
+          "disableLocalAuth": false
+        },
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+      "apiVersion": "2020-08-01",
+      "name": "[concat(parameters('workspaceName'), '/PipelineErrors')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "category": "EcommercePipeline",
+        "displayName": "Pipeline Errors (last 24 h)",
+        "query": "AppTraces | where SeverityLevel >= 3 and Properties.pipeline in ('ingest', 'transform') | order by TimeGenerated desc | project TimeGenerated, Message, Properties.pipeline, Properties.stage, SeverityLevel",
+        "version": 2
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+      "apiVersion": "2020-08-01",
+      "name": "[concat(parameters('workspaceName'), '/QualityCheckResults')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "category": "EcommercePipeline",
+        "displayName": "Quality Check Results",
+        "query": "AppTraces | where Properties.event_type == 'quality_check' | project TimeGenerated, Properties.check_name, Properties.result, Properties.details | order by TimeGenerated desc",
+        "version": 2
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+      "apiVersion": "2020-08-01",
+      "name": "[concat(parameters('workspaceName'), '/PipelineDurationTrend')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "category": "EcommercePipeline",
+        "displayName": "Pipeline Run Duration Trend",
+        "query": "AppMetrics | where Name == 'pipeline_duration_seconds' | summarize avg(Sum), max(Sum) by bin(TimeGenerated, 1h), tostring(Properties.pipeline) | order by TimeGenerated desc",
+        "version": 2
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/savedSearches",
+      "apiVersion": "2020-08-01",
+      "name": "[concat(parameters('workspaceName'), '/NullRateOverTime')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "category": "EcommercePipeline",
+        "displayName": "Null Rate – order_value over time",
+        "query": "AppMetrics | where Name == 'null_rate_percent' and Properties.column == 'order_value' | summarize avg(Sum) by bin(TimeGenerated, 1h) | order by TimeGenerated desc",
+        "version": 2
+      }
+    }
+  ],
+  "outputs": {
+    "workspaceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+    },
+    "workspaceCustomerId": {
+      "type": "string",
+      "value": "[reference(resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))).customerId]"
+    }
+  }
+}

@@ -6,13 +6,17 @@ Run: python -m pipelines.transform
 import pandas as pd
 from pathlib import Path
 
+from monitoring.azure_monitor import get_logger, pipeline_span
 
 STAGING_DIR = Path(__file__).parent.parent / "data" / "staging"
 MARTS_DIR = Path(__file__).parent.parent / "data" / "marts"
 
+logger = get_logger("transform")
+
 
 def load_staging(name: str = "orders_staging") -> pd.DataFrame:
     path = STAGING_DIR / f"{name}.csv"
+    logger.info("Loading staging file: %s", path)
     df = pd.read_csv(path, parse_dates=["order_date"])
     return df
 
@@ -54,13 +58,16 @@ def save_mart(df: pd.DataFrame, name: str) -> Path:
     MARTS_DIR.mkdir(parents=True, exist_ok=True)
     out = MARTS_DIR / f"{name}.csv"
     df.to_csv(out, index=False)
+    logger.info("[transform] Saved %d rows → %s", len(df), out)
     print(f"[transform] Saved {len(df):,} rows → {out}")
     return out
 
 
 if __name__ == "__main__":
-    df = load_staging()
-    daily = build_daily_summary(df)
-    category = build_category_summary(df)
-    save_mart(daily, "daily_summary")
-    save_mart(category, "category_summary")
+    with pipeline_span("transform") as ctx:
+        df = load_staging()
+        daily = build_daily_summary(df)
+        category = build_category_summary(df)
+        save_mart(daily, "daily_summary")
+        save_mart(category, "category_summary")
+        ctx["record_count"] = len(daily) + len(category)
