@@ -1,0 +1,117 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys a Log Analytics Workspace for the ecommerce orders pipeline. Replaces AWS CloudWatch Log Groups.",
+    "migratedFrom": "AWS CloudWatch Log Groups: /ecommerce/pipeline/ingest, /ecommerce/pipeline/transform, /ecommerce/pipeline/quality"
+  },
+  "parameters": {
+    "workspaceName": {
+      "type": "string",
+      "defaultValue": "law-ecommerce-pipeline-prod",
+      "metadata": {"description": "Name of the Log Analytics Workspace."}
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": {"description": "Azure region for deployment."}
+    },
+    "sku": {
+      "type": "string",
+      "defaultValue": "PerGB2018",
+      "allowedValues": ["PerGB2018", "Free", "Standalone", "PerNode"],
+      "metadata": {"description": "Pricing tier."}
+    },
+    "retentionDays": {
+      "type": "int",
+      "defaultValue": 30,
+      "minValue": 7,
+      "maxValue": 730,
+      "metadata": {"description": "Data retention in days (maps to CloudWatch log group retention_days)."}
+    },
+    "dailyQuotaGb": {
+      "type": "int",
+      "defaultValue": 5,
+      "metadata": {"description": "Daily ingestion cap in GB (-1 to disable)."}
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces",
+      "apiVersion": "2022-10-01",
+      "name": "[parameters('workspaceName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "sku": {"name": "[parameters('sku')]"},
+        "retentionInDays": "[parameters('retentionDays')]",
+        "workspaceCapping": {"dailyQuotaGb": "[parameters('dailyQuotaGb')]"},
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/tables",
+      "apiVersion": "2022-10-01",
+      "name": "[concat(parameters('workspaceName'), '/PipelineEvents_CL')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "retentionInDays": "[parameters('retentionDays')]",
+        "schema": {
+          "name": "PipelineEvents_CL",
+          "columns": [
+            {"name": "TimeGenerated",   "type": "datetime"},
+            {"name": "Stage",           "type": "string"},
+            {"name": "Status",          "type": "string"},
+            {"name": "Message",         "type": "string"},
+            {"name": "RowCount",        "type": "int"},
+            {"name": "DurationSeconds", "type": "real"},
+            {"name": "ErrorDetails",    "type": "string"},
+            {"name": "RunId",           "type": "string"}
+          ]
+        }
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/tables",
+      "apiVersion": "2022-10-01",
+      "name": "[concat(parameters('workspaceName'), '/QualityCheckResults_CL')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+      ],
+      "properties": {
+        "retentionInDays": "[parameters('retentionDays')]",
+        "schema": {
+          "name": "QualityCheckResults_CL",
+          "columns": [
+            {"name": "TimeGenerated", "type": "datetime"},
+            {"name": "CheckName",    "type": "string"},
+            {"name": "Result",       "type": "string"},
+            {"name": "Details",      "type": "string"},
+            {"name": "RunId",        "type": "string"}
+          ]
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "workspaceId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]"
+    },
+    "workspaceCustomerId": {
+      "type": "string",
+      "value": "[reference(parameters('workspaceName')).customerId]"
+    }
+  }
+}

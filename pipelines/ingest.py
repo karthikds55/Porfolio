@@ -1,10 +1,21 @@
 """
 Ingestion pipeline: loads raw CSV data into a staging layer.
 Run: python -m pipelines.ingest
+
+Azure Monitor telemetry is emitted when the APPLICATIONINSIGHTS_CONNECTION_STRING
+and AZURE_LOG_ANALYTICS_* environment variables are set (see monitoring/README.md).
+Runs normally without them – telemetry is silently skipped.
 """
 
 import pandas as pd
 from pathlib import Path
+
+# Optional Azure Monitor integration (no-op if env vars / SDK not present)
+try:
+    from monitoring.pipeline_telemetry import PipelineRun, stage_telemetry
+    _TELEMETRY_AVAILABLE = True
+except ImportError:
+    _TELEMETRY_AVAILABLE = False
 
 
 RAW_DIR = Path(__file__).parent.parent / "data" / "raw"
@@ -32,5 +43,12 @@ def save_staging(df: pd.DataFrame, name: str = "orders_staging") -> Path:
 
 
 if __name__ == "__main__":
-    orders = ingest_orders()
-    save_staging(orders)
+    if _TELEMETRY_AVAILABLE:
+        with PipelineRun() as run:
+            with stage_telemetry(run, "ingest") as ctx:
+                orders = ingest_orders()
+                save_staging(orders)
+                ctx.set_row_count(len(orders))
+    else:
+        orders = ingest_orders()
+        save_staging(orders)

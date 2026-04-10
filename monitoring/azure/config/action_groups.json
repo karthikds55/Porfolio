@@ -1,0 +1,79 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Azure Monitor Action Groups – equivalent to AWS SNS topics used by CloudWatch alarms. Replace placeholder emails/URLs before deploying.",
+
+  "action_groups": [
+    {
+      "name": "ag-pipeline-critical",
+      "short_name": "PipeCrit",
+      "description": "Notified on Error/Critical pipeline alerts. Replaces SNS topic arn:aws:sns:…:pipeline-alerts.",
+      "enabled": true,
+      "receivers": {
+        "email": [
+          {
+            "name": "DataEngineering-Email",
+            "email_address": "data-engineering@example.com",
+            "use_common_alert_schema": true
+          },
+          {
+            "name": "DBA-Email",
+            "email_address": "dba-team@example.com",
+            "use_common_alert_schema": true
+          }
+        ],
+        "sms": [
+          {
+            "name": "OnCall-SMS",
+            "country_code": "1",
+            "phone_number": "5550000000"
+          }
+        ],
+        "webhook": [
+          {
+            "name": "Teams-Webhook",
+            "service_uri": "https://outlook.office.com/webhook/__TEAMS_WEBHOOK_ID__",
+            "use_common_alert_schema": true,
+            "_comment": "Replace __TEAMS_WEBHOOK_ID__ with your Microsoft Teams incoming webhook URL"
+          }
+        ],
+        "azure_function": [],
+        "logic_app": []
+      }
+    },
+    {
+      "name": "ag-pipeline-warning",
+      "short_name": "PipeWarn",
+      "description": "Notified on Warning-level pipeline alerts (stale pipeline, long run times).",
+      "enabled": true,
+      "receivers": {
+        "email": [
+          {
+            "name": "DataEngineering-Email",
+            "email_address": "data-engineering@example.com",
+            "use_common_alert_schema": true
+          }
+        ],
+        "sms": [],
+        "webhook": [
+          {
+            "name": "Teams-Webhook",
+            "service_uri": "https://outlook.office.com/webhook/__TEAMS_WEBHOOK_ID__",
+            "use_common_alert_schema": true
+          }
+        ],
+        "azure_function": [],
+        "logic_app": []
+      }
+    }
+  ],
+
+  "migration_notes": {
+    "aws_sns_topic": "arn:aws:sns:us-east-1:123456789012:pipeline-alerts",
+    "azure_equivalent": "Action Groups ag-pipeline-critical and ag-pipeline-warning",
+    "key_differences": [
+      "Azure Action Groups support SMS, Email, Voice, Webhook, ITSM, Runbook, Logic App, and Azure Function receivers natively.",
+      "A single Action Group can be reused across multiple alert rules (unlike SNS where each alarm specifies its own topic ARN).",
+      "Microsoft Teams integration uses the built-in 'Microsoft Teams' receiver type or a Webhook to an Incoming Webhook connector."
+    ]
+  }
+}

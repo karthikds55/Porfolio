@@ -1,0 +1,123 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Azure Monitor alert rule definitions – migrated from AWS CloudWatch Alarms. Deploy via 01_setup_azure_monitoring.ps1 or the ARM template.",
+
+  "alert_rules": [
+    {
+      "name": "alert-pipeline-ingest-errors",
+      "display_name": "Pipeline Ingest Errors",
+      "description": "Fires when any ERROR is logged during the ingest stage. Equivalent to AWS CloudWatch alarm 'PipelineIngestErrors'.",
+      "severity": 2,
+      "enabled": true,
+      "evaluation_frequency": "PT5M",
+      "window_size": "PT5M",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'ERROR' | count",
+      "threshold": {
+        "operator": "GreaterThanOrEqual",
+        "value": 1
+      },
+      "action_group": "ag-pipeline-critical",
+      "aws_equivalent": "CloudWatch Alarm: PipelineIngestErrors"
+    },
+    {
+      "name": "alert-transform-errors",
+      "display_name": "Pipeline Transform Errors",
+      "description": "Fires when any ERROR is logged during the transform stage.",
+      "severity": 2,
+      "enabled": true,
+      "evaluation_frequency": "PT5M",
+      "window_size": "PT5M",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "PipelineEvents_CL | where Stage == 'transform' and Status == 'ERROR' | count",
+      "threshold": {
+        "operator": "GreaterThanOrEqual",
+        "value": 1
+      },
+      "action_group": "ag-pipeline-critical",
+      "aws_equivalent": "CloudWatch Alarm: PipelineTransformErrors"
+    },
+    {
+      "name": "alert-quality-check-failures",
+      "display_name": "Data Quality Check Failures",
+      "description": "Fires when one or more [FAIL] quality checks are recorded. Equivalent to AWS CloudWatch alarm 'DataQualityFailures'.",
+      "severity": 1,
+      "enabled": true,
+      "evaluation_frequency": "PT5M",
+      "window_size": "PT15M",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "QualityCheckResults_CL | where Result == 'FAIL' | count",
+      "threshold": {
+        "operator": "GreaterThanOrEqual",
+        "value": 1
+      },
+      "action_group": "ag-pipeline-critical",
+      "aws_equivalent": "CloudWatch Alarm: DataQualityFailures"
+    },
+    {
+      "name": "alert-pipeline-stale",
+      "display_name": "Pipeline Stale (No Ingest in 24 h)",
+      "description": "Fires when no successful ingest run is recorded within 24 hours. Equivalent to AWS CloudWatch alarm 'PipelineStale' with treat_missing_data=breaching.",
+      "severity": 2,
+      "enabled": true,
+      "evaluation_frequency": "PT1H",
+      "window_size": "P1D",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'SUCCESS' | count",
+      "threshold": {
+        "operator": "LessThan",
+        "value": 1
+      },
+      "action_group": "ag-pipeline-warning",
+      "aws_equivalent": "CloudWatch Alarm: PipelineStale"
+    },
+    {
+      "name": "alert-high-quality-failure-rate",
+      "display_name": "High Quality Failure Rate (>3 failures in 1 h)",
+      "description": "Fires when quality checks produce more than 3 failures within a 1-hour window – possible systemic data issue.",
+      "severity": 1,
+      "enabled": true,
+      "evaluation_frequency": "PT15M",
+      "window_size": "PT1H",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "QualityCheckResults_CL | where Result == 'FAIL' | where TimeGenerated > ago(1h) | count",
+      "threshold": {
+        "operator": "GreaterThan",
+        "value": 3
+      },
+      "action_group": "ag-pipeline-critical",
+      "aws_equivalent": "new – no direct CloudWatch equivalent"
+    },
+    {
+      "name": "alert-long-running-pipeline",
+      "display_name": "Pipeline Run Duration Exceeded 10 Minutes",
+      "description": "Fires when any pipeline stage takes longer than 600 seconds – indicates a performance regression.",
+      "severity": 3,
+      "enabled": true,
+      "evaluation_frequency": "PT5M",
+      "window_size": "PT15M",
+      "auto_mitigate": true,
+      "type": "log_alert",
+      "query": "PipelineEvents_CL | where DurationSeconds > 600 | count",
+      "threshold": {
+        "operator": "GreaterThanOrEqual",
+        "value": 1
+      },
+      "action_group": "ag-pipeline-warning",
+      "aws_equivalent": "new – no direct CloudWatch equivalent"
+    }
+  ],
+
+  "severity_reference": {
+    "0": "Critical",
+    "1": "Error",
+    "2": "Warning",
+    "3": "Informational",
+    "4": "Verbose"
+  }
+}

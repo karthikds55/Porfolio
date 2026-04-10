@@ -1,0 +1,185 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys all Azure Monitor Scheduled Query (Log) Alert Rules for the ecommerce pipeline. Replaces AWS CloudWatch Alarms.",
+    "migratedFrom": "AWS CloudWatch Alarms: PipelineIngestErrors, DataQualityFailures, PipelineStale"
+  },
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "logAnalyticsWorkspaceId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the Log Analytics Workspace."}
+    },
+    "criticalActionGroupId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the 'ag-pipeline-critical' action group."}
+    },
+    "warningActionGroupId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the 'ag-pipeline-warning' action group."}
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "variables": {
+    "criticalActionGroups": [{"actionGroupId": "[parameters('criticalActionGroupId')]"}],
+    "warningActionGroups":  [{"actionGroupId": "[parameters('warningActionGroupId')]"}]
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-pipeline-ingest-errors",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Pipeline Ingest Errors",
+        "description": "Fires on any ERROR during the ingest stage. AWS equiv: PipelineIngestErrors alarm.",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT5M",
+        "autoMitigate": true,
+        "scopes": ["[parameters('logAnalyticsWorkspaceId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'ERROR' | count",
+              "timeAggregation": "Count",
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {"numberOfEvaluationPeriods": 1, "minFailingPeriodsToAlert": 1}
+            }
+          ]
+        },
+        "actions": {"actionGroups": "[variables('criticalActionGroups')]"}
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-transform-errors",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Pipeline Transform Errors",
+        "description": "Fires on any ERROR during the transform stage.",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT5M",
+        "autoMitigate": true,
+        "scopes": ["[parameters('logAnalyticsWorkspaceId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "PipelineEvents_CL | where Stage == 'transform' and Status == 'ERROR' | count",
+              "timeAggregation": "Count",
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {"numberOfEvaluationPeriods": 1, "minFailingPeriodsToAlert": 1}
+            }
+          ]
+        },
+        "actions": {"actionGroups": "[variables('criticalActionGroups')]"}
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-quality-check-failures",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Data Quality Check Failures",
+        "description": "Fires on any [FAIL] quality check result. AWS equiv: DataQualityFailures alarm.",
+        "severity": 1,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT15M",
+        "autoMitigate": true,
+        "scopes": ["[parameters('logAnalyticsWorkspaceId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "QualityCheckResults_CL | where Result == 'FAIL' | count",
+              "timeAggregation": "Count",
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {"numberOfEvaluationPeriods": 1, "minFailingPeriodsToAlert": 1}
+            }
+          ]
+        },
+        "actions": {"actionGroups": "[variables('criticalActionGroups')]"}
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-pipeline-stale",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Pipeline Stale (No Ingest in 24 h)",
+        "description": "Fires when no successful ingest run is recorded in 24 h. AWS equiv: PipelineStale alarm (treat_missing_data=breaching).",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT1H",
+        "windowSize": "P1D",
+        "autoMitigate": true,
+        "scopes": ["[parameters('logAnalyticsWorkspaceId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'SUCCESS' | count",
+              "timeAggregation": "Count",
+              "operator": "LessThan",
+              "threshold": 1,
+              "failingPeriods": {"numberOfEvaluationPeriods": 1, "minFailingPeriodsToAlert": 1}
+            }
+          ]
+        },
+        "actions": {"actionGroups": "[variables('warningActionGroups')]"}
+      }
+    },
+    {
+      "type": "Microsoft.Insights/scheduledQueryRules",
+      "apiVersion": "2023-03-15-preview",
+      "name": "alert-long-running-pipeline",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "displayName": "Pipeline Run Duration Exceeded 10 Minutes",
+        "description": "Fires when any pipeline stage exceeds 600 seconds runtime.",
+        "severity": 3,
+        "enabled": true,
+        "evaluationFrequency": "PT5M",
+        "windowSize": "PT15M",
+        "autoMitigate": true,
+        "scopes": ["[parameters('logAnalyticsWorkspaceId')]"],
+        "criteria": {
+          "allOf": [
+            {
+              "query": "PipelineEvents_CL | where DurationSeconds > 600 | count",
+              "timeAggregation": "Count",
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {"numberOfEvaluationPeriods": 1, "minFailingPeriodsToAlert": 1}
+            }
+          ]
+        },
+        "actions": {"actionGroups": "[variables('warningActionGroups')]"}
+      }
+    }
+  ]
+}

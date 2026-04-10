@@ -1,0 +1,127 @@
+{
+  "_comment": "LEGACY – AWS CloudWatch monitoring config for the ecommerce orders pipeline. Kept as a migration reference. Do NOT deploy.",
+  "cloudwatch": {
+    "namespace": "EcommerceOrdersPipeline",
+    "region": "us-east-1",
+    "log_groups": [
+      {
+        "name": "/ecommerce/pipeline/ingest",
+        "retention_days": 30,
+        "metric_filters": [
+          {
+            "filter_name": "IngestErrorCount",
+            "filter_pattern": "[ERROR]",
+            "metric_name": "IngestErrors",
+            "metric_namespace": "EcommerceOrdersPipeline",
+            "metric_value": "1",
+            "default_value": "0"
+          },
+          {
+            "filter_name": "IngestRowCount",
+            "filter_pattern": "[ingest] Saved *",
+            "metric_name": "IngestRowCount",
+            "metric_namespace": "EcommerceOrdersPipeline",
+            "metric_value": "$rows",
+            "default_value": "0"
+          }
+        ]
+      },
+      {
+        "name": "/ecommerce/pipeline/transform",
+        "retention_days": 30,
+        "metric_filters": [
+          {
+            "filter_name": "TransformErrorCount",
+            "filter_pattern": "[ERROR]",
+            "metric_name": "TransformErrors",
+            "metric_namespace": "EcommerceOrdersPipeline",
+            "metric_value": "1",
+            "default_value": "0"
+          }
+        ]
+      },
+      {
+        "name": "/ecommerce/pipeline/quality",
+        "retention_days": 30,
+        "metric_filters": [
+          {
+            "filter_name": "QualityFailCount",
+            "filter_pattern": "[FAIL]",
+            "metric_name": "QualityCheckFailures",
+            "metric_namespace": "EcommerceOrdersPipeline",
+            "metric_value": "1",
+            "default_value": "0"
+          }
+        ]
+      }
+    ],
+    "alarms": [
+      {
+        "alarm_name": "PipelineIngestErrors",
+        "alarm_description": "Triggers when ingest stage logs errors",
+        "metric_name": "IngestErrors",
+        "namespace": "EcommerceOrdersPipeline",
+        "statistic": "Sum",
+        "period_seconds": 300,
+        "evaluation_periods": 1,
+        "threshold": 1,
+        "comparison_operator": "GreaterThanOrEqualToThreshold",
+        "actions_enabled": true,
+        "alarm_actions": ["arn:aws:sns:us-east-1:123456789012:pipeline-alerts"],
+        "ok_actions": ["arn:aws:sns:us-east-1:123456789012:pipeline-alerts"]
+      },
+      {
+        "alarm_name": "DataQualityFailures",
+        "alarm_description": "Triggers on any [FAIL] data quality check",
+        "metric_name": "QualityCheckFailures",
+        "namespace": "EcommerceOrdersPipeline",
+        "statistic": "Sum",
+        "period_seconds": 300,
+        "evaluation_periods": 1,
+        "threshold": 1,
+        "comparison_operator": "GreaterThanOrEqualToThreshold",
+        "actions_enabled": true,
+        "alarm_actions": ["arn:aws:sns:us-east-1:123456789012:pipeline-alerts"]
+      },
+      {
+        "alarm_name": "PipelineStale",
+        "alarm_description": "Triggers when no ingest rows are reported for 24 h",
+        "metric_name": "IngestRowCount",
+        "namespace": "EcommerceOrdersPipeline",
+        "statistic": "Sum",
+        "period_seconds": 86400,
+        "evaluation_periods": 1,
+        "threshold": 1,
+        "comparison_operator": "LessThanThreshold",
+        "treat_missing_data": "breaching",
+        "actions_enabled": true,
+        "alarm_actions": ["arn:aws:sns:us-east-1:123456789012:pipeline-alerts"]
+      }
+    ],
+    "dashboard": {
+      "name": "EcommerceOrdersPipeline",
+      "widgets": [
+        {"type": "metric", "title": "Ingest Row Count (24 h)", "metric": "IngestRowCount"},
+        {"type": "metric", "title": "Quality Check Failures (24 h)", "metric": "QualityCheckFailures"},
+        {"type": "metric", "title": "Ingest Errors (1 h)", "metric": "IngestErrors"},
+        {"type": "metric", "title": "Transform Errors (1 h)", "metric": "TransformErrors"},
+        {"type": "log",    "title": "Recent Pipeline Logs", "log_group": "/ecommerce/pipeline/ingest"}
+      ]
+    },
+    "s3_log_archive": {
+      "bucket": "ecommerce-pipeline-logs-archive",
+      "prefix": "cloudwatch-exports/",
+      "export_schedule_cron": "cron(0 2 * * ? *)"
+    }
+  },
+  "migration_mapping": {
+    "CloudWatch Log Groups"     : "Azure Log Analytics Workspace",
+    "CloudWatch Metric Filters" : "Azure Monitor Log-based Metrics",
+    "CloudWatch Alarms"         : "Azure Monitor Alert Rules",
+    "SNS Topics"                : "Azure Monitor Action Groups (Email/Teams)",
+    "CloudWatch Dashboard"      : "Azure Monitor Workbook / Dashboard",
+    "S3 Log Archive"            : "Azure Blob Storage (Cool tier)",
+    "CloudWatch Insights"       : "Azure Log Analytics KQL Queries",
+    "AWS X-Ray"                 : "Azure Application Insights"
+  }
+}

@@ -1,10 +1,20 @@
 """
 Transform pipeline: applies business logic to staged data and writes mart tables.
 Run: python -m pipelines.transform
+
+Azure Monitor telemetry is emitted when the APPLICATIONINSIGHTS_CONNECTION_STRING
+and AZURE_LOG_ANALYTICS_* environment variables are set (see monitoring/README.md).
+Runs normally without them – telemetry is silently skipped.
 """
 
 import pandas as pd
 from pathlib import Path
+
+try:
+    from monitoring.pipeline_telemetry import PipelineRun, stage_telemetry
+    _TELEMETRY_AVAILABLE = True
+except ImportError:
+    _TELEMETRY_AVAILABLE = False
 
 
 STAGING_DIR = Path(__file__).parent.parent / "data" / "staging"
@@ -59,8 +69,18 @@ def save_mart(df: pd.DataFrame, name: str) -> Path:
 
 
 if __name__ == "__main__":
-    df = load_staging()
-    daily = build_daily_summary(df)
-    category = build_category_summary(df)
-    save_mart(daily, "daily_summary")
-    save_mart(category, "category_summary")
+    if _TELEMETRY_AVAILABLE:
+        with PipelineRun() as run:
+            with stage_telemetry(run, "transform") as ctx:
+                df = load_staging()
+                daily = build_daily_summary(df)
+                category = build_category_summary(df)
+                save_mart(daily, "daily_summary")
+                save_mart(category, "category_summary")
+                ctx.set_row_count(len(df))
+    else:
+        df = load_staging()
+        daily = build_daily_summary(df)
+        category = build_category_summary(df)
+        save_mart(daily, "daily_summary")
+        save_mart(category, "category_summary")
