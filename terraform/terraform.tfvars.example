@@ -1,0 +1,14 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# Bucket names must be globally unique across all AWS accounts.
+
+aws_region          = "us-east-1"
+project_name        = "data-engineering"
+environment         = "dev"
+
+raw_bucket_name     = "your-org-data-engineering-raw-dev"
+parquet_bucket_name = "your-org-data-engineering-parquet-dev"
+
+raw_prefix             = "raw/"
+raw_retention_days     = 30
+lambda_timeout_seconds = 300
+lambda_memory_mb       = 1024

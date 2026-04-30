@@ -1,12 +1,20 @@
 """
 Transform pipeline: applies business logic to staged data and writes mart tables.
-Run: python -m pipelines.transform
+
+Local mode (default):
+    python -m pipelines.transform
+
+Cloud mode (reads staged Parquet from S3):
+    S3_STAGING_BUCKET=my-parquet-bucket S3_STAGING_KEY=orders_staging.parquet \
+        python -m pipelines.transform
 
 Azure Monitor telemetry is emitted when the APPLICATIONINSIGHTS_CONNECTION_STRING
 and AZURE_LOG_ANALYTICS_* environment variables are set (see monitoring/README.md).
 Runs normally without them – telemetry is silently skipped.
 """
 
+import os
+import tempfile
 from pathlib import Path
 
 import pandas as pd
@@ -96,19 +104,36 @@ def save_mart(df: pd.DataFrame, name: str) -> Path:
     return out
 
 
+def load_staging_from_s3(bucket: str, key: str) -> pd.DataFrame:
+    """Download a Parquet staging file from S3 and return as a DataFrame."""
+    from pipelines.s3_utils import download_from_s3
+
+    with tempfile.TemporaryDirectory() as tmp:
+        local = Path(tmp) / Path(key).name
+        download_from_s3(bucket, key, local)
+        df = pd.read_parquet(local)
+    print(f"[transform] Loaded {len(df):,} rows from s3://{bucket}/{key}")
+    return df
+
+
 if __name__ == "__main__":
+    s3_bucket = os.environ.get("S3_STAGING_BUCKET")
+    s3_key = os.environ.get("S3_STAGING_KEY")
+
+    if s3_bucket and s3_key:
+        df = load_staging_from_s3(s3_bucket, s3_key)
+    else:
+        df = load_staging()
+
+    daily = build_daily_summary(df)
+    category = build_category_summary(df)
+
     if _TELEMETRY_AVAILABLE:
         with PipelineRun() as run:
             with stage_telemetry(run, "transform") as ctx:
-                df = load_staging()
-                daily = build_daily_summary(df)
-                category = build_category_summary(df)
                 save_mart(daily, "daily_summary")
                 save_mart(category, "category_summary")
                 ctx.set_row_count(len(df))
     else:
-        df = load_staging()
-        daily = build_daily_summary(df)
-        category = build_category_summary(df)
         save_mart(daily, "daily_summary")
         save_mart(category, "category_summary")

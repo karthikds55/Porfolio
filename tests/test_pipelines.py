@@ -38,7 +38,7 @@ def test_ingest_orders_date_dtype():
 
 def test_ingest_orders_discount_bool():
     df = ingest_orders(RAW_ORDERS)
-    assert df["discount_applied"].dtype == bool or df["discount_applied"].isnull().all()
+    assert pd.api.types.is_bool_dtype(df["discount_applied"])
 
 
 # ---------------------------------------------------------------------------

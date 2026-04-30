@@ -1,4 +1,13 @@
+# Core pipeline
 pandas
+pyarrow
+boto3
+
+# File format support
+openpyxl
+xlrd>=2.0
+
+# Dev / testing
 pytest
 jupyter
 notebook
