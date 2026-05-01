@@ -1,72 +1,52 @@
-<!-- Classic "background" banner (image) -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:374151&height=140&section=header&text=Karthik%20Darapaneni&fontColor=E5E7EB&fontSize=48&animation=fadeIn" />
-</p>
+# Data Engineering Portfolio
 
-<p align="center">
-  <b>Cloud Data Engineer (5+ years)</b> • AWS / Azure / GCP • SQL • Python • Spark • Airflow
-</p>
-<p align="center">
-  Reliable pipelines • Data Modeling • Data Quality • Observability • Cost/Performance
-</p>
+[![CI](https://github.com/karthikds55/DataEngineering/actions/workflows/ci.yml/badge.svg)](https://github.com/karthikds55/DataEngineering/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![AWS](https://img.shields.io/badge/AWS-Lambda%20%7C%20S3-orange?logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
+[![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![Airflow](https://img.shields.io/badge/Orchestration-Airflow-017CEE?logo=apacheairflow&logoColor=white)](https://airflow.apache.org/)
 
-<!-- All hyperlinks as classic monochrome buttons -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/karthikdarapaneni/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brv%2FjQHUtQTWO2UmdIxbXOQ%3D%3D/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-111827?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="mailto:YOUR_EMAIL@example.com">
-    <img src="https://img.shields.io/badge/Email-Contact-111827?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://github.com/karthikds55">
-    <img src="https://img.shields.io/badge/GitHub-Follow-111827?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://YOUR_PORTFOLIO.com">
-    <img src="https://img.shields.io/badge/Portfolio-Visit-111827?style=for-the-badge&logo=vercel&logoColor=white" />
-  </a>
-</p>
-
-<hr/>
-
-<!-- Classic navigation row -->
-<p align="center">
-  <a href="#featured-work"><img src="https://img.shields.io/badge/Featured%20Work-Open-374151?style=for-the-badge" /></a>
-  <a href="#core-skills"><img src="https://img.shields.io/badge/Core%20Skills-View-374151?style=for-the-badge" /></a>
-  <a href="#cloud--data-stack"><img src="https://img.shields.io/badge/Cloud%20%26%20Data%20Stack-Browse-374151?style=for-the-badge" /></a>
-  <a href="#highlights"><img src="https://img.shields.io/badge/Highlights-See-374151?style=for-the-badge" /></a>
-  <a href="#contact"><img src="https://img.shields.io/badge/Contact-Reach%20out-374151?style=for-the-badge" /></a>
-</p>
+Production-style data engineering pipeline demonstrating end-to-end patterns: cloud ingestion, transformation, data quality, infrastructure-as-code, orchestration, and automated testing.
 
 ---
 
-## Quick Start — Git Bash Setup
+## Architecture
 
-Clone the repo and check out the `data-engineering` branch in Git Bash:
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/karthikds55/DataEngineering.git
-cd DataEngineering
-
-# 2. Fetch all remote branches
-git fetch --all
-
-# 3. Check out the data-engineering branch
-git checkout data-engineering
-
-# 4. Install Python dependencies
-pip install -r requirements.txt
-
-# 5. Run the full pipeline (ingest → transform → quality checks)
-python -m pipelines.ingest
-python -m pipelines.transform
-python -m transforms.quality_checks
-
-# 6. Run the test suite
-pytest tests/
 ```
-
-> **Already on the branch?**  Run `git branch` to confirm — you should see `* data-engineering`.
+Any file lands in S3 (CSV / JSON / Excel / Parquet)
+         │
+         │  s3:ObjectCreated:*
+         ▼
+┌─────────────────────┐
+│  AWS Lambda         │   s3_to_parquet.py
+│  S3 → Parquet       │   Snappy compression
+└────────┬────────────┘
+         │
+         ▼  S3 Parquet bucket
+         │
+         ├─── Cloud mode: transform.py reads directly from S3
+         │
+         ▼  Local mode (development)
+┌─────────────────────┐
+│  Ingest Pipeline    │   pipelines/ingest.py
+│  Raw → Staging      │   Schema validation, dtype coercion
+└────────┬────────────┘
+         ▼
+┌─────────────────────┐
+│  Transform Pipeline │   pipelines/transform.py
+│  Staging → Marts    │   Daily summary, category summary
+└────────┬────────────┘
+         ▼
+┌─────────────────────┐
+│  Quality Checks     │   transforms/quality_checks.py
+│  Validate output    │   Nulls, duplicates, value ranges
+└────────┬────────────┘
+         ▼
+┌─────────────────────┐
+│  Airflow DAG        │   dags/ecommerce_pipeline_dag.py
+│  Orchestration      │   Scheduled daily, retry logic
+└─────────────────────┘
+```
 
 ---
 
@@ -74,107 +54,178 @@ pytest tests/
 
 ```
 DataEngineering/
+├── .github/workflows/ci.yml          # GitHub Actions: pytest on every push
+├── dags/
+│   └── ecommerce_pipeline_dag.py     # Airflow DAG: ingest → transform → quality
 ├── data/
-│   ├── raw/           # Source files (CSV, JSON, …)
-│   ├── staging/       # Post-ingest, pre-transform layer
-│   └── marts/         # Aggregated mart tables
-├── notebooks/         # Exploratory & profiling notebooks
+│   └── raw/
+│       └── daily_ecommerce_orders.csv
+├── notebooks/
+│   └── ecommerce_data_profiling.ipynb
 ├── pipelines/
-│   ├── ingest.py      # Raw → staging ingestion
-│   └── transform.py   # Staging → mart transforms
-├── transforms/
-│   └── quality_checks.py  # Schema, null, range checks
+│   ├── ingest.py                     # Raw CSV → staging layer
+│   ├── transform.py                  # Staging → daily/category mart tables
+│   ├── s3_to_parquet.py              # Lambda handler: any file → Parquet
+│   └── s3_utils.py                   # S3 download/upload helpers
+├── scripts/
+│   └── build_lambda.sh               # Packages Lambda code + deps → ZIP
+├── terraform/
+│   ├── main.tf                       # S3 buckets, Lambda, S3 event trigger
+│   ├── iam.tf                        # Lambda execution role, S3 policy
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── terraform.tfvars.example
 ├── tests/
-│   └── test_pipelines.py  # pytest unit tests
-├── reports/           # Generated HTML profiling reports
+│   ├── test_pipelines.py             # 13 tests: ingest, transform, quality
+│   └── test_s3_to_parquet.py         # 21 tests: Lambda handler, all formats
+├── transforms/
+│   └── quality_checks.py             # Null, duplicate, range validators
+├── .env.example
+├── Dockerfile
+├── Makefile
 └── requirements.txt
 ```
 
 ---
 
-## Featured Work
+## Quickstart — Local
 
-<p>
-  <a href="https://github.com/karthikds55/DataEngineering">
-    <img src="https://img.shields.io/badge/Repo-DataEngineering-111827?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
+```bash
+git clone https://github.com/karthikds55/DataEngineering.git
+cd DataEngineering
 
-**DataEngineering** — a portfolio repo for production-style patterns:
-- ingestion → transforms → tests → orchestration
-- quality gates + monitoring mindset
-- scalable structure for cloud deployments
+pip install -r requirements.txt
 
-<details>
-  <summary><b>Roadmap</b></summary>
+# Run the full pipeline
+make pipeline
 
-- Raw → staging → marts example pipeline
-- Data quality checks (schema, freshness, duplicates)
-- Orchestration DAG + backfills
-- CI checks (lint/test)
-</details>
+# Or step by step
+make ingest      # raw CSV → data/staging/orders_staging.csv
+make transform   # staging → data/marts/daily_summary.csv + category_summary.csv
+make quality     # validate staging data (nulls, duplicates, ranges)
+
+# Run all tests
+make test
+```
 
 ---
 
-## Core Skills
-- **SQL (advanced):** modeling, performance tuning, validation
-- **Python:** pipelines, automation, API ingestion
-- **Orchestration:** Airflow / Prefect / Dagster
-- **Transforms:** dbt / Spark / SQL
-- **Modeling:** facts/dims, SCD, marts
-- **Quality & Observability:** tests, SLAs, monitoring/alerting
-- **Cost/Performance:** partitioning, clustering, Parquet, incremental loads
+## Quickstart — Docker
+
+```bash
+make docker-build
+
+# Mounts local data/ folder so output is accessible after the run
+make docker-run
+```
 
 ---
 
-## Cloud & Data Stack
-<details>
-  <summary><b>AWS</b></summary>
+## Cloud Deployment — AWS Lambda + Terraform
 
-<p>
-  <a href="https://aws.amazon.com/s3/"><img src="https://img.shields.io/badge/S3-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
-  <a href="https://aws.amazon.com/glue/"><img src="https://img.shields.io/badge/Glue-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
-  <a href="https://aws.amazon.com/redshift/"><img src="https://img.shields.io/badge/Redshift-Open-111827?style=for-the-badge&logo=amazonaws&logoColor=white" /></a>
-</p>
-</details>
+The `s3_to_parquet` Lambda converts any file dropped into the raw S3 bucket to Parquet automatically. Supported formats: **CSV, JSON, JSONL, Excel (.xlsx/.xls), Parquet (passthrough)**.
 
-<details>
-  <summary><b>Azure</b></summary>
+### Deploy
 
-<p>
-  <a href="https://azure.microsoft.com/products/storage/data-lake-storage/"><img src="https://img.shields.io/badge/ADLS-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
-  <a href="https://azure.microsoft.com/products/data-factory/"><img src="https://img.shields.io/badge/Data%20Factory-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
-  <a href="https://azure.microsoft.com/products/synapse-analytics/"><img src="https://img.shields.io/badge/Synapse-Open-111827?style=for-the-badge&logo=microsoftazure&logoColor=white" /></a>
-</p>
-</details>
+```bash
+# 1. Build Lambda deployment package
+bash scripts/build_lambda.sh
 
-<details>
-  <summary><b>GCP</b></summary>
+# 2. Configure Terraform
+cd terraform
+cp terraform.tfvars.example terraform.tfvars
+# Edit terraform.tfvars — set globally unique bucket names
 
-<p>
-  <a href="https://cloud.google.com/storage"><img src="https://img.shields.io/badge/GCS-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
-  <a href="https://cloud.google.com/bigquery"><img src="https://img.shields.io/badge/BigQuery-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
-  <a href="https://cloud.google.com/pubsub"><img src="https://img.shields.io/badge/Pub%2FSub-Open-111827?style=for-the-badge&logo=googlecloud&logoColor=white" /></a>
-</p>
-</details>
+# 3. Deploy infrastructure
+terraform init
+terraform plan
+terraform apply
+```
+
+### What Terraform provisions
+
+| Resource | Purpose |
+|---|---|
+| `aws_s3_bucket` (×2) | Separate raw input and Parquet output buckets |
+| `aws_lambda_function` | S3-to-Parquet converter, 1 GB RAM, 5 min timeout |
+| `aws_s3_bucket_notification` | Triggers Lambda on `s3:ObjectCreated:*` |
+| `aws_iam_role` + `aws_iam_policy` | Least-privilege: GetObject on raw, PutObject on parquet |
+| `aws_cloudwatch_log_group` | Lambda logs, 14-day retention |
+
+### Run the cloud pipeline end-to-end
+
+```bash
+# Upload a file to trigger the Lambda
+aws s3 cp data/raw/daily_ecommerce_orders.csv s3://YOUR-RAW-BUCKET/raw/
+
+# Once Lambda converts it, run transform against S3 Parquet output
+S3_STAGING_BUCKET=YOUR-PARQUET-BUCKET \
+S3_STAGING_KEY=daily_ecommerce_orders.parquet \
+python -m pipelines.transform
+```
 
 ---
 
-## Highlights
-- 5+ years delivering cloud pipelines end-to-end (ingestion → curated marts)
-- Strong emphasis on **data trust** (testing + observability) and **practical performance**
+## Orchestration — Airflow DAG
+
+The DAG `ecommerce_pipeline` models the full local pipeline as three sequential tasks with retry logic and daily scheduling.
+
+```
+ingest_orders → transform_orders → quality_checks
+```
+
+```bash
+pip install apache-airflow
+export AIRFLOW_HOME=~/airflow
+airflow db init
+airflow dags trigger ecommerce_pipeline
+```
+
+---
+
+## Testing
+
+34 tests, no real AWS credentials required — all S3 calls are mocked.
+
+```bash
+make test
+# or
+pytest tests/ -v
+```
+
+| Test file | Coverage |
+|---|---|
+| `test_pipelines.py` | Ingest schema validation, dtype coercion, transform aggregations, quality checks |
+| `test_s3_to_parquet.py` | Lambda handler, all file formats, S3 event parsing, error capture |
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Language | Python 3.11 |
+| Data processing | pandas, PyArrow |
+| Cloud | AWS Lambda, S3, CloudWatch |
+| IaC | Terraform |
+| Orchestration | Apache Airflow |
+| File formats | CSV, JSON, JSONL, Excel, Parquet |
+| Testing | pytest (34 tests) |
+| CI/CD | GitHub Actions |
+| Containerization | Docker |
 
 ---
 
 ## Contact
-<p align="center">
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/">
-    <img src="https://img.shields.io/badge/LinkedIn-Message-374151?style=for-the-badge&logo=linkedin&logoColor=white" />
+
+<p>
+  <a href="https://www.linkedin.com/in/karthikdarapaneni/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:YOUR_EMAIL@example.com">
-    <img src="https://img.shields.io/badge/Email-Send-374151?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="mailto:darapuneni.karthik@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="https://YOUR_PORTFOLIO.com">
-    <img src="https://img.shields.io/badge/Portfolio-Open-374151?style=for-the-badge&logo=vercel&logoColor=white" />
+  <a href="https://github.com/karthikds55">
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
