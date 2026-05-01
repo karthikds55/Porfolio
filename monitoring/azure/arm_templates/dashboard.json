@@ -1,0 +1,148 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys an Azure Portal Dashboard for the ecommerce pipeline. Replaces AWS CloudWatch Dashboard 'EcommerceOrdersPipeline'.",
+    "migratedFrom": "AWS CloudWatch Dashboard: EcommerceOrdersPipeline"
+  },
+  "parameters": {
+    "dashboardName": {
+      "type": "string",
+      "defaultValue": "dash-ecommerce-pipeline-prod"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "logAnalyticsWorkspaceId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the Log Analytics Workspace."}
+    },
+    "appInsightsId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the Application Insights component."}
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Portal/dashboards",
+      "apiVersion": "2022-12-01-preview",
+      "name": "[parameters('dashboardName')]",
+      "location": "[parameters('location')]",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "lenses": [
+          {
+            "order": 0,
+            "parts": [
+              {
+                "position": {"x": 0, "y": 0, "colSpan": 6, "rowSpan": 4},
+                "metadata": {
+                  "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+                  "inputs": [
+                    {
+                      "name": "resourceId",
+                      "value": "[parameters('logAnalyticsWorkspaceId')]"
+                    },
+                    {
+                      "name": "Query",
+                      "value": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'SUCCESS' | summarize TotalRows = sum(RowCount) by bin(TimeGenerated, 1d) | render barchart"
+                    }
+                  ],
+                  "settings": {"title": "Daily Ingest Row Count (AWS equiv: IngestRowCount metric)"}
+                }
+              },
+              {
+                "position": {"x": 6, "y": 0, "colSpan": 6, "rowSpan": 4},
+                "metadata": {
+                  "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+                  "inputs": [
+                    {
+                      "name": "resourceId",
+                      "value": "[parameters('logAnalyticsWorkspaceId')]"
+                    },
+                    {
+                      "name": "Query",
+                      "value": "QualityCheckResults_CL | where Result == 'FAIL' | summarize Failures = count() by bin(TimeGenerated, 1d) | render barchart"
+                    }
+                  ],
+                  "settings": {"title": "Quality Check Failures per Day (AWS equiv: QualityCheckFailures metric)"}
+                }
+              },
+              {
+                "position": {"x": 0, "y": 4, "colSpan": 6, "rowSpan": 4},
+                "metadata": {
+                  "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+                  "inputs": [
+                    {
+                      "name": "resourceId",
+                      "value": "[parameters('logAnalyticsWorkspaceId')]"
+                    },
+                    {
+                      "name": "Query",
+                      "value": "PipelineEvents_CL | where Stage in ('ingest','transform') | summarize AvgDuration = avg(DurationSeconds) by Stage, bin(TimeGenerated, 1d) | render timechart"
+                    }
+                  ],
+                  "settings": {"title": "Pipeline Stage Duration Trend"}
+                }
+              },
+              {
+                "position": {"x": 6, "y": 4, "colSpan": 6, "rowSpan": 4},
+                "metadata": {
+                  "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+                  "inputs": [
+                    {
+                      "name": "resourceId",
+                      "value": "[parameters('logAnalyticsWorkspaceId')]"
+                    },
+                    {
+                      "name": "Query",
+                      "value": "PipelineEvents_CL | where Status == 'ERROR' | order by TimeGenerated desc | take 20 | project TimeGenerated, Stage, Message, ErrorDetails"
+                    }
+                  ],
+                  "settings": {"title": "Recent Pipeline Errors (AWS equiv: CloudWatch Logs Insights)"}
+                }
+              },
+              {
+                "position": {"x": 0, "y": 8, "colSpan": 12, "rowSpan": 4},
+                "metadata": {
+                  "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+                  "inputs": [
+                    {
+                      "name": "resourceId",
+                      "value": "[parameters('logAnalyticsWorkspaceId')]"
+                    },
+                    {
+                      "name": "Query",
+                      "value": "PipelineEvents_CL | order by TimeGenerated desc | take 50 | project TimeGenerated, Stage, Status, Message, RowCount, DurationSeconds, RunId"
+                    }
+                  ],
+                  "settings": {"title": "Recent Pipeline Events (Last 50)"}
+                }
+              }
+            ]
+          }
+        ],
+        "metadata": {
+          "model": {
+            "timeRange": {"value": {"relative": {"duration": 24, "timeUnit": 1}}, "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"}
+          }
+        }
+      }
+    }
+  ],
+  "outputs": {
+    "dashboardId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Portal/dashboards', parameters('dashboardName'))]"
+    }
+  }
+}

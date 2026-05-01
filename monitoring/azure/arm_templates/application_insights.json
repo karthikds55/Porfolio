@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "description": "Deploys Application Insights linked to the Log Analytics Workspace. Provides distributed tracing and custom metric ingestion. Replaces AWS X-Ray + CloudWatch custom metrics.",
+    "migratedFrom": "AWS X-Ray + CloudWatch custom metrics (namespace EcommerceOrdersPipeline)"
+  },
+  "parameters": {
+    "appInsightsName": {
+      "type": "string",
+      "defaultValue": "appi-ecommerce-pipeline-prod"
+    },
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]"
+    },
+    "logAnalyticsWorkspaceId": {
+      "type": "string",
+      "metadata": {"description": "Full resource ID of the Log Analytics Workspace to link to."}
+    },
+    "samplingPercentage": {
+      "type": "int",
+      "defaultValue": 100,
+      "minValue": 0,
+      "maxValue": 100
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": {
+        "project": "ecommerce-orders-pipeline",
+        "environment": "production",
+        "migrated_from": "aws"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Insights/components",
+      "apiVersion": "2020-02-02",
+      "name": "[parameters('appInsightsName')]",
+      "location": "[parameters('location')]",
+      "kind": "other",
+      "tags": "[parameters('tags')]",
+      "properties": {
+        "Application_Type": "other",
+        "WorkspaceResourceId": "[parameters('logAnalyticsWorkspaceId')]",
+        "SamplingPercentage": "[parameters('samplingPercentage')]",
+        "RetentionInDays": 90,
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
+      }
+    }
+  ],
+  "outputs": {
+    "appInsightsId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.Insights/components', parameters('appInsightsName'))]"
+    },
+    "instrumentationKey": {
+      "type": "string",
+      "value": "[reference(parameters('appInsightsName')).InstrumentationKey]"
+    },
+    "connectionString": {
+      "type": "string",
+      "value": "[reference(parameters('appInsightsName')).ConnectionString]"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "_schema_version": "1.0",
+  "_description": "Central Azure Monitor configuration for the ecommerce orders pipeline. All resource names/IDs are parameterised – substitute real values before deploying.",
+
+  "azure": {
+    "subscription_id": "__SUBSCRIPTION_ID__",
+    "resource_group": "rg-ecommerce-pipeline-prod",
+    "location": "eastus",
+    "tags": {
+      "project": "ecommerce-orders-pipeline",
+      "environment": "production",
+      "owner": "data-engineering",
+      "migrated_from": "aws"
+    }
+  },
+
+  "log_analytics": {
+    "workspace_name": "law-ecommerce-pipeline-prod",
+    "sku": "PerGB2018",
+    "retention_days": 30,
+    "daily_quota_gb": 5,
+    "custom_tables": [
+      {
+        "table_name": "PipelineEvents_CL",
+        "description": "Custom table for all pipeline stage events (ingest / transform / quality)",
+        "columns": [
+          {"name": "TimeGenerated",    "type": "datetime"},
+          {"name": "Stage",            "type": "string"},
+          {"name": "Status",           "type": "string"},
+          {"name": "Message",          "type": "string"},
+          {"name": "RowCount",         "type": "int"},
+          {"name": "DurationSeconds",  "type": "real"},
+          {"name": "ErrorDetails",     "type": "string"},
+          {"name": "RunId",            "type": "string"}
+        ]
+      },
+      {
+        "table_name": "QualityCheckResults_CL",
+        "description": "Per-check pass/fail results from quality_checks.py",
+        "columns": [
+          {"name": "TimeGenerated", "type": "datetime"},
+          {"name": "CheckName",    "type": "string"},
+          {"name": "Result",       "type": "string"},
+          {"name": "Details",      "type": "string"},
+          {"name": "RunId",        "type": "string"}
+        ]
+      }
+    ]
+  },
+
+  "application_insights": {
+    "name": "appi-ecommerce-pipeline-prod",
+    "application_type": "other",
+    "linked_log_analytics_workspace": "law-ecommerce-pipeline-prod",
+    "sampling_percentage": 100,
+    "custom_events": [
+      "PipelineStart",
+      "IngestComplete",
+      "TransformComplete",
+      "QualityCheckComplete",
+      "PipelineEnd",
+      "PipelineFailure"
+    ],
+    "custom_metrics": [
+      {"name": "pipeline.ingest.row_count",    "unit": "Count"},
+      {"name": "pipeline.ingest.duration_sec", "unit": "Seconds"},
+      {"name": "pipeline.transform.duration_sec", "unit": "Seconds"},
+      {"name": "pipeline.quality.fail_count",  "unit": "Count"}
+    ]
+  },
+
+  "storage": {
+    "account_name": "stecommercepipelinelogs",
+    "account_tier": "Standard",
+    "replication": "LRS",
+    "containers": [
+      {
+        "name": "pipeline-logs",
+        "access": "private",
+        "lifecycle_policy": {
+          "cool_after_days": 7,
+          "archive_after_days": 30,
+          "delete_after_days": 90
+        }
+      },
+      {
+        "name": "diagnostic-exports",
+        "access": "private",
+        "lifecycle_policy": {
+          "cool_after_days": 14,
+          "delete_after_days": 365
+        }
+      }
+    ]
+  },
+
+  "metrics": {
+    "collection_interval_seconds": 60,
+    "pipeline_metrics": [
+      {
+        "name": "IngestRowCount",
+        "description": "Number of rows written to staging during ingest",
+        "type": "gauge",
+        "unit": "Count"
+      },
+      {
+        "name": "IngestDurationSeconds",
+        "description": "Wall-clock time for the ingest stage",
+        "type": "gauge",
+        "unit": "Seconds"
+      },
+      {
+        "name": "TransformDurationSeconds",
+        "description": "Wall-clock time for the transform stage",
+        "type": "gauge",
+        "unit": "Seconds"
+      },
+      {
+        "name": "QualityCheckFailures",
+        "description": "Count of [FAIL] results from quality_checks.py in a run",
+        "type": "counter",
+        "unit": "Count"
+      },
+      {
+        "name": "PipelineRunStatus",
+        "description": "1 = success, 0 = failure",
+        "type": "gauge",
+        "unit": "Count"
+      }
+    ]
+  },
+
+  "log_queries": {
+    "recent_pipeline_errors": "PipelineEvents_CL | where Status == 'ERROR' | order by TimeGenerated desc | take 50",
+    "daily_ingest_summary": "PipelineEvents_CL | where Stage == 'ingest' and Status == 'SUCCESS' | summarize avg(RowCount), max(RowCount), min(RowCount) by bin(TimeGenerated, 1d)",
+    "quality_failures_last_7d": "QualityCheckResults_CL | where Result == 'FAIL' | where TimeGenerated > ago(7d) | summarize count() by CheckName, bin(TimeGenerated, 1d)",
+    "pipeline_duration_trend": "PipelineEvents_CL | where Stage in ('ingest','transform') | summarize avg(DurationSeconds) by Stage, bin(TimeGenerated, 1d) | render timechart"
+  }
+}

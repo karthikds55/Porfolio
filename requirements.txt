@@ -2,3 +2,9 @@ pandas
 pytest
 jupyter
 notebook
+
+# Azure Monitor – optional; install to enable telemetry (monitoring/README.md)
+azure-identity
+azure-monitor-ingestion
+azure-monitor-query
+opencensus-ext-azure
